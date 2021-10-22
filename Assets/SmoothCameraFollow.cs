@@ -12,7 +12,7 @@ public class SmoothCameraFollow : MonoBehaviour
         playerTarget = GameObject.Find("Target");
     }
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Vector3 smoothedPos = Vector3.Lerp(this.transform.position, playerTarget.transform.position, smoothRate * Time.deltaTime);
         Quaternion smoothedRot = Quaternion.Lerp(this.transform.rotation, playerTarget.transform.rotation, smoothRate * Time.deltaTime);
