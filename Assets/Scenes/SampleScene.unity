@@ -1513,6 +1513,11 @@ MonoBehaviour:
   - {fileID: 200928622}
   - {fileID: 737786052}
   bulletPrefab: {fileID: 176630, guid: e8f6740231a1649d1be403eaf1e38c20, type: 3}
+  aimUI: {fileID: 475417093}
+  missilePos:
+  - {fileID: 848261407}
+  - {fileID: 313180592}
+  missilePrefab: {fileID: 326100060658656687, guid: 8f460e23d7ff344faaa5e2a8a5bbc6bc, type: 3}
 --- !u!1 &7497107405956443672
 GameObject:
   m_ObjectHideFlags: 0

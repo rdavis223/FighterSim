@@ -6,6 +6,9 @@ public class PlayerShooting : MonoBehaviour
 {
     public GameObject[] shootPos;
     public GameObject bulletPrefab;
+    public Transform aimUI;
+    public GameObject[] missilePos;
+    public GameObject missilePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +34,24 @@ public class PlayerShooting : MonoBehaviour
                 bullet.transform.LookAt(lookPosition);
             }
         }
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(aimUI.position);
+            RaycastHit hit;
+            if (Physics.Raycast(ray.origin, ray.direction, out hit)){
+                GameObject enemy = hit.transform.gameObject;
+                for (int i = 0; i < missilePos.Length; i++)
+                {
+                    GameObject bullet = Instantiate(missilePrefab);
+                    bullet.transform.position = missilePos[i].transform.position;
+                    bullet.transform.forward = missilePos[i].transform.forward;
+                    bullet.GetComponent<Missile>().setTarget(enemy);
+                    bullet.transform.LookAt(enemy.transform.position);
+                }
+            }
+
+        }
+
     }
 }
