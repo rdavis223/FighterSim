@@ -359,7 +359,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!96 &2518896178226999269
 TrailRenderer:
   serializedVersion: 2
@@ -479,8 +479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904322782669d4efba39c7da0918af0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  timeToLive: 10
+  speed: 120
+  timeToLive: 20
 --- !u!1 &183226
 GameObject:
   m_ObjectHideFlags: 0
