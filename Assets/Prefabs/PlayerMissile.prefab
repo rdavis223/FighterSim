@@ -4920,6 +4920,7 @@ GameObject:
   - component: {fileID: 326100060645662295}
   - component: {fileID: 2265581846191034670}
   - component: {fileID: 5555480846312186580}
+  - component: {fileID: -8282788867420185883}
   m_Layer: 0
   m_Name: PlayerMissile
   m_TagString: PlayerProjectile
@@ -4983,3 +4984,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 50
+--- !u!54 &-8282788867420185883
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326100060658656687}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
