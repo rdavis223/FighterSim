@@ -16,6 +16,16 @@ public class PlayerShooting : MonoBehaviour
     private float weaponHeat;
     public float weaponHeatMax;
     public Image weaponHeatUI;
+    public GameObject redLock;
+    public GameObject canvas;
+    private float lockTimer = 0f;
+    public float lockTime;
+    public GameObject greenLock;
+    private GameObject lockedObj;
+    public LayerMask lockable;
+    public float missileRechargeTime;
+    private float missileRechargeTimer;
+    public Image missileRechargeUI;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +36,7 @@ public class PlayerShooting : MonoBehaviour
         weaponHeat = 0f;
         activeFireTime = fireTimes[0];
         fireTimer = activeFireTime;
+        missileRechargeTimer = missileRechargeTime;
     }
 
     // Update is called once per frame
@@ -61,36 +72,96 @@ public class PlayerShooting : MonoBehaviour
                 }
             }
         }
+        Ray ray = Camera.main.ScreenPointToRay(aimUI.position);
+        RaycastHit hit;
+        //if (Physics.Raycast(ray.origin, ray.direction, out hit))
 
-        if (Input.GetButtonDown("Fire2"))
+        if (missileRechargeTimer >= missileRechargeTime && recursiveSphereCast(ray, out hit, 1f, 4f))
         {
-            Ray ray = Camera.main.ScreenPointToRay(aimUI.position);
-            RaycastHit hit;
-            if (Physics.Raycast(ray.origin, ray.direction, out hit)){
-                if (hit.transform.gameObject.tag == "Enemy")
+            if (hit.transform.gameObject.tag == "Enemy")
+            {
+                if (hit.transform.gameObject != lockedObj && lockedObj != null)
                 {
-                    GameObject enemy = hit.transform.gameObject;
-                    for (int i = 0; i < missilePos.Length; i++)
-                    {
-                        GameObject bullet = Instantiate(missilePrefab);
-                        bullet.transform.position = missilePos[i].transform.position;
-                        bullet.transform.forward = missilePos[i].transform.forward;
-                        bullet.GetComponent<Missile>().setTarget(enemy);
-                        bullet.transform.LookAt(enemy.transform.position);
-                    }
+                    lockedObj = null;
+                    redLock.SetActive(false);
+                    greenLock.SetActive(false);
+                    lockTimer = 0f;
                 }
+                if (lockTimer >= lockTime)
+                {
+                    redLock.SetActive(false);
+                    greenLock.SetActive(true);
+                    Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(Camera.main, hit.transform.position);
+                    greenLock.GetComponent<RectTransform>().anchoredPosition = screenPoint - canvas.GetComponent<RectTransform>().sizeDelta / 2f;
+                } else
+                {
+                    lockedObj = hit.transform.gameObject;
+                    lockTimer += Time.deltaTime;
+                    redLock.SetActive(true);
+                    Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(Camera.main, hit.transform.position);
+                    redLock.GetComponent<RectTransform>().anchoredPosition = screenPoint - canvas.GetComponent<RectTransform>().sizeDelta / 2f;
+                }
+            } else
+            {
+                lockedObj = null;
+                redLock.SetActive(false);
+                greenLock.SetActive(false);
+                lockTimer = 0f;
             }
+        } else
+        {
+            lockedObj = null;
+            redLock.SetActive(false);
+            greenLock.SetActive(false);
+            lockTimer = 0f;
+        }
+        if (Input.GetButtonDown("Fire2") && lockTimer >= lockTime)
+        {
+            for (int i = 0; i < missilePos.Length; i++)
+            {
+                GameObject bullet = Instantiate(missilePrefab);
+                bullet.transform.position = missilePos[i].transform.position;
+                bullet.transform.forward = missilePos[i].transform.forward;
+                bullet.GetComponent<Missile>().setTarget(lockedObj);
+                bullet.transform.LookAt(lockedObj.transform.position);
+            }
+            lockedObj = null;
+            redLock.SetActive(false);
+            greenLock.SetActive(false);
+            lockTimer = 0f;
+            missileRechargeTimer = 0f;
 
         }
         fireTimer += Time.deltaTime;
         weaponHeat -= Time.deltaTime * 2f;
-        updateWeaponHeat();
+        missileRechargeTimer+= Time.deltaTime;
+        updateUI();
     }
 
-    void updateWeaponHeat()
+    void updateUI()
     {
         weaponHeat = Mathf.Clamp(weaponHeat, 0f, weaponHeatMax);
         weaponHeatUI.fillAmount = (weaponHeat / weaponHeatMax);
+
+        missileRechargeTimer = Mathf.Clamp(missileRechargeTimer, 0f, missileRechargeTime);
+        missileRechargeUI.fillAmount = (missileRechargeTimer / missileRechargeTime);
+    }
+
+    bool recursiveSphereCast(Ray ray, out RaycastHit hit, float i, float final)
+    {
+        if (Physics.SphereCast(ray.origin, i, ray.direction, out hit, Mathf.Infinity, lockable.value))
+        {
+            return true;
+        } else
+        {
+            if (i <= final)
+            {
+                return recursiveSphereCast(ray, out hit, i + 1f, final);
+            } else
+            {
+                return false;
+            }
+        }
     }
 }
 
