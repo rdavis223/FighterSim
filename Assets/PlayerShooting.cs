@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -9,17 +10,29 @@ public class PlayerShooting : MonoBehaviour
     public Transform aimUI;
     public GameObject[] missilePos;
     public GameObject missilePrefab;
+    public float[] fireTimes;
+    private float activeFireTime;
+    private float fireTimer;
+    private float weaponHeat;
+    public float weaponHeatMax;
+    public Image weaponHeatUI;
+
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        fireTimer = 0f;
+        weaponHeat = 0f;
+        activeFireTime = fireTimes[0];
+        fireTimer = activeFireTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        
+        if (Input.GetButton("Fire1") && fireTimer >= activeFireTime && weaponHeat < weaponHeatMax)
         {
             for (int i =0; i < shootPos.Length; i++)
             {
@@ -32,6 +45,20 @@ public class PlayerShooting : MonoBehaviour
                 Vector3 lookPosition = new Vector3(end_x, end_y, end_z);
                 bullet.GetComponent<BulletMovement>().setStraight(this.transform.forward, lookPosition);
                 bullet.transform.LookAt(lookPosition);
+                fireTimer = 0;
+                weaponHeat++;
+                float weaponHeatPercent = ((weaponHeat / weaponHeatMax) * 100);
+                if (weaponHeatPercent < 70)
+                {
+                    activeFireTime = fireTimes[0];
+                    
+                } else if (weaponHeatPercent > 70 && weaponHeatPercent < 90)
+                {
+                    activeFireTime = fireTimes[1];
+                } else
+                {
+                    activeFireTime = fireTimes[2];
+                }
             }
         }
 
@@ -40,18 +67,30 @@ public class PlayerShooting : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(aimUI.position);
             RaycastHit hit;
             if (Physics.Raycast(ray.origin, ray.direction, out hit)){
-                GameObject enemy = hit.transform.gameObject;
-                for (int i = 0; i < missilePos.Length; i++)
+                if (hit.transform.gameObject.tag == "Enemy")
                 {
-                    GameObject bullet = Instantiate(missilePrefab);
-                    bullet.transform.position = missilePos[i].transform.position;
-                    bullet.transform.forward = missilePos[i].transform.forward;
-                    bullet.GetComponent<Missile>().setTarget(enemy);
-                    bullet.transform.LookAt(enemy.transform.position);
+                    GameObject enemy = hit.transform.gameObject;
+                    for (int i = 0; i < missilePos.Length; i++)
+                    {
+                        GameObject bullet = Instantiate(missilePrefab);
+                        bullet.transform.position = missilePos[i].transform.position;
+                        bullet.transform.forward = missilePos[i].transform.forward;
+                        bullet.GetComponent<Missile>().setTarget(enemy);
+                        bullet.transform.LookAt(enemy.transform.position);
+                    }
                 }
             }
 
         }
+        fireTimer += Time.deltaTime;
+        weaponHeat -= Time.deltaTime * 2f;
+        updateWeaponHeat();
+    }
 
+    void updateWeaponHeat()
+    {
+        weaponHeat = Mathf.Clamp(weaponHeat, 0f, weaponHeatMax);
+        weaponHeatUI.fillAmount = (weaponHeat / weaponHeatMax);
     }
 }
+
