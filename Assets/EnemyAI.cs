@@ -39,11 +39,4 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    public void handleCollision(Collider other)
-    {
-        if (other.gameObject.name.Contains("Bullet"))
-        {
-            Destroy(this.gameObject);
-        }
-    }
 }

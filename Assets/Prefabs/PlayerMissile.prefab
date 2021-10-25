@@ -4919,9 +4919,10 @@ GameObject:
   - component: {fileID: 326100060658826779}
   - component: {fileID: 326100060645662295}
   - component: {fileID: 2265581846191034670}
+  - component: {fileID: 5555480846312186580}
   m_Layer: 0
   m_Name: PlayerMissile
-  m_TagString: Untagged
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4953,7 +4954,7 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 5
-  m_Height: 65
+  m_Height: 75
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 35}
 --- !u!114 &2265581846191034670
@@ -4968,4 +4969,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b933e73022e5c45db93998b07c5477ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 100
+--- !u!114 &5555480846312186580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326100060658656687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eacf9355ac8bd419f88261208c6dc33a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 50

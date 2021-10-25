@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PassCollision : MonoBehaviour
+public class EnemyHealthUI : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class PassCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.rotation = Camera.main.transform.rotation;
+        this.GetComponent<RectTransform>().position = this.transform.parent.position + Camera.main.transform.up * 5.8f;
     }
-    
 }

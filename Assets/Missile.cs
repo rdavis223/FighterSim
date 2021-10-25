@@ -15,11 +15,19 @@ public class Missile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.LookAt(target.transform.position);
-        this.transform.position += this.transform.forward * speed * Time.deltaTime;
+        if (target == null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            this.transform.LookAt(target.transform.position);
+            this.transform.position += this.transform.forward * speed * Time.deltaTime;
+        }
     }
     public void setTarget(GameObject t)
     {
         target = t;
+        t.GetComponent<EnemyHealthMgr>().trackMissile(this.gameObject);
     }
 }
