@@ -10,6 +10,7 @@ public class EnemyHealthMgr : MonoBehaviour
     public float startingHealth;
     private float currentHealth;
     private List<GameObject> targetedMissiles;
+    public EnemyShield shield;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class EnemyHealthMgr : MonoBehaviour
 
     public void hurt(float damage)
     {
+        shield.damageTaken();
         currentHealth -= damage;
         if (currentHealth <= 0f)
         {
