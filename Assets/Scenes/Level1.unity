@@ -3617,6 +3617,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cf7d8f1be65407d81b39a3ed4cf67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootPos:
+  - {fileID: 1257585590}
+  - {fileID: 1804974390}
+  bulletPrefab: {fileID: 176630, guid: 52e0576a3a9e440b6a98c19134ea951d, type: 3}
+  fireTimes:
+  - 0.2
+  - 0.3
+  - 0.6
+  weaponHeatMax: 60
+  chanceOfShoot: 80
 --- !u!1 &2019705667
 GameObject:
   m_ObjectHideFlags: 0

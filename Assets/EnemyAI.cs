@@ -14,11 +14,13 @@ public class EnemyAI : MonoBehaviour
     public GameObject player;
     public float playerAttackRange = 600f;
     public bool dodging = false;
+    private EnemyShooting shootControl;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        shootControl = GetComponent<EnemyShooting>();
     }
 
     // Update is called once per frame
@@ -72,6 +74,10 @@ public class EnemyAI : MonoBehaviour
     {
         Vector3 playerDir = (player.transform.position - this.transform.position).normalized;
         Quaternion playerRot = Quaternion.LookRotation(player.transform.position - this.transform.position);
+        if (playerRot == this.transform.rotation)
+        {
+            shootControl.shootPrimary();
+        }
         turnTowardsVector(playerRot);
         if (distanceToPlayer() > 30f)
         {
