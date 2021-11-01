@@ -308,9 +308,10 @@ GameObject:
   - component: {fileID: 698683963953881838}
   - component: {fileID: 2518896178226999269}
   - component: {fileID: -4892825457558699149}
+  - component: {fileID: -8936239943907078624}
   m_Layer: 0
   m_Name: EnemyBullet
-  m_TagString: Untagged
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -431,7 +432,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.32941175, g: 0.65774715, b: 0.9607843, a: 1}
+      key0: {r: 0.9529412, g: 0.16078432, b: 0.007843138, a: 1}
       key1: {r: 0.87394446, g: 0.866634, b: 0.8962264, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -481,6 +482,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 200
   timeToLive: 20
+--- !u!114 &-8936239943907078624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785df25b6e7e443cebfc39287caf6e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
 --- !u!1 &183226
 GameObject:
   m_ObjectHideFlags: 0

@@ -72,7 +72,6 @@ public class EnemyAI : MonoBehaviour
 
     void flyTowardsPlayer()
     {
-        Vector3 playerDir = (player.transform.position - this.transform.position).normalized;
         Quaternion playerRot = Quaternion.LookRotation(player.transform.position - this.transform.position);
         if (playerRot == this.transform.rotation)
         {
@@ -81,14 +80,13 @@ public class EnemyAI : MonoBehaviour
         turnTowardsVector(playerRot);
         if (distanceToPlayer() > 30f)
         {
-            flyInDirection(playerDir);
+            flyForward();
         }
         else
         {
+            Vector3 playerDir = (player.transform.position - this.transform.position).normalized;
             Vector3 newDirection = Quaternion.Euler(Random.Range(30f, 50f), 0f, 0f) * playerDir;
-            Debug.Log(this.transform.position);
             dest = this.transform.position + (newDirection.normalized * Random.Range(150f, 400f));
-            Debug.Log(dest);
             dir = Quaternion.LookRotation(newDirection);
             dodging = true;
         }
@@ -116,7 +114,11 @@ public class EnemyAI : MonoBehaviour
         this.transform.position += point.normalized * speed * Time.deltaTime;
 
     }
+    void flyForward()
+    {
+        this.transform.position += this.transform.forward * speed * Time.deltaTime;
 
+    }
     void flyTowardsPoint(Vector3 point)
     {
         flyInDirection(point - this.transform.position);
