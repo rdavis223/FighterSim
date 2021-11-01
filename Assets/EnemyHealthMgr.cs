@@ -11,6 +11,7 @@ public class EnemyHealthMgr : MonoBehaviour
     private float currentHealth;
     private List<GameObject> targetedMissiles;
     public EnemyShield shield;
+    public GameObject explosionPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,8 @@ public class EnemyHealthMgr : MonoBehaviour
         if (currentHealth <= 0f)
         {
             destroyExistingMissiles();
+            GameObject exp = Instantiate(explosionPrefab);
+            exp.transform.position = this.transform.position;
             Destroy(this.gameObject);
         }
         updateHealthBar();
