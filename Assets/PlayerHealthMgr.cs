@@ -47,4 +47,11 @@ public class PlayerHealthMgr : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+    public void repair(float repairAmount)
+    {
+        currentHealth += repairAmount;
+        currentHealth = Mathf.Clamp(currentHealth, 0f, startingHealth);
+        updateHealthBar();
+    }
 }
