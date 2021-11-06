@@ -30,6 +30,7 @@ public class PlayerHealthMgr : MonoBehaviour
         if (currentHealth <= 0f)
         {
             Debug.Log("DEAD");
+            currentHealth = 0f;
         }
         updateHealthBar();
     }

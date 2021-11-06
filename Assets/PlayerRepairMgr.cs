@@ -32,7 +32,6 @@ public class PlayerRepairMgr : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision");
         if (other.gameObject.tag == "Parts")
         {
             repairLevel += repairPerPart;
