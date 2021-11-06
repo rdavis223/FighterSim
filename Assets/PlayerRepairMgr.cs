@@ -11,10 +11,12 @@ public class PlayerRepairMgr : MonoBehaviour
     public float repairPerPart;
     private PlayerHealthMgr health;
     public Image ui;
+    private bool partsLock;
 
 
     private void Start()
     {
+        partsLock = false;
         repairLevel = 0f;
         health = this.GetComponent<PlayerHealthMgr>();
         updateRepairBar();
@@ -32,12 +34,14 @@ public class PlayerRepairMgr : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Parts")
+        if (other.gameObject.tag == "Parts" & !partsLock)
         {
+            partsLock = true;
             repairLevel += repairPerPart;
             repairLevel = Mathf.Clamp(repairLevel, 0f, maxRepair);
             Destroy(other.gameObject);
             updateRepairBar();
+            partsLock = false;
         }
     }
 
