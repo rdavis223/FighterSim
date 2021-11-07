@@ -81,13 +81,13 @@ public class PlayerShield : MonoBehaviour
         sinceDamageTimer = sinceDamageTime;
     }
 
-    public void shieldCollision(Collider other)
+    public void shieldCollision(GameObject other)
     {
         if (disableShield)
         {
             return;
         }
-        if (other.gameObject.tag == "Enemy" && shield.enabled)
+        if (other.gameObject.tag == "Enemy" && shield.enabled && shieldEnergy > 1f)
         {
             visible.enabled = true;
             Destroy(other.gameObject);
@@ -98,6 +98,11 @@ public class PlayerShield : MonoBehaviour
             {
                 mgr.kill();
             } 
+        } else if (other.gameObject.tag == "Enemy" && shield.enabled)
+        {
+            sinceDamageTimer = sinceDamageTime;
+            shieldEnergy = 0f;
+
         }
     }
 

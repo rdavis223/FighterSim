@@ -59,6 +59,9 @@ public class PlayerHealthMgr : MonoBehaviour
             if (!shield.isShieldActive())
             {
                 EnemyShipCrash(other.gameObject);
+            } else
+            {
+                shield.shieldCollision(other.gameObject);
             }
         }
     }
@@ -68,7 +71,14 @@ public class PlayerHealthMgr : MonoBehaviour
         Debug.Log("CharacterControllerHit");
         if (hit.gameObject.tag == "Enemy")
         {
-            EnemyShipCrash(hit.gameObject);
+            if (!shield.isShieldActive())
+            {
+                EnemyShipCrash(hit.gameObject);
+            }
+            else
+            {
+                shield.shieldCollision(hit.gameObject);
+            }
         }
     }
 

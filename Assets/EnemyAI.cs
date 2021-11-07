@@ -7,9 +7,12 @@ public class EnemyAI : MonoBehaviour
     public float range;
     private bool destSet;
     private Vector3 dest;
-    public float speed;
+    public float attackSpeed;
+    public float flySpeed;
     private Quaternion dir;
     public float turnSpeed = 1f;
+
+    private float speed;
 
     public GameObject player;
     public float playerAttackRange = 600f;
@@ -34,15 +37,18 @@ public class EnemyAI : MonoBehaviour
         }
         if (dodging)
         {
+            setSpeed(flySpeed);
             dodgeObject();
         }
         else if (distanceToPlayer() < playerAttackRange)
         {
             destSet = false;
+            setSpeed(attackSpeed);
             attackPlayer();
         }
         else
         {
+            setSpeed(flySpeed);
             Patrol();
         }
         
@@ -98,7 +104,10 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            setDodgeObject((player.transform.position - this.transform.position).normalized, Random.Range(50f, 70f), Random.Range(150f, 400f));
+            int[] vals = new int[]  { -1, 1 };
+            int randIndex = Random.Range(0, 1);
+
+            setDodgeObject((player.transform.position - this.transform.position).normalized, Random.Range(55f, 80f) * vals[randIndex], Random.Range(150f, 400f));
         }
     }
 
@@ -157,7 +166,13 @@ public class EnemyAI : MonoBehaviour
         if (collision.gameObject.tag == "Station")
         {
             setDodgeObject(this.transform.forward, 90, 50f);
+            //handle other enemy collision
         }
+    }
+
+    void setSpeed(float s)
+    {
+        speed = s;
     }
 
 

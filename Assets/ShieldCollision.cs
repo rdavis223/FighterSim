@@ -8,9 +8,9 @@ public class ShieldCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "EnemyShield")
         {
-            this.transform.parent.GetComponent<PlayerShield>().shieldCollision(other);
+            this.transform.parent.GetComponent<PlayerShield>().shieldCollision(other.gameObject);
         }
     }
 }
