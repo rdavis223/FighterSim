@@ -13,8 +13,9 @@ public class EnemyAI : MonoBehaviour
 
     public GameObject player;
     public float playerAttackRange = 600f;
-    public bool dodging = false;
+    private bool dodging = false;
     private EnemyShooting shootControl;
+    public bool testing = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,16 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (distanceToPlayer() < playerAttackRange)
+        if (testing)
+        {
+            executeTestScript();
+            return;
+        }
+        if (dodging)
+        {
+            dodgeObject();
+        }
+        else if (distanceToPlayer() < playerAttackRange)
         {
             destSet = false;
             attackPlayer();
@@ -38,6 +48,17 @@ public class EnemyAI : MonoBehaviour
         
     }
 
+    void executeTestScript()
+    {
+        if (dodging)
+        {
+            dodgeObject();
+        } else
+        {
+            flyForward();
+        }
+
+    }
     void Patrol()
     {
         if (!destSet)
@@ -60,14 +81,7 @@ public class EnemyAI : MonoBehaviour
 
     void attackPlayer()
     {
-        if (dodging)
-        {
-            dodgePlayer();
-        }
-        else
-        {
-            flyTowardsPlayer();
-        }
+        flyTowardsPlayer();
     }
 
     void flyTowardsPlayer()
@@ -84,15 +98,11 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            Vector3 playerDir = (player.transform.position - this.transform.position).normalized;
-            Vector3 newDirection = Quaternion.Euler(Random.Range(30f, 50f), 0f, 0f) * playerDir;
-            dest = this.transform.position + (newDirection.normalized * Random.Range(150f, 400f));
-            dir = Quaternion.LookRotation(newDirection);
-            dodging = true;
+            setDodgeObject((player.transform.position - this.transform.position).normalized, Random.Range(30f, 50f), Random.Range(150f, 400f));
         }
     }
 
-    void dodgePlayer()
+    void dodgeObject()
     {
         turnTowardsVector(dir);
         flyTowardsPoint(dest);
@@ -100,6 +110,14 @@ public class EnemyAI : MonoBehaviour
         {
             dodging = false;
         }
+    }
+
+    void setDodgeObject(Vector3 currentDir, float angle, float range)
+    {
+        Vector3 newDirection = Quaternion.Euler(angle, 0f, 0f) * currentDir;
+        dest = this.transform.position + (newDirection.normalized * range);
+        dir = Quaternion.LookRotation(newDirection);
+        dodging = true;
     }
     void turnTowardsVector(Quaternion rot)
     {
@@ -123,15 +141,23 @@ public class EnemyAI : MonoBehaviour
     {
         flyInDirection(point - this.transform.position);
     }
-
-    float distanceToPlayer()
+ float distanceToPlayer()
     {
         return Vector3.Distance(this.transform.position, player.transform.position);
     }
+   
 
     bool isAtPoint(Vector3 pos, Vector3 destination)
     {
         return Vector3.Distance(this.transform.position, dest) <= 1f;
+    }
+
+    public void detectObject(Collider collision)
+    {
+        if (collision.gameObject.tag == "Station")
+        {
+            setDodgeObject(this.transform.forward, 90, 50f);
+        }
     }
 
 

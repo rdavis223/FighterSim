@@ -16,18 +16,29 @@ public class PlayerShield : MonoBehaviour
     public Image ui;
 
     public float shieldRechargeRate;
+
+    public bool disableShield;
     // Start is called before the first frame update
     void Start()
     {
         shieldEnergy = shieldEnergyMax;
         visible = this.GetComponent<MeshRenderer>();
-        shield = this.GetComponent<Collider>();
+        shield = this.GetComponent<MeshCollider>();
         shield.enabled = true;
+
+        if (disableShield)
+        {
+            shield.enabled = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (disableShield)
+        {
+            return;
+        }
         if (sinceDamageTimer <= 0f)
         {
             visible.enabled = false;
@@ -49,6 +60,10 @@ public class PlayerShield : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (disableShield)
+        {
+            return;
+        }
         if (other.gameObject.tag == "EnemyProjectile")
         {
             visible.enabled = true;
@@ -61,6 +76,31 @@ public class PlayerShield : MonoBehaviour
     public void damageTaken()
     {
         sinceDamageTimer = sinceDamageTime;
+    }
+
+    public void shieldCollision(Collider other)
+    {
+        if (disableShield)
+        {
+            return;
+        }
+        if (other.gameObject.tag == "Enemy" && shield.enabled)
+        {
+            visible.enabled = true;
+            Destroy(other.gameObject);
+            sinceDamageTimer = sinceDamageTime;
+            shieldEnergy = 1f;
+            EnemyHealthMgr mgr = other.gameObject.GetComponent<EnemyHealthMgr>();
+            if (mgr != null)
+            {
+                mgr.kill();
+            } 
+        }
+    }
+
+    public bool isShieldActive()
+    {
+        return shield.enabled;
     }
 
 }

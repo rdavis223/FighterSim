@@ -27,6 +27,11 @@ public class EnemyHealthMgr : MonoBehaviour
 
     }
 
+    public void kill()
+    {
+        hurt(startingHealth);
+    }
+
     public void hurt(float damage)
     {
         shield.damageTaken();

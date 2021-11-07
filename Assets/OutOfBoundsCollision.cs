@@ -6,7 +6,6 @@ public class OutOfBoundsCollision : MonoBehaviour
 {
     private void OnTriggerExit(Collider collision)
     {
-        Debug.Log("collsion");
         if (collision.gameObject.name == "Player")
         {
             this.transform.parent.GetComponentInParent<OutOfBoundsMgr>().crossedBoundry();

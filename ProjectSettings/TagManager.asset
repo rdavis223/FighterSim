@@ -9,6 +9,7 @@ TagManager:
   - PlayerProjectile
   - EnemyProjectile
   - Parts
+  - Station
   layers:
   - Default
   - TransparentFX

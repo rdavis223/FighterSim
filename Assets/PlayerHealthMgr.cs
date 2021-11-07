@@ -10,11 +10,14 @@ public class PlayerHealthMgr : MonoBehaviour
     public float startingHealth;
     private float currentHealth;
     public PlayerShield shield;
+    private MeshRenderer playerBody;
+    public GameObject explosionPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = startingHealth;
+        
     }
 
     // Update is called once per frame
@@ -47,6 +50,33 @@ public class PlayerHealthMgr : MonoBehaviour
             this.hurt(other.gameObject.GetComponent<EnemyProjectile>().Damage);
             Destroy(other.gameObject);
         }
+        if (other.gameObject.tag == "Enemy")
+        {
+            if (!shield.isShieldActive())
+            {
+                EnemyShipCrash(other.gameObject);
+            }
+        }
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Debug.Log("CharacterControllerHit");
+        if (hit.gameObject.tag == "Enemy")
+        {
+            EnemyShipCrash(hit.gameObject);
+        }
+    }
+
+    void EnemyShipCrash(GameObject other)
+    {
+        this.hurt(startingHealth);
+        EnemyHealthMgr mgr = other.GetComponent<EnemyHealthMgr>();
+        if (mgr != null)
+        {
+            mgr.kill();
+        }
+
     }
 
     public void repair(float repairAmount)
@@ -54,5 +84,10 @@ public class PlayerHealthMgr : MonoBehaviour
         currentHealth += repairAmount;
         currentHealth = Mathf.Clamp(currentHealth, 0f, startingHealth);
         updateHealthBar();
+    }
+
+    public void playerDie()
+    {
+        //todo tmr
     }
 }
