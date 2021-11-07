@@ -12,18 +12,20 @@ public class PlayerHealthMgr : MonoBehaviour
     public PlayerShield shield;
     private MeshRenderer playerBody;
     public GameObject explosionPrefab;
+    public bool GOD_MODE;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = startingHealth;
+        playerBody = this.GetComponent<MeshRenderer>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        currentHealth = startingHealth;
     }
 
     public void hurt(float damage)
@@ -34,6 +36,7 @@ public class PlayerHealthMgr : MonoBehaviour
         {
             Debug.Log("DEAD");
             currentHealth = 0f;
+            playerDie();
         }
         updateHealthBar();
     }
@@ -45,8 +48,9 @@ public class PlayerHealthMgr : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "EnemyProjectile")
+        if (other.gameObject.tag == "EnemyProjectile" && !shield.isShieldActive())
         {
+            Debug.Log("shot");
             this.hurt(other.gameObject.GetComponent<EnemyProjectile>().Damage);
             Destroy(other.gameObject);
         }
@@ -88,6 +92,9 @@ public class PlayerHealthMgr : MonoBehaviour
 
     public void playerDie()
     {
-        //todo tmr
+        GameObject explosion = Instantiate(explosionPrefab);
+        explosion.transform.position = this.transform.position;
+        playerBody.enabled = false;
+        GlobalStateMgr.setDead(true);
     }
 }

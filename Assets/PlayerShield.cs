@@ -9,7 +9,7 @@ public class PlayerShield : MonoBehaviour
     private float sinceDamageTimer;
 
     public float shieldEnergyMax;
-    private float shieldEnergy;
+    public float shieldEnergy;
 
     private MeshRenderer visible;
     private Collider shield;
@@ -37,6 +37,7 @@ public class PlayerShield : MonoBehaviour
     {
         if (disableShield)
         {
+            Debug.Log("returned");
             return;
         }
         if (sinceDamageTimer <= 0f)
@@ -60,8 +61,10 @@ public class PlayerShield : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.name);
         if (disableShield)
         {
+            Debug.Log("returned");
             return;
         }
         if (other.gameObject.tag == "EnemyProjectile")

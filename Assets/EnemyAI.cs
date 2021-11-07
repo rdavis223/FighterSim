@@ -98,7 +98,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            setDodgeObject((player.transform.position - this.transform.position).normalized, Random.Range(30f, 50f), Random.Range(150f, 400f));
+            setDodgeObject((player.transform.position - this.transform.position).normalized, Random.Range(50f, 70f), Random.Range(150f, 400f));
         }
     }
 

@@ -42,7 +42,10 @@ public class PlayerShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GlobalStateMgr.isDead())
+        {
+            return;
+        }
         if (Input.GetButton("Fire1") && fireTimer >= activeFireTime && weaponHeat < weaponHeatMax)
         {
             for (int i =0; i < shootPos.Length; i++)

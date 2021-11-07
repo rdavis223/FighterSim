@@ -22,7 +22,7 @@ public class EnemyShield : MonoBehaviour
     {
         shieldEnergy = shieldEnergyMax;
         visible = this.GetComponent<MeshRenderer>();
-        shield = this.GetComponent<Collider>();
+        shield = this.GetComponent<MeshCollider>();
         shield.enabled = true;
     }
 
