@@ -40,8 +40,8 @@ public class PlayerRepairMgr : MonoBehaviour
             repairLevel += repairPerPart;
             repairLevel = Mathf.Clamp(repairLevel, 0f, maxRepair);
             Destroy(other.gameObject);
-            updateRepairBar();
             partsLock = false;
+            updateRepairBar();
         }
     }
 

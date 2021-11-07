@@ -92,14 +92,14 @@ public class PlayerShooting : MonoBehaviour
                     redLock.SetActive(false);
                     greenLock.SetActive(true);
                     Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(Camera.main, hit.transform.position);
-                    greenLock.GetComponent<RectTransform>().anchoredPosition = screenPoint - canvas.GetComponent<RectTransform>().sizeDelta / 2f;
+                    greenLock.GetComponent<RectTransform>().anchoredPosition = screenPoint - (canvas.GetComponent<RectTransform>().sizeDelta * canvas.GetComponent<RectTransform>().localScale) / 2f;
                 } else
                 {
                     lockedObj = hit.transform.gameObject;
                     lockTimer += Time.deltaTime;
                     redLock.SetActive(true);
                     Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(Camera.main, hit.transform.position);
-                    redLock.GetComponent<RectTransform>().anchoredPosition = screenPoint - canvas.GetComponent<RectTransform>().sizeDelta / 2f;
+                    redLock.GetComponent<RectTransform>().anchoredPosition = screenPoint - (canvas.GetComponent<RectTransform>().sizeDelta * canvas.GetComponent<RectTransform>().localScale) / 2f;
                 }
             } else
             {

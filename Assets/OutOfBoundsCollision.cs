@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OutOfBoundsCollision : MonoBehaviour
 {
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
         Debug.Log("collsion");
         if (collision.gameObject.name == "Player")
