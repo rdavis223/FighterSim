@@ -16,6 +16,8 @@ public class EnemyShield : MonoBehaviour
     public GameObject sliderObject;
     public Slider ui;
 
+    private EnemyHealthMgr healthmgr;
+
     public float shieldRechargeRate;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class EnemyShield : MonoBehaviour
         visible = this.GetComponent<MeshRenderer>();
         shield = this.GetComponent<MeshCollider>();
         shield.enabled = true;
+        healthmgr = this.GetComponent<EnemyHealthMgr>();
     }
 
     // Update is called once per frame
@@ -58,6 +61,14 @@ public class EnemyShield : MonoBehaviour
             Destroy(other.gameObject);
             sinceDamageTimer = sinceDamageTime;
             shieldEnergy -= other.gameObject.GetComponent<PlayerProjectile>().Damage;
+        }
+        if (shieldEnergy < 0f)
+        {
+            if (healthmgr != null)
+            {
+                healthmgr.hurt(shieldEnergy * -1);
+                shieldEnergy = 0f;
+            }
         }
     }
 

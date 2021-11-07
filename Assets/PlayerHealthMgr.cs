@@ -34,7 +34,6 @@ public class PlayerHealthMgr : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0f)
         {
-            Debug.Log("DEAD");
             currentHealth = 0f;
             playerDie();
         }
@@ -50,7 +49,6 @@ public class PlayerHealthMgr : MonoBehaviour
     {
         if (other.gameObject.tag == "EnemyProjectile" && !shield.isShieldActive())
         {
-            Debug.Log("shot");
             this.hurt(other.gameObject.GetComponent<EnemyProjectile>().Damage);
             Destroy(other.gameObject);
         }

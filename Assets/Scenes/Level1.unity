@@ -2695,7 +2695,7 @@ GameObject:
   - component: {fileID: 980588941}
   - component: {fileID: 980588948}
   m_Layer: 8
-  m_Name: Shield (1)
+  m_Name: SHOULD BE NOT ACTIVE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5576,7 +5576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7494025446628835274}
   m_Layer: 8
-  m_Name: Collider
+  m_Name: OLD COLLIDER SHOULD BE DISABLED
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

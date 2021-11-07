@@ -105,9 +105,9 @@ public class EnemyAI : MonoBehaviour
         else
         {
             int[] vals = new int[]  { -1, 1 };
-            int randIndex = Random.Range(0, 1);
-
-            setDodgeObject((player.transform.position - this.transform.position).normalized, Random.Range(55f, 80f) * vals[randIndex], Random.Range(150f, 400f));
+            int randIndex = Random.Range(0, 2);
+            float dodgeAngle = Random.Range(70f, 120f) * vals[randIndex];
+            setDodgeObject((player.transform.position - this.transform.position).normalized, dodgeAngle, Random.Range(150f, 400f));
         }
     }
 
@@ -166,7 +166,12 @@ public class EnemyAI : MonoBehaviour
         if (collision.gameObject.tag == "Station")
         {
             setDodgeObject(this.transform.forward, 90, 50f);
-            //handle other enemy collision
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Turning away from enemy");
+            setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, 180f, Random.Range(10f, 40f));
+
         }
     }
 
