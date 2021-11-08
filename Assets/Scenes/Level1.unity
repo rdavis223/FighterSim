@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 149748363}
   - component: {fileID: 149748367}
   - component: {fileID: 149748366}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 154835599}
   - component: {fileID: 154835604}
   - component: {fileID: 154835603}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1724,7 +1724,7 @@ GameObject:
   - component: {fileID: 795035217}
   - component: {fileID: 795035222}
   - component: {fileID: 795035221}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2332,7 +2332,7 @@ GameObject:
   - component: {fileID: 800352892}
   - component: {fileID: 800352897}
   - component: {fileID: 800352896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3164,7 +3164,7 @@ GameObject:
   - component: {fileID: 1058399012}
   - component: {fileID: 1058399017}
   - component: {fileID: 1058399016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3319,7 +3319,7 @@ GameObject:
   - component: {fileID: 1180682362}
   - component: {fileID: 1180682366}
   - component: {fileID: 1180682367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5642,7 +5642,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824668865}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a7e373dfb0464105b38d0fe31f45380, type: 3}
   m_Name: 
@@ -5651,6 +5651,9 @@ MonoBehaviour:
   attackSpeed: 40
   flySpeed: 80
   turnSpeed: 150
+  wall:
+    serializedVersion: 2
+    m_Bits: 512
   player: {fileID: 0}
   playerAttackRange: 600
   testing: 0
@@ -5961,7 +5964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072070101}
   - component: {fileID: 2072070102}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6571,7 +6574,7 @@ MonoBehaviour:
   startingHealth: 100
   shield: {fileID: 1221689989}
   explosionPrefab: {fileID: 574386901711554893, guid: 59cea7adc6dfb4d7abc8452f69516e0e, type: 3}
-  GOD_MODE: 0
+  GOD_MODE: 1
   gameOverCanvas: {fileID: 1617931062}
 --- !u!114 &7496991941289972382
 MonoBehaviour:

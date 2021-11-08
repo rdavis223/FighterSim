@@ -12,6 +12,8 @@ public class EnemyAI : MonoBehaviour
     private Quaternion dir;
     public float turnSpeed = 1f;
 
+    public LayerMask wall;
+
     private float speed;
 
     public GameObject player;
@@ -70,6 +72,7 @@ public class EnemyAI : MonoBehaviour
         if (!destSet)
         {
             dest = new Vector3(Random.Range(0, range), Random.Range(0, range), Random.Range(0, range));
+            dest = vectorClamp(dest);
             destSet = true;
             dir = Quaternion.LookRotation(dest - this.transform.position);
 
@@ -87,7 +90,14 @@ public class EnemyAI : MonoBehaviour
 
     void attackPlayer()
     {
-        flyTowardsPlayer();
+        if (player.transform.position.x > 1500f || player.transform.position.y > 1500f || player.transform.position.z > 1500f)
+        {
+            Patrol();
+        }
+        else
+        {
+            flyTowardsPlayer();
+        }
     }
 
     void flyTowardsPlayer()
@@ -125,6 +135,12 @@ public class EnemyAI : MonoBehaviour
     {
         Vector3 newDirection = Quaternion.Euler(angle, 0f, 0f) * currentDir;
         dest = this.transform.position + (newDirection.normalized * range);
+        RaycastHit hit;
+        if (Physics.Raycast(this.transform.position, newDirection, out hit, (dest-this.transform.position).magnitude, wall))
+        {
+            Debug.Log("Did the thing");
+            dest = hit.point;
+        }
         dir = Quaternion.LookRotation(newDirection);
         dodging = true;
     }
@@ -179,6 +195,19 @@ public class EnemyAI : MonoBehaviour
     {
         speed = s;
     }
+
+    Vector3 vectorClamp(Vector3 pos)
+    {
+        pos.x = Mathf.Clamp(pos.x, 0f, 1500f);
+        pos.y = Mathf.Clamp(pos.y, 0f, 1500f);
+        pos.z = Mathf.Clamp(pos.x, 0f, 1500f);
+        return pos;
+
+
+    }
+
+
+
 
 
 }

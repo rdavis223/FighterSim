@@ -16,7 +16,7 @@ public class AstroidSpawner : MonoBehaviour
         while (i < asteroidsToSpawn)
         {
             Vector3 pos = new Vector3(Random.Range(0f, 1500f), Random.Range(0f, 1500f), Random.Range(0f, 1500f));
-            Collider[] hitColliders = Physics.OverlapSphere(pos, 3f);
+            Collider[] hitColliders = Physics.OverlapSphere(pos, 5f);
             if (hitColliders.Length == 0)
             {
                 GameObject asteroid;
