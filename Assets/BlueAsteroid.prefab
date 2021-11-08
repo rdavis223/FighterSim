@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2426509138778644700}
   - component: {fileID: 2403474009976047360}
   - component: {fileID: 1373861887851352392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 2444993886982131694}
   - component: {fileID: 4862844707336640609}
   - component: {fileID: 5585047044446642837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlueAsteroid
   m_TagString: Ast
   m_Icon: {fileID: 0}

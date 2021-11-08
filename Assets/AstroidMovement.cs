@@ -14,6 +14,8 @@ public class AstroidMovement : MonoBehaviour
 
     private float moveSpeed;
     public GameObject explosionPrefab;
+
+    public bool disableMovement = false;
     private void Start()
     {
         rotateX = Random.Range(0f, 1f);
@@ -27,8 +29,11 @@ public class AstroidMovement : MonoBehaviour
 
     private void Update()
     {
-        this.transform.Rotate(rotateX * Time.deltaTime * rotateSpeed, rotateY * Time.deltaTime * rotateSpeed, rotateZ * Time.deltaTime * rotateSpeed);
-        this.transform.position += dir * moveSpeed * Time.deltaTime;
+        if (!disableMovement)
+        {
+            this.transform.Rotate(rotateX * Time.deltaTime * rotateSpeed, rotateY * Time.deltaTime * rotateSpeed, rotateZ * Time.deltaTime * rotateSpeed);
+            this.transform.position += dir * moveSpeed * Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

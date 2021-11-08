@@ -22,11 +22,14 @@ public class EnemyAI : MonoBehaviour
     private EnemyShooting shootControl;
     public bool testing = false;
 
+    EnemyHealthMgr healthMgr;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
         shootControl = GetComponent<EnemyShooting>();
+        healthMgr = GetComponent<EnemyHealthMgr>();
     }
 
     // Update is called once per frame
@@ -60,12 +63,14 @@ public class EnemyAI : MonoBehaviour
     {
         if (dodging)
         {
+            setSpeed(flySpeed);
             dodgeObject();
-        } else
+        }
+        else
         {
+            setSpeed(attackSpeed);
             flyForward();
         }
-
     }
     void Patrol()
     {
@@ -185,9 +190,12 @@ public class EnemyAI : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Turning away from enemy");
             setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, 180f, Random.Range(10f, 40f));
 
+        }
+        if (collision.gameObject.tag == "Ast")
+        {
+            setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, 70f, 12f);
         }
     }
 
@@ -202,7 +210,6 @@ public class EnemyAI : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, 0f, 1500f);
         pos.z = Mathf.Clamp(pos.x, 0f, 1500f);
         return pos;
-
 
     }
 

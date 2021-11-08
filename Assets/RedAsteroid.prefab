@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6771251096087342355}
   - component: {fileID: 6706036088937640630}
   - component: {fileID: 6706036088937640629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 6719938189039296057}
   - component: {fileID: 6706036087637175835}
   - component: {fileID: 6706036087637175834}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedAsteroid
   m_TagString: Ast
   m_Icon: {fileID: 0}

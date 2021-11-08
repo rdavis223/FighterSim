@@ -63,11 +63,28 @@ public class EnemyHealthMgr : MonoBehaviour
             this.hurt(other.gameObject.GetComponent<PlayerProjectile>().Damage);
             Destroy(other.gameObject);
         }
+
+        if (other.gameObject.tag == "Enemy")
+        {
+            kill();
+        }
+        if (other.gameObject.tag == "Ast")
+        {
+            if (shield.isShieldActive())
+            {
+                shield.hurtShield(49f);
+            }
+            else
+            {
+                this.hurt(49f);
+            }
+            other.gameObject.GetComponent<AstroidMovement>().explode();
+        }
     }
 
     void destroyExistingMissiles()
     {
-        foreach(GameObject missile in targetedMissiles)
+          foreach(GameObject missile in targetedMissiles)
         {
             Destroy(missile);
         }

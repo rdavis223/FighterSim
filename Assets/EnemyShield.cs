@@ -1,4 +1,4 @@
-using System.Collections;
+  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -57,11 +57,21 @@ public class EnemyShield : MonoBehaviour
     {
         if (other.gameObject.tag == "PlayerProjectile")
         {
-            visible.enabled = true;
             Destroy(other.gameObject);
-            sinceDamageTimer = sinceDamageTime;
-            shieldEnergy -= other.gameObject.GetComponent<PlayerProjectile>().Damage;
+            hurtShield(other.gameObject.GetComponent<PlayerProjectile>().Damage);
         }
+    }
+
+    public void damageTaken()
+    {
+        sinceDamageTimer = sinceDamageTime;
+    }
+
+    public void hurtShield(float damage)
+    {
+        visible.enabled = true;
+        sinceDamageTimer = sinceDamageTime;
+        shieldEnergy -= damage;
         if (shieldEnergy < 0f)
         {
             if (healthmgr != null)
@@ -72,9 +82,9 @@ public class EnemyShield : MonoBehaviour
         }
     }
 
-    public void damageTaken()
+    public bool isShieldActive()
     {
-        sinceDamageTimer = sinceDamageTime;
+        return shield.enabled;
     }
 
 }
