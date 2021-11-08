@@ -13,6 +13,7 @@ public class PlayerHealthMgr : MonoBehaviour
     private MeshRenderer playerBody;
     public GameObject explosionPrefab;
     public bool GOD_MODE;
+    public GameObject gameOverCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -140,6 +141,18 @@ public class PlayerHealthMgr : MonoBehaviour
         GameObject explosion = Instantiate(explosionPrefab);
         explosion.transform.position = this.transform.position;
         playerBody.enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        StartCoroutine("showGameOverScreen");
         GlobalStateMgr.setDead(true);
+
+    }
+
+    IEnumerator showGameOverScreen()
+    {
+        yield return new WaitForSeconds(.5f);
+        gameOverCanvas.SetActive(true);
+        GlobalStateMgr.timeControl(true);
+
     }
 }

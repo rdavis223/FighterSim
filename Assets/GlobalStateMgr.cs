@@ -15,4 +15,15 @@ public static class GlobalStateMgr
     {
         dead = d;
     }
+
+    public static void timeControl(bool d)
+    {
+        if (d)
+        {
+            Time.timeScale = 0;
+        } else
+        {
+            Time.timeScale = 1;
+        }
+    }
 }
