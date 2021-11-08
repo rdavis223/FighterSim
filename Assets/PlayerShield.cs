@@ -61,18 +61,15 @@ public class PlayerShield : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
         if (disableShield)
         {
-            Debug.Log("returned");
             return;
         }
         if (other.gameObject.tag == "EnemyProjectile")
         {
             visible.enabled = true;
             Destroy(other.gameObject);
-            sinceDamageTimer = sinceDamageTime;
-            shieldEnergy -= other.gameObject.GetComponent<EnemyProjectile>().Damage;
+            takeShieldDamage(other.gameObject.GetComponent<EnemyProjectile>().Damage);
         }
     }
 
@@ -90,20 +87,44 @@ public class PlayerShield : MonoBehaviour
         if (other.gameObject.tag == "Enemy" && shield.enabled && shieldEnergy > 1f)
         {
             visible.enabled = true;
-            Destroy(other.gameObject);
             sinceDamageTimer = sinceDamageTime;
             shieldEnergy = 1f;
             EnemyHealthMgr mgr = other.gameObject.GetComponent<EnemyHealthMgr>();
             if (mgr != null)
             {
                 mgr.kill();
-            } 
-        } else if (other.gameObject.tag == "Enemy" && shield.enabled)
+            }
+        }
+        else if (other.gameObject.tag == "Enemy" && shield.enabled)
         {
             sinceDamageTimer = sinceDamageTime;
             shieldEnergy = 0f;
 
         }
+        else if (other.gameObject.tag == "Ast" && shield.enabled)
+        {
+            AstroidMovement mgr = other.GetComponent<AstroidMovement>();
+            if (mgr != null)
+            {
+                mgr.explode();
+            }
+            else
+            {
+                mgr = other.transform.parent.gameObject.GetComponent<AstroidMovement>();
+                if (mgr != null)
+                {
+                    mgr.explode();
+                }
+            }
+            takeShieldDamage(49f);
+        }
+    }
+
+    public void takeShieldDamage(float damage)
+    {
+        visible.enabled = true;
+        sinceDamageTimer = sinceDamageTime;
+        shieldEnergy -= damage;
     }
 
     public bool isShieldActive()

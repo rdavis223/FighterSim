@@ -13,6 +13,7 @@ public class AstroidMovement : MonoBehaviour
     private Vector3 dir;
 
     private float moveSpeed;
+    public GameObject explosionPrefab;
     private void Start()
     {
         rotateX = Random.Range(0f, 1f);
@@ -37,10 +38,30 @@ public class AstroidMovement : MonoBehaviour
             this.transform.LookAt(new Vector3(750f, 750f, 750f));
             dir = Quaternion.Euler(Random.Range(-45f, 45f), Random.Range(-45f, 45f), 0f) * this.transform.forward;
         }
+
+        if (other.gameObject.tag == "PlayerProjectile")
+        {
+            //Todo: ensure missibles remove themselves from enemy scropt before they are destoryed
+            Destroy(other.gameObject);
+            explode();
+         
+        } else if (other.gameObject.tag == "EnemyProjectile")
+        {
+            Destroy(other.gameObject);
+            explode();
+        }
     }
 
     public void bounceOffEnvironment()
     {
         dir = Quaternion.Euler(180f + Random.Range(-30f, 30f), 0f, 0f) * dir;
     }
+
+    public void explode()
+    {
+        GameObject exp = Instantiate(explosionPrefab);
+        exp.transform.position = this.transform.position;
+        Destroy(this.gameObject);
+    }
+
 }

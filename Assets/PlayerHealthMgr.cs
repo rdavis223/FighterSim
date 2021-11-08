@@ -25,19 +25,25 @@ public class PlayerHealthMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentHealth = startingHealth;
+ 
     }
 
     public void hurt(float damage)
     {
         shield.damageTaken();
         currentHealth -= damage;
+        if (GOD_MODE)
+        {
+            currentHealth = startingHealth;
+            updateHealthBar();
+        }
         if (currentHealth <= 0f)
         {
             currentHealth = 0f;
             playerDie();
         }
         updateHealthBar();
+
     }
 
     void updateHealthBar()
@@ -52,12 +58,20 @@ public class PlayerHealthMgr : MonoBehaviour
             this.hurt(other.gameObject.GetComponent<EnemyProjectile>().Damage);
             Destroy(other.gameObject);
         }
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Ast")
         {
             if (!shield.isShieldActive())
             {
-                EnemyShipCrash(other.gameObject);
-            } else
+                if (other.gameObject.tag == "Enemy")
+                {
+                    EnemyShipCrash(other.gameObject);
+                }
+                else
+                {
+                    AsteroidCrash(other.gameObject);
+                }
+            }
+            else
             {
                 shield.shieldCollision(other.gameObject);
             }
@@ -66,12 +80,17 @@ public class PlayerHealthMgr : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log("CharacterControllerHit");
-        if (hit.gameObject.tag == "Enemy")
+        if (hit.gameObject.tag == "Enemy" || hit.gameObject.tag == "Ast")
         {
             if (!shield.isShieldActive())
             {
-                EnemyShipCrash(hit.gameObject);
+                if (hit.gameObject.tag == "Enemy")
+                {
+                    EnemyShipCrash(hit.gameObject);
+                } else
+                {
+                    AsteroidCrash(hit.gameObject);
+                }
             }
             else
             {
@@ -89,6 +108,24 @@ public class PlayerHealthMgr : MonoBehaviour
             mgr.kill();
         }
 
+    }
+
+    void AsteroidCrash(GameObject other)
+    {
+        this.hurt(startingHealth / 2);
+        AstroidMovement mgr = other.GetComponent<AstroidMovement>();
+        if (mgr != null)
+        {
+            mgr.explode();
+        }
+        else
+        {
+            mgr = other.transform.parent.gameObject.GetComponent<AstroidMovement>();
+            if (mgr != null)
+            {
+                mgr.explode();
+            }
+        }
     }
 
     public void repair(float repairAmount)
