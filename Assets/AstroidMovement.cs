@@ -9,17 +9,38 @@ public class AstroidMovement : MonoBehaviour
     private float rotateZ;
 
     private float rotateSpeed;
+
+    private Vector3 dir;
+
+    private float moveSpeed;
     private void Start()
     {
         rotateX = Random.Range(0f, 1f);
         rotateY = Random.Range(0f, 1f);
         rotateZ = Random.Range(0f, 1f);
         rotateSpeed = Random.Range(10f, 40f);
+        dir = Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), 0f) * this.transform.forward;
+        moveSpeed = Random.Range(4f, 10f);
 
     }
 
     private void Update()
     {
         this.transform.Rotate(rotateX * Time.deltaTime * rotateSpeed, rotateY * Time.deltaTime * rotateSpeed, rotateZ * Time.deltaTime * rotateSpeed);
+        this.transform.position += dir * moveSpeed * Time.deltaTime;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name.Contains("Wall"))
+        {
+            this.transform.LookAt(new Vector3(750f, 750f, 750f));
+            dir = Quaternion.Euler(Random.Range(-45f, 45f), Random.Range(-45f, 45f), 0f) * this.transform.forward;
+        }
+    }
+
+    public void bounceOffEnvironment()
+    {
+        dir = Quaternion.Euler(180f + Random.Range(-30f, 30f), 0f, 0f) * dir;
     }
 }
