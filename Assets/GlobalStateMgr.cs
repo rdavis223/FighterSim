@@ -6,6 +6,7 @@ public static class GlobalStateMgr
 {
     public static bool dead = false;
 
+    public static List<GameObject> mainEnemyList = new List<GameObject>();
     public static bool isDead()
     {
         return dead;
@@ -25,5 +26,15 @@ public static class GlobalStateMgr
         {
             Time.timeScale = 1;
         }
+    }
+
+    public static void addEnemy(GameObject enemy)
+    {
+        mainEnemyList.Add(enemy);
+    }
+
+    public static void removeEnemy(GameObject enemy)
+    {
+        mainEnemyList.Remove(enemy);
     }
 }

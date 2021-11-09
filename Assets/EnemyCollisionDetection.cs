@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyCollisionDetection : MonoBehaviour
 {
     // Start is called before the first frame update
-    public EnemyAI aiControl;
+    public EnemyAIMain aiControl;
 
     private void OnTriggerEnter(Collider collision)
     {

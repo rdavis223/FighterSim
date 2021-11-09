@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAIMain : EnemyAICommon
 {
     public float range;
     private bool destSet;
@@ -10,17 +10,20 @@ public class EnemyAI : MonoBehaviour
     public float attackSpeed;
     public float flySpeed;
     private Quaternion dir;
-    public float turnSpeed = 1f;
 
     public LayerMask wall;
-
-    private float speed;
 
     public GameObject player;
     public float playerAttackRange = 600f;
     private bool dodging = false;
     private EnemyShooting shootControl;
     public bool testing = false;
+
+    private bool hasHealer = false;
+    private GameObject healer = null;
+    private bool healerIsAttached = false;
+
+    public GameObject[] attachPos;
 
     EnemyHealthMgr healthMgr;
 
@@ -30,6 +33,12 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("Player");
         shootControl = GetComponent<EnemyShooting>();
         healthMgr = GetComponent<EnemyHealthMgr>();
+        GameObject attachPosParent = this.transform.Find("AttachPositions").gameObject;
+        attachPos = new GameObject[4];
+        for(int i = 0; i < attachPosParent.transform.childCount; i++)
+        {
+            attachPos[i] = attachPosParent.transform.GetChild(i).gameObject;
+        }
     }
 
     // Update is called once per frame
@@ -61,16 +70,8 @@ public class EnemyAI : MonoBehaviour
 
     void executeTestScript()
     {
-        if (dodging)
-        {
-            setSpeed(flySpeed);
-            dodgeObject();
-        }
-        else
-        {
-            setSpeed(attackSpeed);
-            flyForward();
-        }
+        setSpeed(10f);
+        flyForward();
     }
     void Patrol()
     {
@@ -149,37 +150,11 @@ public class EnemyAI : MonoBehaviour
         dir = Quaternion.LookRotation(newDirection);
         dodging = true;
     }
-    void turnTowardsVector(Quaternion rot)
-    {
-        if (this.transform.rotation != rot)
-        {
-            this.transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, turnSpeed * Time.deltaTime);
-        }
-    }
 
-    void flyInDirection(Vector3 point)
-    {
-        this.transform.position += point.normalized * speed * Time.deltaTime;
 
-    }
-    void flyForward()
-    {
-        this.transform.position += this.transform.forward * speed * Time.deltaTime;
-
-    }
-    void flyTowardsPoint(Vector3 point)
-    {
-        flyInDirection(point - this.transform.position);
-    }
- float distanceToPlayer()
+    float distanceToPlayer()
     {
         return Vector3.Distance(this.transform.position, player.transform.position);
-    }
-   
-
-    bool isAtPoint(Vector3 pos, Vector3 destination)
-    {
-        return Vector3.Distance(this.transform.position, dest) <= 1f;
     }
 
     public void detectObject(Collider collision)
@@ -199,11 +174,6 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void setSpeed(float s)
-    {
-        speed = s;
-    }
-
     Vector3 vectorClamp(Vector3 pos)
     {
         pos.x = Mathf.Clamp(pos.x, 0f, 1500f);
@@ -211,6 +181,34 @@ public class EnemyAI : MonoBehaviour
         pos.z = Mathf.Clamp(pos.x, 0f, 1500f);
         return pos;
 
+    }
+
+    public bool isAvailableForRepair()
+    {
+        return (!dodging && !hasHealer && healthMgr.getCurrentHealthPercent() < 100f);
+    }
+
+    public GameObject[] getRepairAttachPoint()
+    {
+        return attachPos;
+    }
+
+    public bool setHealer(GameObject healer)
+    {
+        if (!hasHealer)
+        {
+            hasHealer = true;
+            this.healer = healer;
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
+    public void attachHealer()
+    {
+        healerIsAttached = true;
     }
 
 

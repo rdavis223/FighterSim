@@ -17,7 +17,9 @@ public class EnemyHealthMgr : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = startingHealth;
+        GlobalStateMgr.addEnemy(this.gameObject);
+        //TESTING : currentHealth = startingHealth;
+        currentHealth = 20f;
         targetedMissiles = new List<GameObject>();
     }
 
@@ -98,5 +100,10 @@ public class EnemyHealthMgr : MonoBehaviour
     {
         GameObject exp = Instantiate(partsPrefab);
         exp.transform.position = this.transform.position;
+    }
+
+    public float getCurrentHealthPercent()
+    {
+        return currentHealth / startingHealth;
     }
 }
