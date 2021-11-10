@@ -35,6 +35,7 @@ public static class GlobalStateMgr
 
     public static void removeEnemy(GameObject enemy)
     {
+        Debug.Log("remove enemy ran");
         mainEnemyList.Remove(enemy);
     }
 }

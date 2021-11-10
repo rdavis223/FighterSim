@@ -21,12 +21,13 @@ public class EnemyHealthMgr : MonoBehaviour
         //TESTING : currentHealth = startingHealth;
         currentHealth = 20f;
         targetedMissiles = new List<GameObject>();
+        updateHealthBar();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(currentHealth);
     }
 
     public void kill()
@@ -41,6 +42,8 @@ public class EnemyHealthMgr : MonoBehaviour
         if (currentHealth <= 0f)
         {
             destroyExistingMissiles();
+            GlobalStateMgr.removeEnemy(this.gameObject);
+            this.GetComponent<EnemyAICommon>().initiateDetach();
             explode();
             dropParts();
             Destroy(this.gameObject);

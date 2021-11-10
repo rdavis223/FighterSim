@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class EnemyAIMain : EnemyAICommon
 {
-    public float range;
-    private bool destSet;
-    private Vector3 dest;
+    
     public float attackSpeed;
     public float flySpeed;
-    private Quaternion dir;
 
     public LayerMask wall;
 
@@ -72,26 +69,6 @@ public class EnemyAIMain : EnemyAICommon
     {
         setSpeed(10f);
         flyForward();
-    }
-    void Patrol()
-    {
-        if (!destSet)
-        {
-            dest = new Vector3(Random.Range(0, range), Random.Range(0, range), Random.Range(0, range));
-            dest = vectorClamp(dest);
-            destSet = true;
-            dir = Quaternion.LookRotation(dest - this.transform.position);
-
-        }
-        if (isAtPoint(this.transform.position, dest))
-        {
-            destSet = false;
-        }
-        else
-        {
-            turnTowardsVector(dir);
-            flyInDirection(dest - this.transform.position);
-        }
     }
 
     void attackPlayer()
@@ -174,14 +151,6 @@ public class EnemyAIMain : EnemyAICommon
         }
     }
 
-    Vector3 vectorClamp(Vector3 pos)
-    {
-        pos.x = Mathf.Clamp(pos.x, 0f, 1500f);
-        pos.y = Mathf.Clamp(pos.y, 0f, 1500f);
-        pos.z = Mathf.Clamp(pos.x, 0f, 1500f);
-        return pos;
-
-    }
 
     public bool isAvailableForRepair()
     {
@@ -210,6 +179,24 @@ public class EnemyAIMain : EnemyAICommon
     {
         healerIsAttached = true;
     }
+
+    public override void initiateDetach()
+    {
+        if (healer != null)
+        {
+            healer.GetComponent<EnemyAIHealer>().detach();
+        }
+        detach();
+    }
+
+    public void detach()
+    {
+        hasHealer = false;
+        healer = null;
+        healerIsAttached = false;
+    }
+
+
 
 
 

@@ -26,22 +26,29 @@ public class EnemyAIHealer : EnemyAICommon
         if (!findEnemyRunning && !enemySet)
         {
             StartCoroutine(findEnemyToHeal());
-        } else if (enemySet && isAttached)
+        } else if (findEnemyRunning && !enemySet)
+        {
+            Patrol();
+        }
+        else if (enemySet && isAttached)
         {
             continueHealing();
         }
         else
         {
-            GameObject g = findClosestAttachPos();
-            Vector3 closestAttachPos = g.transform.position;
-            if (enemySet && !isAttached && !isAtPoint(this.transform.position, closestAttachPos))
+            if (enemyAttachPos != null)
             {
-                moveToEnemy(closestAttachPos);
+                GameObject g = findClosestAttachPos();
+                Vector3 closestAttachPos = g.transform.position;
+                if (enemySet && !isAttached && !isAtPoint(this.transform.position, closestAttachPos))
+                {
+                    moveToEnemy(closestAttachPos);
 
-            }
-            else if (enemySet && !isAttached && isAtPoint(this.transform.position, closestAttachPos))
-            {
-                startHealing(g);
+                }
+                else if (enemySet && !isAttached && isAtPoint(this.transform.position, closestAttachPos))
+                {
+                    startHealing(g);
+                }
             }
         }
 
@@ -59,6 +66,7 @@ public class EnemyAIHealer : EnemyAICommon
                 if (result)
                 {
                     enemySet = true;
+                    otherEnemyAI = enemyAi;
                     currentEnemy = enemy;
                     enemyAttachPos = enemyAi.getRepairAttachPoint();
                     findEnemyRunning = false;
@@ -121,8 +129,25 @@ public class EnemyAIHealer : EnemyAICommon
         flyForward();
     }
 
+    public override void initiateDetach()
+    {
+        if (otherEnemyAI != null) {
+            otherEnemyAI.detach();
+        }
+        
+        this.detach();
+    }
     public void detach()
     {
+        enemySet = false;
+        line.enabled = false;
+        currentEnemy = null;
+        enemyAttachPos = null;
+        findEnemyRunning = false;
+        isAttached = false;
+        attachPos = null;
+        otherHealthMgr = null;
+        otherEnemyAI = null;
 
     }
 }
