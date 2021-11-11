@@ -13,21 +13,23 @@ public class EnemyHealthMgr : MonoBehaviour
     public EnemyShield shield;
     public GameObject explosionPrefab;
     public GameObject partsPrefab;
+    public bool hasShield;
 
     // Start is called before the first frame update
     void Start()
     {
         GlobalStateMgr.addEnemy(this.gameObject);
-        //TESTING : currentHealth = startingHealth;
-        currentHealth = 20f;
+        currentHealth = startingHealth;
         targetedMissiles = new List<GameObject>();
         updateHealthBar();
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentHealth);
+
     }
 
     public void kill()
@@ -37,7 +39,10 @@ public class EnemyHealthMgr : MonoBehaviour
 
     public void hurt(float damage)
     {
-        shield.damageTaken();
+        if (hasShield)
+        {
+            shield.damageTaken();
+        }
         currentHealth -= damage;
         if (currentHealth <= 0f)
         {
@@ -75,7 +80,7 @@ public class EnemyHealthMgr : MonoBehaviour
         }
         if (other.gameObject.tag == "Ast")
         {
-            if (shield.isShieldActive())
+            if (hasShield && shield.isShieldActive())
             {
                 shield.hurtShield(49f);
             }
@@ -108,5 +113,11 @@ public class EnemyHealthMgr : MonoBehaviour
     public float getCurrentHealthPercent()
     {
         return currentHealth / startingHealth;
+    }
+
+    public void heal(float amount)
+    {
+        currentHealth += amount;
+        updateHealthBar();
     }
 }

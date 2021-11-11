@@ -7,6 +7,7 @@ public static class GlobalStateMgr
     public static bool dead = false;
 
     public static List<GameObject> mainEnemyList = new List<GameObject>();
+    public static List<GameObject> healerEnemyList = new List<GameObject>();
     public static bool isDead()
     {
         return dead;
@@ -30,12 +31,24 @@ public static class GlobalStateMgr
 
     public static void addEnemy(GameObject enemy)
     {
-        mainEnemyList.Add(enemy);
+        if (enemy.GetComponent<EnemyAIMain>() != null)
+        {
+            mainEnemyList.Add(enemy);
+        } else
+        {
+            healerEnemyList.Add(enemy);
+        }
     }
 
     public static void removeEnemy(GameObject enemy)
     {
-        Debug.Log("remove enemy ran");
-        mainEnemyList.Remove(enemy);
+        if (enemy.GetComponent<EnemyAIMain>() != null)
+        {
+            mainEnemyList.Remove(enemy);
+        }
+        else
+        {
+            healerEnemyList.Remove(enemy);
+        }
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Station
   - EnemyShield
   - Ast
+  - player
   layers:
   - Default
   - TransparentFX

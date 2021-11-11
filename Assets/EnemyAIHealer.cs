@@ -13,16 +13,23 @@ public class EnemyAIHealer : EnemyAICommon
     EnemyHealthMgr otherHealthMgr;
     EnemyAIMain otherEnemyAI;
     LineRenderer line;
+    public float healerSpeed = 100f;
     // Start is called before the first frame update
     void Start()
     {
         line = GetComponent<LineRenderer>();
         line.enabled = false;
+        setSpeed(healerSpeed);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (dodging)
+        {
+            dodgeObject();
+            return;
+        }
         if (!findEnemyRunning && !enemySet)
         {
             StartCoroutine(findEnemyToHeal());
@@ -80,7 +87,6 @@ public class EnemyAIHealer : EnemyAICommon
 
     void moveToEnemy(Vector3 closestAttachPos)
     {
-        setSpeed(20f);
         Quaternion playerRot = Quaternion.LookRotation(closestAttachPos - this.transform.position);
         turnTowardsVector(playerRot);
         flyForward();
@@ -126,7 +132,12 @@ public class EnemyAIHealer : EnemyAICommon
         line.SetPosition(0, this.transform.position);
         line.SetPosition(1, currentEnemy.transform.position);
         setSpeed(otherEnemyAI.getSpeed());
-        flyForward();
+        flyTowardsPoint(attachPos.transform.position);
+        otherHealthMgr.heal(Time.deltaTime * 3.5f);
+        if (otherHealthMgr.getCurrentHealthPercent() >= 1f)
+        {
+            initiateDetach();
+        }
     }
 
     public override void initiateDetach()
@@ -149,5 +160,34 @@ public class EnemyAIHealer : EnemyAICommon
         otherHealthMgr = null;
         otherEnemyAI = null;
 
+    }
+
+    public override void detectObject(Collider collision)
+    {
+        if (collision.gameObject.tag == "Station")
+        {
+            Debug.Log("Collision");
+            setDodgeObject(this.transform.forward, 90, 50f);
+            initiateDetach();
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("EnemyCollide");
+            if (collision.gameObject != currentEnemy)
+            {
+                setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, 180f, Random.Range(10f, 40f));
+                initiateDetach();
+            }
+        }
+        if (collision.gameObject.tag == "Ast")
+        {
+            setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, 70f, 12f);
+            initiateDetach();
+        }
+        if (collision.gameObject.tag == "player")
+        {
+            setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, Random.Range(70f, 90f), 12f);
+
+        }
     }
 }

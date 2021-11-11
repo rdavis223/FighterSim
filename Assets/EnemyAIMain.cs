@@ -7,12 +7,9 @@ public class EnemyAIMain : EnemyAICommon
     
     public float attackSpeed;
     public float flySpeed;
-
-    public LayerMask wall;
-
+    public float runSpeed;
     public GameObject player;
     public float playerAttackRange = 600f;
-    private bool dodging = false;
     private EnemyShooting shootControl;
     public bool testing = false;
 
@@ -48,7 +45,7 @@ public class EnemyAIMain : EnemyAICommon
         }
         if (dodging)
         {
-            setSpeed(flySpeed);
+            setSpeed(runSpeed);
             dodgeObject();
         }
         else if (distanceToPlayer() < playerAttackRange)
@@ -68,6 +65,11 @@ public class EnemyAIMain : EnemyAICommon
     void executeTestScript()
     {
         setSpeed(10f);
+        if (dodging)
+        {
+            dodgeObject();
+            return;
+        }
         flyForward();
     }
 
@@ -91,7 +93,7 @@ public class EnemyAIMain : EnemyAICommon
             shootControl.shootPrimary();
         }
         turnTowardsVector(playerRot);
-        if (distanceToPlayer() > 30f)
+        if (distanceToPlayer() > 60f)
         {
             flyForward();
         }
@@ -99,42 +101,17 @@ public class EnemyAIMain : EnemyAICommon
         {
             int[] vals = new int[]  { -1, 1 };
             int randIndex = Random.Range(0, 2);
-            float dodgeAngle = Random.Range(70f, 120f) * vals[randIndex];
+            float dodgeAngle = Random.Range(75f, 120f) * vals[randIndex];
             setDodgeObject((player.transform.position - this.transform.position).normalized, dodgeAngle, Random.Range(150f, 400f));
         }
     }
-
-    void dodgeObject()
-    {
-        turnTowardsVector(dir);
-        flyTowardsPoint(dest);
-        if (isAtPoint(this.transform.position, dest))
-        {
-            dodging = false;
-        }
-    }
-
-    void setDodgeObject(Vector3 currentDir, float angle, float range)
-    {
-        Vector3 newDirection = Quaternion.Euler(angle, 0f, 0f) * currentDir;
-        dest = this.transform.position + (newDirection.normalized * range);
-        RaycastHit hit;
-        if (Physics.Raycast(this.transform.position, newDirection, out hit, (dest-this.transform.position).magnitude, wall))
-        {
-            Debug.Log("Did the thing");
-            dest = hit.point;
-        }
-        dir = Quaternion.LookRotation(newDirection);
-        dodging = true;
-    }
-
 
     float distanceToPlayer()
     {
         return Vector3.Distance(this.transform.position, player.transform.position);
     }
 
-    public void detectObject(Collider collision)
+    public override void detectObject(Collider collision)
     {
         if (collision.gameObject.tag == "Station")
         {
@@ -154,7 +131,7 @@ public class EnemyAIMain : EnemyAICommon
 
     public bool isAvailableForRepair()
     {
-        return (!dodging && !hasHealer && healthMgr.getCurrentHealthPercent() < 100f);
+        return (!dodging && !hasHealer && healthMgr.getCurrentHealthPercent() < 1f);
     }
 
     public GameObject[] getRepairAttachPoint()
@@ -194,6 +171,16 @@ public class EnemyAIMain : EnemyAICommon
         hasHealer = false;
         healer = null;
         healerIsAttached = false;
+    }
+    public void setDodgeSpeedDynamically()
+    {
+        if (distanceToPlayer() < 60f)
+        {
+            setSpeed(runSpeed);
+        } else
+        {
+            setSpeed(flySpeed);
+        }
     }
 
 

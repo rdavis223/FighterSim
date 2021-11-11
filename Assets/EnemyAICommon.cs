@@ -11,6 +11,10 @@ public class EnemyAICommon : MonoBehaviour
     public float range;
     protected Quaternion dir;
     protected Vector3 dest;
+    protected bool dodging = false;
+    public LayerMask wall;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -96,4 +100,34 @@ public class EnemyAICommon : MonoBehaviour
         return pos;
 
     }
+
+    protected void dodgeObject()
+    {
+        turnTowardsVector(dir);
+        flyTowardsPoint(dest);
+        if (isAtPoint(this.transform.position, dest))
+        {
+            dodging = false;
+        }
+    }
+
+    protected void setDodgeObject(Vector3 currentDir, float angle, float range)
+    {
+        Vector3 newDirection = Quaternion.Euler(angle, 0f, 0f) * currentDir;
+        dest = this.transform.position + (newDirection.normalized * range);
+        RaycastHit hit;
+        if (Physics.Raycast(this.transform.position, newDirection, out hit, (dest - this.transform.position).magnitude, wall))
+        {
+            dest = hit.point;
+        }
+        dir = Quaternion.LookRotation(newDirection);
+        dodging = true;
+    }
+
+    public virtual void detectObject(Collider collision)
+    {
+
+    }
+    
+
 }
