@@ -132,4 +132,9 @@ public class PlayerShield : MonoBehaviour
         return shield.enabled;
     }
 
+    public void disableGraphic()
+    {
+        visible.enabled = false;
+    }
+
 }

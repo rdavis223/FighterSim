@@ -59,6 +59,11 @@ public class EnemyAIHealer : EnemyAICommon
             }
         }
 
+        if (GlobalStateMgr.isDead())
+        {
+            StopAllCoroutines();
+        }
+
     }
 
     IEnumerator findEnemyToHeal()

@@ -32,8 +32,7 @@ public class PlayerShooting : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        GlobalStateMgr.setDead(false);
-        GlobalStateMgr.timeControl(false);
+        GlobalStateMgr.initalize();
         fireTimer = 0f;
         weaponHeat = 0f;
         activeFireTime = fireTimes[0];

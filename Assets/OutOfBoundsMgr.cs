@@ -28,8 +28,8 @@ public class OutOfBoundsMgr : MonoBehaviour
             outsideTimer -= Time.deltaTime;
             if (outsideTimer <= 0f)
             {
-                Debug.Log("GameOver");
-                //implement game over code here
+                returnToBattleField.SetActive(false);
+                player.GetComponent<PlayerHealthMgr>().playerDie();
             }
             counter.text = Mathf.Ceil(outsideTimer).ToString();
         }

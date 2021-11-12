@@ -51,4 +51,12 @@ public static class GlobalStateMgr
             healerEnemyList.Remove(enemy);
         }
     }
+
+    public static void initalize()
+    {
+        dead = false;
+        mainEnemyList = new List<GameObject>();
+        healerEnemyList = new List<GameObject>();
+        timeControl(false);
+    }
 }

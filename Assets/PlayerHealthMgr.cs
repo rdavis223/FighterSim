@@ -138,6 +138,7 @@ public class PlayerHealthMgr : MonoBehaviour
 
     public void playerDie()
     {
+        shield.disableGraphic();
         GameObject explosion = Instantiate(explosionPrefab);
         explosion.transform.position = this.transform.position;
         playerBody.enabled = false;
