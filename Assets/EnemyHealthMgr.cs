@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +14,7 @@ public class EnemyHealthMgr : MonoBehaviour
     public GameObject partsPrefab;
     public bool hasShield;
     private bool dieRan = false;
+    private bool partsDropped = false;
 
     // Start is called before the first frame update
     void Start()
@@ -109,10 +109,14 @@ public class EnemyHealthMgr : MonoBehaviour
         GameObject exp = Instantiate(explosionPrefab);
         exp.transform.position = this.transform.position;
     }
-    void dropParts()
-    {
-        GameObject exp = Instantiate(partsPrefab);
-        exp.transform.position = this.transform.position;
+    void dropParts() { 
+        float r = Random.Range(0f, 100f);
+        if (r <= 60f)
+        {
+            GameObject exp = Instantiate(partsPrefab);
+            exp.transform.position = this.transform.position;
+        }
+        
     }
 
     public float getCurrentHealthPercent()
