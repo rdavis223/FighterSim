@@ -14,6 +14,7 @@ public class EnemyHealthMgr : MonoBehaviour
     public GameObject explosionPrefab;
     public GameObject partsPrefab;
     public bool hasShield;
+    private bool dieRan = false;
 
     // Start is called before the first frame update
     void Start()
@@ -46,12 +47,16 @@ public class EnemyHealthMgr : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0f)
         {
-            destroyExistingMissiles();
-            GlobalStateMgr.removeEnemy(this.gameObject);
-            this.GetComponent<EnemyAICommon>().initiateDetach();
-            explode();
-            dropParts();
-            Destroy(this.gameObject);
+            if (!dieRan)
+            {
+                dieRan = true;
+                destroyExistingMissiles();
+                GlobalStateMgr.removeEnemy(this.gameObject);
+                this.GetComponent<EnemyAICommon>().initiateDetach();
+                explode();
+                dropParts();
+                Destroy(this.gameObject);
+            }
         }
         updateHealthBar();
     }

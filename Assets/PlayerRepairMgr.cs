@@ -13,7 +13,6 @@ public class PlayerRepairMgr : MonoBehaviour
     public Image ui;
     private bool partsLock;
 
-
     private void Start()
     {
         partsLock = false;
@@ -34,13 +33,12 @@ public class PlayerRepairMgr : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Parts" & !partsLock)
+        if (other.gameObject.tag == "Parts")
         {
-            partsLock = true;
+            Debug.Log(other.gameObject.GetInstanceID().ToString());
             repairLevel += repairPerPart;
             repairLevel = Mathf.Clamp(repairLevel, 0f, maxRepair);
             Destroy(other.gameObject);
-            partsLock = false;
             updateRepairBar();
         }
     }
@@ -49,4 +47,5 @@ public class PlayerRepairMgr : MonoBehaviour
     {
         ui.fillAmount = repairLevel / maxRepair;
     }
+
 }

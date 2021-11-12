@@ -36,7 +36,7 @@ public class EnemyShield : MonoBehaviour
         {
             visible.enabled = false;
             shieldEnergy += Time.deltaTime * shieldRechargeRate;
-            shieldEnergy = Mathf.Clamp(shieldEnergy, 0f, shieldEnergyMax);
+            shieldEnergy = Mathf.Clamp(shieldEnergy, -500f, shieldEnergyMax);
         }
 
         if (shieldEnergy <= 0f)
