@@ -15,14 +15,15 @@ public class EnemyHealthMgr : MonoBehaviour
     public bool hasShield;
     private bool dieRan = false;
     private bool partsDropped = false;
+    private bool firstRun;
 
     // Start is called before the first frame update
     void Start()
     {
-        GlobalStateMgr.addEnemy(this.gameObject);
         currentHealth = startingHealth;
         targetedMissiles = new List<GameObject>();
         updateHealthBar();
+        firstRun = true;
 
 
     }
@@ -30,7 +31,10 @@ public class EnemyHealthMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (firstRun)
+        {
+            GlobalStateMgr.addEnemy(this.gameObject);
+        }
     }
 
     public void kill()

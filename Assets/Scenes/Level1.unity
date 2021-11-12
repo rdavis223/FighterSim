@@ -1862,7 +1862,7 @@ MonoBehaviour:
   wall:
     serializedVersion: 2
     m_Bits: 0
-  healerSpeed: 50
+  healerSpeed: 80
 --- !u!114 &428875700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4711,7 +4711,7 @@ MonoBehaviour:
   shieldEnergyMax: 50
   shieldEnergy: 0
   ui: {fileID: 867036438}
-  shieldRechargeRate: 2
+  shieldRechargeRate: 10
   disableShield: 0
 --- !u!54 &1221689990
 Rigidbody:
@@ -7160,7 +7160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaf6a2d269c842d9bf1a74d9aeecbae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothRate: 30
+  smoothRate: 20
 --- !u!1001 &1824668864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7294,7 +7294,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackSpeed: 40
-  flySpeed: 80
+  flySpeed: 70
   runSpeed: 100
   player: {fileID: 0}
   playerAttackRange: 600
@@ -7399,7 +7399,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!136 &1824668875
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8499,7 +8499,7 @@ MonoBehaviour:
   lockable:
     serializedVersion: 2
     m_Bits: 64
-  missileRechargeTime: 10
+  missileRechargeTime: 5
   missileRechargeUI: {fileID: 220920084}
 --- !u!65 &7496991941289972375
 BoxCollider:
@@ -8595,7 +8595,7 @@ MonoBehaviour:
   startingHealth: 100
   shield: {fileID: 1221689989}
   explosionPrefab: {fileID: 574386901711554893, guid: 59cea7adc6dfb4d7abc8452f69516e0e, type: 3}
-  GOD_MODE: 1
+  GOD_MODE: 0
   gameOverCanvas: {fileID: 1617931062}
 --- !u!114 &7496991941289972382
 MonoBehaviour:
@@ -8645,7 +8645,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!136 &7496991941289972385
 CapsuleCollider:
   m_ObjectHideFlags: 0

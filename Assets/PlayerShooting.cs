@@ -78,7 +78,7 @@ public class PlayerShooting : MonoBehaviour
         RaycastHit hit;
         //if (Physics.Raycast(ray.origin, ray.direction, out hit))
 
-        if (missileRechargeTimer >= missileRechargeTime && recursiveSphereCast(ray, out hit, 1f, 4f))
+        if (missileRechargeTimer >= missileRechargeTime && recursiveSphereCast(ray, out hit, 1f, 6f))
         {
             if (hit.transform.gameObject.tag == "Enemy")
             {

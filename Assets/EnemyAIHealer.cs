@@ -75,18 +75,21 @@ public class EnemyAIHealer : EnemyAICommon
         findEnemyRunning = true;
         foreach (GameObject enemy in GlobalStateMgr.mainEnemyList)
         {
-            EnemyAIMain enemyAi = enemy.GetComponent<EnemyAIMain>();
-            if (enemyAi.isAvailableForRepair())
+            if (enemy != null)
             {
-                bool result = enemyAi.setHealer(this.gameObject);
-                if (result)
+                EnemyAIMain enemyAi = enemy.GetComponent<EnemyAIMain>();
+                if (enemyAi.isAvailableForRepair())
                 {
-                    enemySet = true;
-                    otherEnemyAI = enemyAi;
-                    currentEnemy = enemy;
-                    enemyAttachPos = enemyAi.getRepairAttachPoint();
-                    findEnemyRunning = false;
-                    yield break;
+                    bool result = enemyAi.setHealer(this.gameObject);
+                    if (result)
+                    {
+                        enemySet = true;
+                        otherEnemyAI = enemyAi;
+                        currentEnemy = enemy;
+                        enemyAttachPos = enemyAi.getRepairAttachPoint();
+                        findEnemyRunning = false;
+                        yield break;
+                    }
                 }
             }
         }
