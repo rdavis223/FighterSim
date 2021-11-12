@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuMgr : MonoBehaviour
 {
+    public bool pauseAllowed = false;
+    public GameObject pauseMenu;
     // Start is called before the first frame update
     public void Restart()
     {
@@ -14,5 +16,19 @@ public class MenuMgr : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    private void Update()
+    {
+        if (pauseAllowed && Input.GetKeyDown(KeyCode.Escape)){
+            togglePause();
+        }
+    }
+
+
+    public void togglePause()
+    {
+        GlobalStateMgr.togglePause();
+        pauseMenu.SetActive(GlobalStateMgr.isPaused());
     }
 }

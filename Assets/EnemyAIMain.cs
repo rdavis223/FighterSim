@@ -38,6 +38,10 @@ public class EnemyAIMain : EnemyAICommon
     // Update is called once per frame
     void Update()
     {
+        if (!GlobalStateMgr.canMove())
+        {
+            return;
+        }
         if (testing)
         {
             executeTestScript();

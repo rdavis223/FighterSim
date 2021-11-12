@@ -5,6 +5,7 @@ using UnityEngine;
 public static class GlobalStateMgr
 {
     public static bool dead = false;
+    public static bool gamePaused = false;
 
     public static List<GameObject> mainEnemyList = new List<GameObject>();
     public static List<GameObject> healerEnemyList = new List<GameObject>();
@@ -58,5 +59,43 @@ public static class GlobalStateMgr
         mainEnemyList = new List<GameObject>();
         healerEnemyList = new List<GameObject>();
         timeControl(false);
+        gamePaused = false;
+        lockCursor();
+    }
+
+    public static void togglePause()
+    {
+        gamePaused = !gamePaused;
+        if (gamePaused)
+        {
+            unlockCursor();
+            timeControl(true);
+        } else
+        {
+            lockCursor();
+            timeControl(false);
+        }
+    }
+
+    public static bool isPaused()
+    {
+        return gamePaused;
+    }
+
+    public static void unlockCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public static void lockCursor()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public static bool canMove()
+    {
+        return !gamePaused && !dead;
     }
 }

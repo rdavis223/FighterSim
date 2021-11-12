@@ -142,8 +142,7 @@ public class PlayerHealthMgr : MonoBehaviour
         GameObject explosion = Instantiate(explosionPrefab);
         explosion.transform.position = this.transform.position;
         playerBody.enabled = false;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        GlobalStateMgr.unlockCursor();
         StartCoroutine("showGameOverScreen");
         GlobalStateMgr.setDead(true);
 

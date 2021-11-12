@@ -30,8 +30,6 @@ public class PlayerShooting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
         GlobalStateMgr.initalize();
         fireTimer = 0f;
         weaponHeat = 0f;
@@ -43,7 +41,7 @@ public class PlayerShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GlobalStateMgr.isDead())
+        if (!GlobalStateMgr.canMove())
         {
             return;
         }

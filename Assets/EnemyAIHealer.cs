@@ -25,6 +25,10 @@ public class EnemyAIHealer : EnemyAICommon
     // Update is called once per frame
     void Update()
     {
+        if (!GlobalStateMgr.canMove())
+        {
+            return;
+        }
         if (dodging)
         {
             dodgeObject();

@@ -20,7 +20,7 @@ public class FlightController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GlobalStateMgr.isDead())
+        if (GlobalStateMgr.canMove())
         {
             forwardSpeed += Input.GetAxisRaw("Vertical") * throttleSpeed;
             forwardSpeed = Mathf.Clamp(forwardSpeed, 0f, maxForwardSpeed);
