@@ -13,7 +13,8 @@ public class PlayerShield : MonoBehaviour
 
     private MeshRenderer visible;
     private Collider shield;
-    public Image ui;
+    public Image ui1;
+    public Image ui2;
 
     public float shieldRechargeRate;
 
@@ -56,7 +57,10 @@ public class PlayerShield : MonoBehaviour
         {
             shield.enabled = true;
         }
-        ui.fillAmount = shieldEnergy / shieldEnergyMax;
+        ui1.fillAmount = shieldEnergy / shieldEnergyMax;
+
+        ui2.fillAmount = shieldEnergy / shieldEnergyMax;
+ 
         sinceDamageTimer -= Time.deltaTime;
     }
     void OnTriggerEnter(Collider other)

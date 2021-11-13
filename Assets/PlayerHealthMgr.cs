@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerHealthMgr : MonoBehaviour
 {
-    public Image healthBar;
+    public Image healthBar1;
+    public Image healthBar2;
     public float startingHealth;
     private float currentHealth;
     public PlayerShield shield;
@@ -49,7 +50,8 @@ public class PlayerHealthMgr : MonoBehaviour
 
     void updateHealthBar()
     {
-        healthBar.fillAmount = (currentHealth / startingHealth);
+        healthBar1.fillAmount = (currentHealth / startingHealth);
+        healthBar2.fillAmount = (currentHealth / startingHealth);
     }
 
     void OnTriggerEnter(Collider other)
