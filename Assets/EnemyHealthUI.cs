@@ -14,6 +14,6 @@ public class EnemyHealthUI : MonoBehaviour
     void Update()
     {
         transform.rotation = Camera.main.transform.rotation;
-        this.GetComponent<RectTransform>().position = this.transform.parent.position + Camera.main.transform.up * 5.8f;
+        //this.GetComponent<RectTransform>().position = this.transform.parent.position + Camera.main.transform.up * 5.8f;
     }
 }
