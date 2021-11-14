@@ -1829,7 +1829,7 @@ MonoBehaviour:
   healthBar: {fileID: 1988372004}
   startingHealth: 100
   shield: {fileID: 0}
-  explosionPrefab: {fileID: 1329845292236604, guid: 9bba9cf244c53c5439505dfc96fdd11c, type: 3}
+  explosionPrefab: {fileID: 574386901711554893, guid: 5719dace5d0464970926a188cd678e05, type: 3}
   partsPrefab: {fileID: 100012, guid: f832b09c86bd81e4f91beb978de1ae75, type: 3}
   hasShield: 0
 --- !u!65 &428875701
@@ -7500,7 +7500,7 @@ MonoBehaviour:
   healthBar: {fileID: 421142968}
   startingHealth: 100
   shield: {fileID: 2019705669}
-  explosionPrefab: {fileID: 574386901711554893, guid: 59cea7adc6dfb4d7abc8452f69516e0e, type: 3}
+  explosionPrefab: {fileID: 574386901711554893, guid: 5719dace5d0464970926a188cd678e05, type: 3}
   partsPrefab: {fileID: 100012, guid: f832b09c86bd81e4f91beb978de1ae75, type: 3}
   hasShield: 1
 --- !u!114 &1824668873
@@ -7520,11 +7520,11 @@ MonoBehaviour:
   - {fileID: 1804974390}
   bulletPrefab: {fileID: 176630, guid: 52e0576a3a9e440b6a98c19134ea951d, type: 3}
   fireTimes:
-  - 0.2
   - 0.3
-  - 0.6
-  weaponHeatMax: 60
-  chanceOfShoot: 20
+  - 0.5
+  - 0.7
+  weaponHeatMax: 40
+  chanceOfShoot: 10
 --- !u!54 &1824668874
 Rigidbody:
   m_ObjectHideFlags: 0
