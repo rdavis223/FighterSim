@@ -8901,7 +8901,7 @@ MonoBehaviour:
   startingHealth: 100
   shield: {fileID: 1221689989}
   explosionPrefab: {fileID: 574386901711554893, guid: 59cea7adc6dfb4d7abc8452f69516e0e, type: 3}
-  GOD_MODE: 0
+  GOD_MODE: 1
   gameOverCanvas: {fileID: 1617931062}
 --- !u!114 &7496991941289972382
 MonoBehaviour:
