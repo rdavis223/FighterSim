@@ -29,10 +29,7 @@ public class EnemyShooting : MonoBehaviour
     }
     public void shootPrimary()
     {
-        if (!GlobalStateMgr.canMove())
-        {
-            return;
-        }
+
         float shootRand = Random.Range(0f, 100f);
         if (shootRand > chanceOfShoot)
         {

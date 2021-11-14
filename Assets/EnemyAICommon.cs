@@ -107,7 +107,7 @@ public class EnemyAICommon : MonoBehaviour
         flyTowardsPoint(dest);
         if (isAtPoint(this.transform.position, dest))
         {
-            dodging = false;
+            dodging = nextDodge();
         }
     }
 
@@ -128,6 +128,10 @@ public class EnemyAICommon : MonoBehaviour
     {
 
     }
-    
+
+    protected virtual bool nextDodge()
+    {
+        return false;
+    }
 
 }

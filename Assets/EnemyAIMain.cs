@@ -49,11 +49,12 @@ public class EnemyAIMain : EnemyAICommon
         }
         if (dodging)
         {
-            setSpeed(runSpeed);
+            setDodgeSpeedDynamically();
             dodgeObject();
         }
         else if (distanceToPlayer() < playerAttackRange)
         {
+            Debug.Log("Called");
             destSet = false;
             setSpeed(attackSpeed);
             attackPlayer();
@@ -184,6 +185,21 @@ public class EnemyAIMain : EnemyAICommon
         } else
         {
             setSpeed(flySpeed);
+        }
+    }
+
+    protected override bool nextDodge()
+    {
+        Vector3 heading = (player.transform.position - this.transform.position).normalized;
+        float dot = Vector3.Dot(heading, this.transform.forward);
+        float d = distanceToPlayer();
+        if (distanceToPlayer() < 170f && dot < 0.4f)
+        {
+            setDodgeObject(this.transform.forward, Random.Range(-15f, 15f), 50f);
+            return true;
+        } else
+        {
+            return false;
         }
     }
 
