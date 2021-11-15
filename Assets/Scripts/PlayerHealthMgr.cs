@@ -21,6 +21,7 @@ public class PlayerHealthMgr : MonoBehaviour
     {
         currentHealth = startingHealth;
         playerBody = this.GetComponent<MeshRenderer>();
+        GOD_MODE = false;
         
     }
 
