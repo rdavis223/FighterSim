@@ -13,6 +13,7 @@ public class EnemyAICommon : MonoBehaviour
     protected Vector3 dest;
     protected bool dodging = false;
     public LayerMask wall;
+    protected bool clearingBoundry = false;
 
 
 
@@ -107,6 +108,7 @@ public class EnemyAICommon : MonoBehaviour
         flyTowardsPoint(dest);
         if (isAtPoint(this.transform.position, dest))
         {
+            clearingBoundry = false;
             dodging = nextDodge();
         }
     }
@@ -119,13 +121,6 @@ public class EnemyAICommon : MonoBehaviour
         if (Physics.Raycast(this.transform.position, newDirection, out hit, (dest - this.transform.position).magnitude, wall))
         {
             dest = hit.point;
-        } else
-        {
-            if (dest.x > range +10f || dest.y > range + 10f || dest.z > range +10f || dest.x < -10f || dest.y < -10f || dest.z < -10f)
-            {
-                newDirection = new Vector3(750f, 750f, 750f) - this.transform.position;
-                dest = this.transform.position + (newDirection.normalized * 40f);
-            }
         }
         dir = Quaternion.LookRotation(newDirection);
         dodging = true;
@@ -139,6 +134,20 @@ public class EnemyAICommon : MonoBehaviour
     protected virtual bool nextDodge()
     {
         return false;
+    }
+
+    protected virtual void boundryHardCheck()
+    {
+        if (!clearingBoundry)
+        {
+            if (this.transform.position.x > range + 10f || this.transform.position.y > range + 10f || this.transform.position.z > range + 10f || this.transform.position.x < -10f || this.transform.position.y < -10f || this.transform.position.z < -10f)
+            {
+                Vector3 newDirection = new Vector3(750f, 750f, 750f) - this.transform.position;
+                dest = this.transform.position + (newDirection.normalized * 40f);
+                dir = Quaternion.LookRotation(newDirection);
+                dodging = true;
+            }
+        }
     }
 
 }

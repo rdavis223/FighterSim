@@ -47,6 +47,7 @@ public class EnemyAIMain : EnemyAICommon
             executeTestScript();
             return;
         }
+        boundryHardCheck();
         if (dodging)
         {
             setDodgeSpeedDynamically();
@@ -120,6 +121,7 @@ public class EnemyAIMain : EnemyAICommon
     {
         if (collision.gameObject.tag == "Station")
         {
+            Debug.Log("Collision");
             setDodgeObject(this.transform.forward, 90, 50f);
         }
         if (collision.gameObject.tag == "Enemy")
@@ -193,9 +195,9 @@ public class EnemyAIMain : EnemyAICommon
         Vector3 heading = (player.transform.position - this.transform.position).normalized;
         float dot = Vector3.Dot(heading, this.transform.forward);
         float d = distanceToPlayer();
-        if (distanceToPlayer() < 170f && dot < 0.4f)
+        if (distanceToPlayer() < 140f && dot < 0.4f)
         {
-            setDodgeObject(this.transform.forward, Random.Range(-15f, 15f), 50f);
+            setDodgeObject(this.transform.forward, Random.Range(-25f, 25f), 50f);
             return true;
         } else
         {

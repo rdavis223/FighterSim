@@ -171,6 +171,7 @@ public class EnemyAIHealer : EnemyAICommon
         attachPos = null;
         otherHealthMgr = null;
         otherEnemyAI = null;
+        destSet = false;
 
     }
 

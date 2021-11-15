@@ -141,13 +141,16 @@ public class PlayerHealthMgr : MonoBehaviour
 
     public void playerDie()
     {
-        shield.disableGraphic();
-        GameObject explosion = Instantiate(explosionPrefab);
-        explosion.transform.position = this.transform.position;
-        playerBody.enabled = false;
-        GlobalStateMgr.unlockCursor();
-        StartCoroutine("showGameOverScreen");
-        GlobalStateMgr.setDead(true);
+        if (!GOD_MODE)
+        {
+            shield.disableGraphic();
+            GameObject explosion = Instantiate(explosionPrefab);
+            explosion.transform.position = this.transform.position;
+            playerBody.enabled = false;
+            GlobalStateMgr.unlockCursor();
+            StartCoroutine("showGameOverScreen");
+            GlobalStateMgr.setDead(true);
+        }
 
     }
 

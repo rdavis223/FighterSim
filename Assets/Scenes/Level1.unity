@@ -1813,7 +1813,7 @@ MonoBehaviour:
   wall:
     serializedVersion: 2
     m_Bits: 0
-  healerSpeed: 80
+  healerSpeed: 100
 --- !u!114 &428875700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7569,7 +7569,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackSpeed: 40
-  flySpeed: 70
+  flySpeed: 75
   runSpeed: 100
   player: {fileID: 0}
   playerAttackRange: 600
@@ -7654,9 +7654,9 @@ MonoBehaviour:
   - {fileID: 1804974390}
   bulletPrefab: {fileID: 176630, guid: 52e0576a3a9e440b6a98c19134ea951d, type: 3}
   fireTimes:
-  - 0.3
-  - 0.5
-  - 0.7
+  - 0.2
+  - 0.4
+  - 0.6
   weaponHeatMax: 40
   chanceOfShoot: 10
 --- !u!54 &1824668874
