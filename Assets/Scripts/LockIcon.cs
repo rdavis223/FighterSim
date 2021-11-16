@@ -11,10 +11,9 @@ public class LockIcon : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-
-        rect = this.GetComponent<RectTransform>();
-        otherRect = UICanvas.GetComponent<RectTransform>();
-        rect.localScale = rect.localScale.x * otherRect.localScale;
+        //rect = this.GetComponent<RectTransform>();
+        //otherRect = UICanvas.GetComponent<RectTransform>();
+        //rect.localScale = rect.localScale.x * otherRect.localScale;
     }
     // Update is called once per frame
     void Update()
