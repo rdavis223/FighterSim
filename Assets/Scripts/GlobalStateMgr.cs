@@ -9,6 +9,9 @@ public static class GlobalStateMgr
 
     public static List<GameObject> mainEnemyList = new List<GameObject>();
     public static List<GameObject> healerEnemyList = new List<GameObject>();
+    public static bool roundStarted = false;
+    public static int currentRound;
+
     public static bool isDead()
     {
         return dead;
@@ -32,6 +35,7 @@ public static class GlobalStateMgr
 
     public static void addEnemy(GameObject enemy)
     {
+        
         if (enemy.GetComponent<EnemyAIMain>() != null)
         {
             mainEnemyList.Add(enemy);
@@ -39,6 +43,7 @@ public static class GlobalStateMgr
         {
             healerEnemyList.Add(enemy);
         }
+        roundStarted = true;
     }
 
     public static void removeEnemy(GameObject enemy)
@@ -51,6 +56,7 @@ public static class GlobalStateMgr
         {
             healerEnemyList.Remove(enemy);
         }
+        Debug.Log(isRoundOver());
     }
 
     public static void initalize()
@@ -61,6 +67,8 @@ public static class GlobalStateMgr
         timeControl(false);
         gamePaused = false;
         lockCursor();
+        currentRound = 1;
+        roundStarted = false;
     }
 
     public static void togglePause()
@@ -97,5 +105,16 @@ public static class GlobalStateMgr
     public static bool canMove()
     {
         return !gamePaused && !dead;
+    }
+
+    public static bool isRoundOver()
+    {
+        return roundStarted && mainEnemyList.Count == 0 && healerEnemyList.Count == 0;
+    }
+
+    public static void nextRound()
+    {
+        currentRound += 1;
+        roundStarted = false;
     }
 }

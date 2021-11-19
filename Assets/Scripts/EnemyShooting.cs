@@ -13,6 +13,7 @@ public class EnemyShooting : MonoBehaviour
     public float weaponHeatMax;
     private float weaponHeat;
     public float chanceOfShoot;
+    private float damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,13 @@ public class EnemyShooting : MonoBehaviour
         fireTimer += Time.deltaTime;
         weaponHeat -= Time.deltaTime * 2f;
     }
+
+    public void setInitialValues(float fireChance, float damage)
+    {
+        this.chanceOfShoot = fireChance;
+        this.damage = damage;
+    }
+
     public void shootPrimary()
     {
 
@@ -50,6 +58,7 @@ public class EnemyShooting : MonoBehaviour
             float end_z = this.transform.position.z + 50 * this.transform.forward.z;
             Vector3 lookPosition = new Vector3(end_x, end_y, end_z);
             bullet.GetComponent<BulletMovement>().setStraight(this.transform.forward, lookPosition);
+            bullet.GetComponent<EnemyProjectile>().Damage = this.damage;
             bullet.transform.LookAt(lookPosition);
             fireTimer = 0;
             weaponHeat++;

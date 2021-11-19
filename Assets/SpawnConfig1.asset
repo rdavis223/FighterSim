@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583107b3bf9714879b1566b30e0e3500, type: 3}
+  m_Name: SpawnConfig1
+  m_EditorClassIdentifier: 
+  enemyShipStartLevel: 1
+  healerShipStartLevel: 10
+  initialEnemyShipCount: 2
+  initialHealerShipCount: 0
+  initialEnemyShipHealth: 100
+  initialEnemyShipShields: 50
+  initialEnemyShipDamage: 5
+  initialEnemyShipFireChance: 10
+  initalHealerShipRechargeRate: 0
+  initalHealerShipHealth: 0
+  enemyShipCountIncreaseRate: 1.5
+  enemyShipHealthIncreaseRate: 1.1
+  enemyShipShieldsIncreaseRate: 1.1
+  enemyShipDamageIncreaseRate: 1.1
+  enemyFireChangeIncreaseRate: 1.1
+  healerShipCountIncreaseRate: 0
+  healerShipRechargeIncreaseRate: 0
+  healerShipHealthIncreaseRate: 0
+  enemyShipPrefab: {fileID: 8844409068092906627, guid: 4ead75cb452e8404dbf14bb3511df93b, type: 3}
+  healerShipPrefab: {fileID: 4627331949488200291, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}

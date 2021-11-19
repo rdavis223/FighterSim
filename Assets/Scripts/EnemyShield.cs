@@ -29,6 +29,12 @@ public class EnemyShield : MonoBehaviour
         healthmgr = this.GetComponent<EnemyHealthMgr>();
     }
 
+    public void setInitialShieldEnergy(float energy)
+    {
+        shieldEnergyMax = energy;
+        shieldEnergy = shieldEnergyMax;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -24,8 +24,13 @@ public class EnemyHealthMgr : MonoBehaviour
         targetedMissiles = new List<GameObject>();
         updateHealthBar();
         firstRun = true;
+    }
 
-
+    public void setInitialHealthValue(float health)
+    {
+        startingHealth = health;
+        currentHealth = startingHealth;
+        updateHealthBar();
     }
 
     // Update is called once per frame
@@ -34,6 +39,7 @@ public class EnemyHealthMgr : MonoBehaviour
         if (firstRun)
         {
             GlobalStateMgr.addEnemy(this.gameObject);
+            firstRun = false;
         }
     }
 
@@ -72,6 +78,7 @@ public class EnemyHealthMgr : MonoBehaviour
 
     void updateHealthBar()
     {
+        Debug.Log(currentHealth);
         healthBar.value = (currentHealth / startingHealth);
     }
 

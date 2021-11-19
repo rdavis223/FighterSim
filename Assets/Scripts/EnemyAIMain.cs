@@ -21,11 +21,14 @@ public class EnemyAIMain : EnemyAICommon
 
     EnemyHealthMgr healthMgr;
 
+    EnemyShield shieldMgr;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
         shootControl = GetComponent<EnemyShooting>();
+        shieldMgr = this.GetComponentInChildren<EnemyShield>();
         healthMgr = GetComponent<EnemyHealthMgr>();
         GameObject attachPosParent = this.transform.Find("AttachPositions").gameObject;
         attachPos = new GameObject[4];
@@ -203,6 +206,13 @@ public class EnemyAIMain : EnemyAICommon
         {
             return false;
         }
+    }
+
+    public void initializeSpawnValues(float health, float damage, float shields, float fireChance)
+    {
+        GetComponent<EnemyHealthMgr>().setInitialHealthValue(health);
+        GetComponent<EnemyShooting>().setInitialValues(fireChance, damage);
+        GetComponentInChildren<EnemyShield>().setInitialShieldEnergy(shields);
     }
 
 
