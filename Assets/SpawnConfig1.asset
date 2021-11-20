@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyShipStartLevel: 1
   healerShipStartLevel: 10
-  initialEnemyShipCount: 2
+  initialEnemyShipCount: 1
   initialHealerShipCount: 0
   initialEnemyShipHealth: 100
   initialEnemyShipShields: 50
@@ -22,7 +22,7 @@ MonoBehaviour:
   initialEnemyShipFireChance: 10
   initalHealerShipRechargeRate: 0
   initalHealerShipHealth: 0
-  enemyShipCountIncreaseRate: 1.5
+  enemyShipCountIncreaseRate: 2
   enemyShipHealthIncreaseRate: 1.1
   enemyShipShieldsIncreaseRate: 1.1
   enemyShipDamageIncreaseRate: 1.1
