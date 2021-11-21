@@ -35,7 +35,6 @@ public class PlayerRepairMgr : MonoBehaviour
     {
         if (other.gameObject.tag == "Parts")
         {
-            Debug.Log(other.gameObject.GetInstanceID().ToString());
             repairLevel += repairPerPart;
             repairLevel = Mathf.Clamp(repairLevel, 0f, maxRepair);
             Destroy(other.gameObject);

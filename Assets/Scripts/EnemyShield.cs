@@ -26,7 +26,7 @@ public class EnemyShield : MonoBehaviour
         visible = this.GetComponent<MeshRenderer>();
         shield = this.GetComponent<MeshCollider>();
         shield.enabled = true;
-        healthmgr = this.GetComponent<EnemyHealthMgr>();
+        healthmgr = this.transform.parent.GetComponentInParent<EnemyHealthMgr>();
     }
 
     public void setInitialShieldEnergy(float energy)
@@ -78,10 +78,13 @@ public class EnemyShield : MonoBehaviour
         visible.enabled = true;
         sinceDamageTimer = sinceDamageTime;
         shieldEnergy -= damage;
+        Debug.Log(shieldEnergy);
         if (shieldEnergy < 0f)
         {
+            Debug.Log("Ran");
             if (healthmgr != null)
             {
+                Debug.Log("Ran2");
                 healthmgr.hurt(shieldEnergy * -1);
                 shieldEnergy = 0f;
             }

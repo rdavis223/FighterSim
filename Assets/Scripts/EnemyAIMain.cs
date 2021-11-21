@@ -123,7 +123,6 @@ public class EnemyAIMain : EnemyAICommon
     {
         if (collision.gameObject.tag == "Station")
         {
-            Debug.Log("Collision");
             setDodgeObject(this.transform.forward, 90, 50f);
         }
         if (collision.gameObject.tag == "Enemy")

@@ -50,6 +50,7 @@ public class EnemyHealthMgr : MonoBehaviour
 
     public void hurt(float damage)
     {
+        Debug.Log(damage);
         if (hasShield)
         {
             shield.damageTaken();
