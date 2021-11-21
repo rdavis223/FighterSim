@@ -58,7 +58,6 @@ public class EnemyAIMain : EnemyAICommon
         }
         else if (distanceToPlayer() < playerAttackRange)
         {
-            Debug.Log("Called");
             destSet = false;
             setSpeed(attackSpeed);
             attackPlayer();

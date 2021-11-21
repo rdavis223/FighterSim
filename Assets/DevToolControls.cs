@@ -24,6 +24,11 @@ public class DevToolControls : MonoBehaviour
                 playerHealth.GOD_MODE = !playerHealth.GOD_MODE;
                 StartCoroutine(displayOutput("GOD_MODE: " + playerHealth.GOD_MODE.ToString()));
             }
+
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                destroyAllShips();
+            }
         }
     }
 
@@ -33,5 +38,26 @@ public class DevToolControls : MonoBehaviour
         output.text = t;
         yield return new WaitForSeconds(3f);
         output.enabled = false;
+    }
+
+    private void destroyAllShips()
+    {
+        int enemiesDestroyed = 0;
+        List<GameObject> eList = new List<GameObject>(GlobalStateMgr.mainEnemyList);
+        List<GameObject> hList = new List<GameObject>(GlobalStateMgr.healerEnemyList);
+
+        foreach (GameObject enemy in eList)
+        {
+            enemy.GetComponent<EnemyHealthMgr>().kill();
+            enemiesDestroyed++;
+        }
+        foreach (GameObject enemy in hList)
+        {
+            enemy.GetComponent<EnemyHealthMgr>().kill();
+            enemiesDestroyed++;
+        }
+
+        StartCoroutine(displayOutput("KILLED ALL ENEMIES: " + enemiesDestroyed.ToString()));
+
     }
 }

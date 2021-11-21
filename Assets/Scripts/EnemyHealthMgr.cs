@@ -78,7 +78,6 @@ public class EnemyHealthMgr : MonoBehaviour
 
     void updateHealthBar()
     {
-        Debug.Log(currentHealth);
         healthBar.value = (currentHealth / startingHealth);
     }
 

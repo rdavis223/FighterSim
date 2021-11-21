@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SpawnMgr : MonoBehaviour
 {
@@ -20,6 +21,15 @@ public class SpawnMgr : MonoBehaviour
 
     private bool firstRound;
 
+    private int fadeDirection;
+    public float fadeSpeed;
+    private bool isTransition;
+    private Color32 startColor = new Color32(0, 0, 0, 255);
+    private Color32 endColor = new Color32(0, 0, 0, 60);
+    private Color32 currentColor;
+
+    public TMP_Text roundText;
+
     private void Start()
     {
         firstRound = true;
@@ -37,10 +47,23 @@ public class SpawnMgr : MonoBehaviour
         spawnHealerShips();
         firstRound = false;
     }
-
-    void nextRound()
+    IEnumerator nextRoundTransition()
     {
         GlobalStateMgr.nextRound();
+        roundText.text = GlobalStateMgr.currentRound.ToString();
+        fadeDirection = -1;
+        currentColor = startColor;
+        isTransition = true;
+        yield return new WaitForSeconds(5f);
+        nextRound();
+
+    }
+    void nextRound()
+    {
+        roundText.color = startColor;
+        isTransition = false;
+
+
         int currentRound = GlobalStateMgr.currentRound;
         if (currentRound > config.enemyShipStartLevel)
         {
@@ -68,7 +91,30 @@ public class SpawnMgr : MonoBehaviour
     {
         if (GlobalStateMgr.isRoundOver())
         {
-            nextRound();
+            StartCoroutine(nextRoundTransition());
+        }
+
+        if (isTransition)
+        {
+            if (fadeDirection == -1)
+            {
+                currentColor = Color32.Lerp(currentColor, endColor, fadeSpeed * Time.deltaTime);
+                roundText.color = currentColor;
+            }
+            else
+            {
+                currentColor = Color32.Lerp(currentColor, startColor, fadeSpeed * Time.deltaTime);
+                roundText.color = currentColor;
+            }
+            if (roundText.color.a < 0.24f)
+            {
+                fadeDirection = 1;
+            }
+
+            if (roundText.color.a > 0.8f)
+            {
+                fadeDirection = -1;
+            }
         }
     }
 

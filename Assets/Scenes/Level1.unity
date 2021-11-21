@@ -3425,6 +3425,7 @@ GameObject:
   - component: {fileID: 925924740}
   - component: {fileID: 925924742}
   - component: {fileID: 925924741}
+  - component: {fileID: 925924743}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -3448,8 +3449,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -14}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 25, y: -13.1366}
+  m_SizeDelta: {x: 200, y: 51.7268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925924741
 MonoBehaviour:
@@ -3498,7 +3499,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.85
+  m_fontSize: 46.5
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3522,7 +3523,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -3548,6 +3549,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925924739}
   m_CullTransparentMesh: 1
+--- !u!95 &925924743
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925924739}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: db8498eda48024fb48836ae4fb6533bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &962179020
 GameObject:
   m_ObjectHideFlags: 0
@@ -5276,7 +5296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79c378bd7c34c06b0133597d2a116f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseAllowed: 1
+  pauseAllowed: 0
   pauseMenu: {fileID: 2073808316}
 --- !u!1 &1509767347
 GameObject:
@@ -6041,6 +6061,8 @@ MonoBehaviour:
   currentHealerShipHealth: 0
   currentEnemyShipCount: 0
   currentHealerShipCount: 0
+  fadeSpeed: 5
+  roundText: {fileID: 925924741}
 --- !u!1 &1806432274
 GameObject:
   m_ObjectHideFlags: 0
