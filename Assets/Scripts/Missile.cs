@@ -30,4 +30,12 @@ public class Missile : MonoBehaviour
         target = t;
         t.GetComponent<EnemyHealthMgr>().trackMissile(this.gameObject);
     }
+
+    public void removeTarget()
+    {
+        if (target != null)
+        {
+            target.GetComponent<EnemyHealthMgr>().removeMissile(this.gameObject);
+        }
+    }
 }

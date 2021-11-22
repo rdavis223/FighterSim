@@ -121,6 +121,11 @@ public class EnemyHealthMgr : MonoBehaviour
             Destroy(missile);
         }
     }
+
+    public void removeMissile(GameObject m)
+    {
+        targetedMissiles.Remove(m);
+    }
     void explode()
     {
         GameObject exp = Instantiate(explosionPrefab);

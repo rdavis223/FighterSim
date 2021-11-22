@@ -46,7 +46,11 @@ public class AstroidMovement : MonoBehaviour
 
         if (other.gameObject.tag == "PlayerProjectile")
         {
-            //Todo: ensure missibles remove themselves from enemy scropt before they are destoryed
+            Missile m = other.gameObject.GetComponent<Missile>();
+            if (m != null)
+            {
+                m.removeTarget();
+            }
             Destroy(other.gameObject);
             explode();
          
