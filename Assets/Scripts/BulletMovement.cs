@@ -18,7 +18,7 @@ public class BulletMovement : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(this.transform.position, straightPos) < 1f)
+        if (Vector3.Distance(this.transform.position, straightPos) < 2f)
         {
             this.transform.forward = straight;
         }

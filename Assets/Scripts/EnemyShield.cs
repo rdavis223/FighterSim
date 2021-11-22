@@ -78,13 +78,11 @@ public class EnemyShield : MonoBehaviour
         visible.enabled = true;
         sinceDamageTimer = sinceDamageTime;
         shieldEnergy -= damage;
-        Debug.Log(shieldEnergy);
         if (shieldEnergy < 0f)
         {
-            Debug.Log("Ran");
+            Debug.Log("Transfer");
             if (healthmgr != null)
             {
-                Debug.Log("Ran2");
                 healthmgr.hurt(shieldEnergy * -1);
                 shieldEnergy = 0f;
             }

@@ -15,6 +15,8 @@ public class EnemyAICommon : MonoBehaviour
     public LayerMask wall;
     protected bool clearingBoundry = false;
 
+    protected GameObject attachedEnemy;
+
 
 
     // Start is called before the first frame update
@@ -148,6 +150,11 @@ public class EnemyAICommon : MonoBehaviour
                 dodging = true;
             }
         }
+    }
+
+    public GameObject getAttachedEnemy()
+    {
+        return attachedEnemy;
     }
 
 }

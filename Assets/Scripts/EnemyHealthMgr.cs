@@ -50,7 +50,6 @@ public class EnemyHealthMgr : MonoBehaviour
 
     public void hurt(float damage)
     {
-        Debug.Log(damage);
         if (hasShield)
         {
             shield.damageTaken();
@@ -86,13 +85,20 @@ public class EnemyHealthMgr : MonoBehaviour
     {
         if (other.gameObject.tag == "PlayerProjectile")
         {
-            this.hurt(other.gameObject.GetComponent<PlayerProjectile>().Damage);
+            if (!shield.isShieldActive())
+            {
+                this.hurt(other.gameObject.GetComponent<PlayerProjectile>().Damage);
+            }
             Destroy(other.gameObject);
         }
 
         if (other.gameObject.tag == "Enemy")
         {
-            kill();
+            GameObject e = this.GetComponent<EnemyAICommon>().getAttachedEnemy();
+            if (e == null || other.gameObject != e)
+            {
+                kill();
+            }
         }
         if (other.gameObject.tag == "Ast")
         {

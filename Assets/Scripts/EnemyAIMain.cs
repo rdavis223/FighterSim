@@ -14,7 +14,6 @@ public class EnemyAIMain : EnemyAICommon
     public bool testing = false;
 
     private bool hasHealer = false;
-    private GameObject healer = null;
     private bool healerIsAttached = false;
 
     public GameObject[] attachPos;
@@ -152,7 +151,7 @@ public class EnemyAIMain : EnemyAICommon
         if (!hasHealer)
         {
             hasHealer = true;
-            this.healer = healer;
+            this.attachedEnemy = healer;
             return true;
         } else
         {
@@ -167,9 +166,9 @@ public class EnemyAIMain : EnemyAICommon
 
     public override void initiateDetach()
     {
-        if (healer != null)
+        if (attachedEnemy != null)
         {
-            healer.GetComponent<EnemyAIHealer>().detach();
+            attachedEnemy.GetComponent<EnemyAIHealer>().detach();
         }
         detach();
     }
@@ -177,7 +176,7 @@ public class EnemyAIMain : EnemyAICommon
     public void detach()
     {
         hasHealer = false;
-        healer = null;
+        attachedEnemy = null;
         healerIsAttached = false;
     }
     public void setDodgeSpeedDynamically()

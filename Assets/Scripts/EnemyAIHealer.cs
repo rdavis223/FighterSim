@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyAIHealer : EnemyAICommon
 {
     bool enemySet = false;
-    GameObject currentEnemy = null;
     GameObject[] enemyAttachPos;
     bool findEnemyRunning = false;
     bool isAttached = false;
@@ -85,7 +84,7 @@ public class EnemyAIHealer : EnemyAICommon
                     {
                         enemySet = true;
                         otherEnemyAI = enemyAi;
-                        currentEnemy = enemy;
+                        attachedEnemy = enemy;
                         enemyAttachPos = enemyAi.getRepairAttachPoint();
                         findEnemyRunning = false;
                         yield break;
@@ -132,17 +131,17 @@ public class EnemyAIHealer : EnemyAICommon
     {
         isAttached = true;
         attachPos = closest;
-        otherEnemyAI = currentEnemy.GetComponent<EnemyAIMain>();
+        otherEnemyAI = attachedEnemy.GetComponent<EnemyAIMain>();
         otherEnemyAI.attachHealer();
-        otherHealthMgr = currentEnemy.GetComponent<EnemyHealthMgr>();
+        otherHealthMgr = attachedEnemy.GetComponent<EnemyHealthMgr>();
         line.enabled = true;
     }
 
     void continueHealing()
     {
-        this.transform.rotation = currentEnemy.transform.rotation;
+        this.transform.rotation = attachedEnemy.transform.rotation;
         line.SetPosition(0, this.transform.position);
-        line.SetPosition(1, currentEnemy.transform.position);
+        line.SetPosition(1, attachedEnemy.transform.position);
         setSpeed(otherEnemyAI.getSpeed());
         flyTowardsPoint(attachPos.transform.position);
         otherHealthMgr.heal(Time.deltaTime * 3.5f);
@@ -164,7 +163,7 @@ public class EnemyAIHealer : EnemyAICommon
     {
         enemySet = false;
         line.enabled = false;
-        currentEnemy = null;
+        attachedEnemy = null;
         enemyAttachPos = null;
         findEnemyRunning = false;
         isAttached = false;
@@ -186,7 +185,7 @@ public class EnemyAIHealer : EnemyAICommon
         if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("EnemyCollide");
-            if (collision.gameObject != currentEnemy)
+            if (collision.gameObject != attachedEnemy)
             {
                 setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, 180f, Random.Range(10f, 40f));
                 initiateDetach();
