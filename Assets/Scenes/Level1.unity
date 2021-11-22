@@ -5436,71 +5436,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!1001 &1541921793
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 741.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 728.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 134.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4621437680856941827, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4625850611958277046, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4625850611958277046, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4627331949488200291, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
-      propertyPath: m_Name
-      value: Healer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}
 --- !u!1 &1572422960
 GameObject:
   m_ObjectHideFlags: 0
@@ -5903,7 +5838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843197831528843554, guid: 4ead75cb452e8404dbf14bb3511df93b, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8843197831972645997, guid: 4ead75cb452e8404dbf14bb3511df93b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7530,6 +7465,7 @@ MonoBehaviour:
     m_Bits: 64
   missileRechargeTime: 5
   missileRechargeUI: {fileID: 220920084}
+  missileLockDistance: 600
 --- !u!65 &7496991941289972375
 BoxCollider:
   m_ObjectHideFlags: 0

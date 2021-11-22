@@ -26,6 +26,7 @@ public class PlayerShooting : MonoBehaviour
     public float missileRechargeTime;
     private float missileRechargeTimer;
     public Image missileRechargeUI;
+    public float missileLockDistance;
 
     // Start is called before the first frame update
     void Start()
@@ -135,7 +136,7 @@ public class PlayerShooting : MonoBehaviour
 
         }
         fireTimer += Time.deltaTime;
-        weaponHeat -= Time.deltaTime * 2f;
+        weaponHeat -= Time.deltaTime * 2.5f;
         missileRechargeTimer+= Time.deltaTime;
         updateUI();
     }
@@ -151,7 +152,7 @@ public class PlayerShooting : MonoBehaviour
 
     bool recursiveSphereCast(Ray ray, out RaycastHit hit, float i, float final)
     {
-        if (Physics.SphereCast(ray.origin, i, ray.direction, out hit, Mathf.Infinity, lockable.value))
+        if (Physics.SphereCast(ray.origin, i, ray.direction, out hit, missileLockDistance, lockable.value))
         {
             return true;
         } else

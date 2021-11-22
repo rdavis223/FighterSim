@@ -69,6 +69,7 @@ public class AstroidMovement : MonoBehaviour
     public void explode()
     {
         GameObject exp = Instantiate(explosionPrefab);
+        exp.transform.localScale = exp.transform.localScale * this.transform.localScale.x;
         exp.transform.position = this.transform.position;
         Destroy(this.gameObject);
     }
