@@ -62,7 +62,10 @@ public class EnemyHealthMgr : MonoBehaviour
                 dieRan = true;
                 destroyExistingMissiles();
                 GlobalStateMgr.removeEnemy(this.gameObject);
-                this.GetComponent<EnemyAICommon>().initiateDetach();
+                if (this.GetComponent<EnemyAICommon>().enabled)
+                {
+                    this.GetComponent<EnemyAICommon>().initiateDetach();
+                }
                 explode();
                 dropParts();
                 Destroy(this.gameObject);
@@ -85,7 +88,7 @@ public class EnemyHealthMgr : MonoBehaviour
     {
         if (other.gameObject.tag == "PlayerProjectile")
         {
-            if (!shield.isShieldActive())
+            if ((hasShield && !shield.isShieldActive()) || !hasShield)
             {
                 this.hurt(other.gameObject.GetComponent<PlayerProjectile>().Damage);
             }

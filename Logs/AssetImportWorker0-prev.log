@@ -1,0 +1,132 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/rdavis/Documents/GitHub/FighterSim
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52866
+Successfully changed project path to: /Users/rdavis/Documents/GitHub/FighterSim
+/Users/rdavis/Documents/GitHub/FighterSim
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 30.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/rdavis/Documents/GitHub/FighterSim/Assets
+GfxDevice: creating device client; threaded=0
+2021-11-23 20:21:17.481 Unity[8208:101439] DELL SE2419HR preferred device: AMD Radeon Pro 5500M (high power)
+2021-11-23 20:21:17.481 Unity[8208:101439] Metal devices available: 2
+2021-11-23 20:21:17.481 Unity[8208:101439] 0: AMD Radeon Pro 5500M (high power)
+2021-11-23 20:21:17.481 Unity[8208:101439] 1: Intel(R) UHD Graphics 630 (low power)
+2021-11-23 20:21:17.481 Unity[8208:101439] Forcing user selected device: AMD Radeon Pro 5500M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5500M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.0f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000554 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 28.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.702 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.923 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1291 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 145.6 MB.
+System memory in use after: 145.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1757.
+Total: 1.860340 ms (FindLiveObjects: 0.197462 ms CreateObjectMapping: 0.049444 ms MarkObjects: 1.520554 ms  DeleteObjects: 0.092065 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/SpawnConfig1.asset
+  artifactKey: Guid(97a08eea378014311a4d7d2c6d2acf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpawnConfig1.asset using Guid(97a08eea378014311a4d7d2c6d2acf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3d44eec41fe06143714d00dfc8fae5') in 0.424607 seconds
+  Import took 0.427736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019297 seconds.
+  path: Assets/SpawnConfig1.asset
+  artifactKey: Guid(97a08eea378014311a4d7d2c6d2acf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpawnConfig1.asset using Guid(97a08eea378014311a4d7d2c6d2acf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3d44eec41fe06143714d00dfc8fae5') in 0.007881 seconds
+  Import took 0.010635 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000550 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.960 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1246 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.1 MB.
+System memory in use after: 147.2 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1761.
+Total: 1.561396 ms (FindLiveObjects: 0.145653 ms CreateObjectMapping: 0.038385 ms MarkObjects: 1.322760 ms  DeleteObjects: 0.053812 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.019625 seconds.
+  path: Assets/Enemy.prefab
+  artifactKey: Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy.prefab using Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99bc97fb96ff428ab7411131d48c580') in 0.272289 seconds
+  Import took 0.276020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036529 seconds.
+  path: Assets/Enemy.prefab
+  artifactKey: Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy.prefab using Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99bc97fb96ff428ab7411131d48c580') in 0.035733 seconds
+  Import took 0.039458 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

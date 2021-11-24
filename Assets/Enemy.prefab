@@ -1542,7 +1542,7 @@ MonoBehaviour:
   flySpeed: 75
   runSpeed: 100
   player: {fileID: 0}
-  playerAttackRange: 600
+  playerAttackRange: 1000
   testing: 0
   attachPos: []
 --- !u!114 &8843197831528843561

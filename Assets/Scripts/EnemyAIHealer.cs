@@ -162,7 +162,10 @@ public class EnemyAIHealer : EnemyAICommon
     public void detach()
     {
         enemySet = false;
-        line.enabled = false;
+        if (line != null)
+        {
+            line.enabled = false;
+        }
         attachedEnemy = null;
         enemyAttachPos = null;
         findEnemyRunning = false;
