@@ -16,8 +16,8 @@ public class SpawnMgr : MonoBehaviour
     public float currentHealerShipRechargeRate;
     public float currentHealerShipHealth;
 
-    public int currentEnemyShipCount;
-    public int currentHealerShipCount;
+    public float currentEnemyShipCount;
+    public float currentHealerShipCount;
 
     private bool firstRound;
 
@@ -41,8 +41,8 @@ public class SpawnMgr : MonoBehaviour
         currentHealerShipRechargeRate = config.initalHealerShipRechargeRate;
         currentHealerShipHealth = config.initalHealerShipHealth;
 
-        currentEnemyShipCount = config.initialEnemyShipCount;
-        currentHealerShipCount = config.initialHealerShipCount;
+        currentEnemyShipCount = (int) config.initialEnemyShipCount;
+        currentHealerShipCount = (int) config.initialHealerShipCount;
         spawnEnemyShips();
         spawnHealerShips();
         firstRound = false;
@@ -67,7 +67,7 @@ public class SpawnMgr : MonoBehaviour
         int currentRound = GlobalStateMgr.currentRound;
         if (currentRound > config.enemyShipStartLevel)
         {
-            currentEnemyShipCount = Mathf.FloorToInt(currentEnemyShipCount * config.enemyShipCountIncreaseRate);
+            currentEnemyShipCount = currentEnemyShipCount * config.enemyShipCountIncreaseRate;
             currentEnemyShipDamage = currentEnemyShipDamage * config.enemyShipDamageIncreaseRate;
             currentEnemyShipFireChance = currentEnemyShipFireChance * config.enemyFireChangeIncreaseRate;
             currentEnemyShipHealth = currentEnemyShipHealth * config.enemyShipHealthIncreaseRate;
@@ -76,7 +76,7 @@ public class SpawnMgr : MonoBehaviour
 
         if (currentRound > config.healerShipStartLevel)
         {
-            currentHealerShipCount = Mathf.FloorToInt(currentHealerShipCount * config.healerShipCountIncreaseRate);
+            currentHealerShipCount = currentHealerShipCount * config.healerShipCountIncreaseRate;
 
             currentHealerShipRechargeRate = currentHealerShipRechargeRate * config.healerShipRechargeIncreaseRate;
             currentHealerShipHealth = currentHealerShipHealth * config.healerShipHealthIncreaseRate;
@@ -124,7 +124,8 @@ public class SpawnMgr : MonoBehaviour
     {
         if (GlobalStateMgr.currentRound >= config.enemyShipStartLevel || (firstRound && 1 >= config.enemyShipStartLevel))
         {
-            for (int i = 0; i < currentEnemyShipCount; i++)
+            int intCount = Mathf.FloorToInt(currentEnemyShipCount);
+            for (int i = 0; i < intCount; i++)
             {
                 GameObject ship = Instantiate(config.enemyShipPrefab);
                 ship.GetComponent<EnemyAIMain>().initializeSpawnValues(currentEnemyShipHealth, currentEnemyShipDamage, currentEnemyShipShields, currentEnemyShipFireChance);
@@ -137,6 +138,7 @@ public class SpawnMgr : MonoBehaviour
     {
         if (GlobalStateMgr.currentRound >= config.healerShipStartLevel ||  (firstRound && 1 >= config.healerShipStartLevel))
         {
+            int intCount = Mathf.FloorToInt(currentHealerShipCount);
             for (int i = 0; i < currentHealerShipCount; i++)
             {
                 GameObject ship = Instantiate(config.healerShipPrefab);
