@@ -31,4 +31,14 @@ public class MenuMgr : MonoBehaviour
         GlobalStateMgr.togglePause();
         pauseMenu.SetActive(GlobalStateMgr.isPaused());
     }
+
+    public void startGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

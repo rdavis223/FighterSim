@@ -27,10 +27,14 @@ public class PlayerShooting : MonoBehaviour
     private float missileRechargeTimer;
     public Image missileRechargeUI;
     public float missileLockDistance;
+    private AudioSource shootSound;
+    private AudioSource missileSound;
 
     // Start is called before the first frame update
     void Start()
     {
+        shootSound = this.GetComponents<AudioSource>()[0];
+        missileSound = this.GetComponents<AudioSource>()[1];
         GlobalStateMgr.initalize();
         fireTimer = 0f;
         weaponHeat = 0f;
@@ -73,6 +77,7 @@ public class PlayerShooting : MonoBehaviour
                 {
                     activeFireTime = fireTimes[2];
                 }
+                shootSound.Play();
             }
         }
         Ray ray = Camera.main.ScreenPointToRay(aimUI.position);
@@ -127,6 +132,7 @@ public class PlayerShooting : MonoBehaviour
                 bullet.transform.forward = missilePos[i].transform.forward;
                 bullet.GetComponent<Missile>().setTarget(lockedObj);
                 bullet.transform.LookAt(lockedObj.transform.position);
+                missileSound.Play();
             }
             lockedObj = null;
             redLock.SetActive(false);

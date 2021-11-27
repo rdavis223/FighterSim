@@ -13,9 +13,11 @@ public class EnemyAIHealer : EnemyAICommon
     EnemyAIMain otherEnemyAI;
     LineRenderer line;
     public float healerSpeed = 100f;
+    private AudioSource healSound;
     // Start is called before the first frame update
     void Start()
     {
+        healSound = GetComponent<AudioSource>();
         line = GetComponent<LineRenderer>();
         line.enabled = false;
         setSpeed(healerSpeed);
@@ -129,6 +131,7 @@ public class EnemyAIHealer : EnemyAICommon
 
     void startHealing(GameObject closest)
     {
+        healSound.Play();
         isAttached = true;
         attachPos = closest;
         otherEnemyAI = attachedEnemy.GetComponent<EnemyAIMain>();
@@ -161,6 +164,7 @@ public class EnemyAIHealer : EnemyAICommon
     }
     public void detach()
     {
+        healSound.Stop();
         enemySet = false;
         if (line != null)
         {

@@ -14,9 +14,11 @@ public class EnemyShooting : MonoBehaviour
     private float weaponHeat;
     public float chanceOfShoot;
     private float damage;
+    private AudioSource shootSound;
     // Start is called before the first frame update
     void Start()
     {
+        shootSound = this.GetComponents<AudioSource>()[0];
         activeFireTime = fireTimes[0];
         fireTimer = 0;
         weaponHeat = 0;
@@ -76,6 +78,7 @@ public class EnemyShooting : MonoBehaviour
             {
                 activeFireTime = fireTimes[2];
             }
+            shootSound.Play();
         }
     }
 }
