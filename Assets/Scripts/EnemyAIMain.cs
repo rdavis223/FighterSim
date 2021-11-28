@@ -95,7 +95,7 @@ public class EnemyAIMain : EnemyAICommon
     void flyTowardsPlayer()
     {
         Quaternion playerRot = Quaternion.LookRotation(player.transform.position - this.transform.position);
-        if (playerRot == this.transform.rotation)
+        if (playerRot == this.transform.rotation && distanceToPlayer() < 600f)
         {
             shootControl.shootPrimary();
         }
