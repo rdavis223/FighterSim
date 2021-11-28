@@ -137,3 +137,27 @@ System memory in use after: 147.9 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1763.
 Total: 2.380750 ms (FindLiveObjects: 0.307493 ms CreateObjectMapping: 0.061872 ms MarkObjects: 1.913272 ms  DeleteObjects: 0.095970 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 462.017903 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Clouds.png
+  artifactKey: Guid(478a6b3965fdb3749a9bbce2e0036b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Clouds.png using Guid(478a6b3965fdb3749a9bbce2e0036b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fe208d6597c72813f9a374118c4fda') in 0.432905 seconds
+  Import took 0.435197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.086959 seconds.
+  path: Assets/Prefabs/Parts.prefab
+  artifactKey: Guid(f832b09c86bd81e4f91beb978de1ae75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Parts.prefab using Guid(f832b09c86bd81e4f91beb978de1ae75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd973c2b1344facbc9a21a0bcd1e0cdeb') in 0.512787 seconds
+  Import took 0.515256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.757566 seconds.
+  path: Assets/Prefabs/Parts.prefab
+  artifactKey: Guid(f832b09c86bd81e4f91beb978de1ae75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Parts.prefab using Guid(f832b09c86bd81e4f91beb978de1ae75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e639985ccc740c3b5b961c50020bcee0') in 0.013138 seconds
+  Import took 0.015905 seconds .
+
