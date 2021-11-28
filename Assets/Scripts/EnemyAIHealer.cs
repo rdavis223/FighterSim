@@ -40,6 +40,7 @@ public class EnemyAIHealer : EnemyAICommon
             StartCoroutine(findEnemyToHeal());
         } else if (findEnemyRunning && !enemySet)
         {
+            SetHealerPatrol();
             Patrol();
         }
         else if (enemySet && isAttached)
@@ -207,6 +208,19 @@ public class EnemyAIHealer : EnemyAICommon
         {
             setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, Random.Range(70f, 90f), 12f);
 
+        }
+    }
+
+    public void SetHealerPatrol()
+    {
+        if (!destSet && GlobalStateMgr.mainEnemyList.Count > 0)
+        {
+            int c = GlobalStateMgr.mainEnemyList.Count;
+            int i = Random.Range(0, c);
+            dest = GlobalStateMgr.mainEnemyList[i].transform.position;
+            dest = vectorClamp(dest);
+            destSet = true;
+            dir = Quaternion.LookRotation(dest - this.transform.position);
         }
     }
 }
