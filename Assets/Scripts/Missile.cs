@@ -38,4 +38,12 @@ public class Missile : MonoBehaviour
             target.GetComponent<EnemyHealthMgr>().removeMissile(this.gameObject);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Station")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

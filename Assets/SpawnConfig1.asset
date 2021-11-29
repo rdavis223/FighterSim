@@ -18,7 +18,7 @@ MonoBehaviour:
   initialHealerShipCount: 1
   initialEnemyShipHealth: 100
   initialEnemyShipShields: 50
-  initialEnemyShipDamage: 2
+  initialEnemyShipDamage: 1
   initialEnemyShipFireChance: 10
   initalHealerShipRechargeRate: 2
   initalHealerShipHealth: 60

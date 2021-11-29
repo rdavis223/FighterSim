@@ -37,6 +37,16 @@ public class BulletMovement : MonoBehaviour
     {
         straightPos = strPos;
         straight = str;
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Station")
+        {
+            Debug.Log("StationHit");
+            Destroy(this.gameObject);
+        }
     }
 }
 
