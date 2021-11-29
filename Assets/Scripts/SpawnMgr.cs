@@ -32,6 +32,7 @@ public class SpawnMgr : MonoBehaviour
 
     private void Start()
     {
+        GlobalStateMgr.initalize();
         firstRound = true;
         currentEnemyShipDamage = config.initialEnemyShipDamage;
         currentEnemyShipFireChance = config.initialEnemyShipFireChance;
@@ -122,7 +123,7 @@ public class SpawnMgr : MonoBehaviour
 
     void spawnEnemyShips()
     {
-        if (GlobalStateMgr.currentRound >= config.enemyShipStartLevel || (firstRound && 1 >= config.enemyShipStartLevel))
+        if ((!firstRound && GlobalStateMgr.currentRound >= config.enemyShipStartLevel) || (firstRound && 1 >= config.enemyShipStartLevel))
         {
             int intCount = Mathf.FloorToInt(currentEnemyShipCount);
             for (int i = 0; i < intCount; i++)
@@ -136,7 +137,7 @@ public class SpawnMgr : MonoBehaviour
 
     void spawnHealerShips()
     {
-        if (GlobalStateMgr.currentRound >= config.healerShipStartLevel ||  (firstRound && 1 >= config.healerShipStartLevel))
+        if ((!firstRound && GlobalStateMgr.currentRound >= config.healerShipStartLevel) ||  (firstRound && 1 >= config.healerShipStartLevel))
         {
             int intCount = Mathf.FloorToInt(currentHealerShipCount);
             for (int i = 0; i < currentHealerShipCount; i++)

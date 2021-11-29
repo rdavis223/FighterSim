@@ -35,7 +35,6 @@ public class PlayerShooting : MonoBehaviour
     {
         shootSound = this.GetComponents<AudioSource>()[0];
         missileSound = this.GetComponents<AudioSource>()[1];
-        GlobalStateMgr.initalize();
         fireTimer = 0f;
         weaponHeat = 0f;
         activeFireTime = fireTimes[0];
