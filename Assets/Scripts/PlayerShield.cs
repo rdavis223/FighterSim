@@ -19,6 +19,7 @@ public class PlayerShield : MonoBehaviour
     public float shieldRechargeRate;
 
     public bool disableShield;
+    public PlayerHealthMgr healthMgr;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,14 +39,13 @@ public class PlayerShield : MonoBehaviour
     {
         if (disableShield)
         {
-            Debug.Log("returned");
             return;
         }
         if (sinceDamageTimer <= 0f)
         {
             visible.enabled = false;
             shieldEnergy += Time.deltaTime * shieldRechargeRate;
-            shieldEnergy = Mathf.Clamp(shieldEnergy, 0f, shieldEnergyMax);
+            shieldEnergy = Mathf.Clamp(shieldEnergy, -500f, shieldEnergyMax);
         }
 
         if (shieldEnergy <= 0f)
@@ -129,6 +129,12 @@ public class PlayerShield : MonoBehaviour
         visible.enabled = true;
         sinceDamageTimer = sinceDamageTime;
         shieldEnergy -= damage;
+        if (shieldEnergy < 0f)
+        {
+            healthMgr.hurt(shieldEnergy * -1);
+            shieldEnergy = 0f;
+        }
+
     }
 
     public bool isShieldActive()

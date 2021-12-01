@@ -115,11 +115,17 @@ public class EnemyHealthMgr : MonoBehaviour
             }
             other.gameObject.GetComponent<AstroidMovement>().explode();
         }
+
+        if (other.gameObject.tag == "Station")
+        {
+            Debug.Log("STATION DEATH");
+            kill();
+        }
     }
 
     void destroyExistingMissiles()
     {
-          foreach(GameObject missile in targetedMissiles)
+        foreach(GameObject missile in targetedMissiles)
         {
             Destroy(missile);
         }

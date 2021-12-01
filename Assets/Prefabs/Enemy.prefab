@@ -1539,7 +1539,7 @@ MonoBehaviour:
   wall:
     serializedVersion: 2
     m_Bits: 512
-  attackSpeed: 40
+  attackSpeed: 65
   flySpeed: 75
   runSpeed: 100
   player: {fileID: 0}

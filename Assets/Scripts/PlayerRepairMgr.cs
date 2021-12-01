@@ -12,6 +12,8 @@ public class PlayerRepairMgr : MonoBehaviour
     private PlayerHealthMgr health;
     public Image ui;
     private bool partsLock;
+    public GameObject[] regThrusters;
+    public GameObject[] healThrusters;
 
     private void Start()
     {
@@ -25,9 +27,21 @@ public class PlayerRepairMgr : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            health.repair(repairLevel);
-            repairLevel = 0f;
-            updateRepairBar();
+            if (health.getLostHealth() > 0f)
+            {
+                if (health.getLostHealth() >= repairLevel)
+                {
+                    health.repair(repairLevel);
+                    repairLevel = 0f;
+                }
+                else
+                {
+                    repairLevel -= health.getLostHealth();
+                    health.repair(health.getLostHealth());
+                }
+                StartCoroutine(healThrusterEffect());
+                updateRepairBar();
+            }
         }
     }
 
@@ -45,6 +59,31 @@ public class PlayerRepairMgr : MonoBehaviour
     void updateRepairBar()
     {
         ui.fillAmount = repairLevel / maxRepair;
+    }
+
+    IEnumerator healThrusterEffect()
+    {
+        foreach (GameObject thruster in healThrusters)
+        {
+            thruster.SetActive(true);
+        }
+        foreach (GameObject thruster in regThrusters)
+        {
+            thruster.SetActive(false);
+        }
+
+        yield return new WaitForSeconds(3f);
+
+        foreach (GameObject thruster in regThrusters)
+        {
+            thruster.SetActive(true);
+        }
+
+        foreach (GameObject thruster in healThrusters)
+        {
+            thruster.SetActive(false);
+        }
+
     }
 
 }

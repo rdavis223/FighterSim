@@ -152,8 +152,8 @@ public class SpawnMgr : MonoBehaviour
     Vector3 generateSpawnPos()
     {
         Vector3 pos = new Vector3(Random.Range(200f, range - 200f), Random.Range(200f, range - 200f), Random.Range(200f, range - 200f));
-        Collider[] hitColliders = Physics.OverlapSphere(pos, 5f);
-        if (hitColliders.Length != 0)
+        Collider[] hitColliders = Physics.OverlapSphere(pos, 15f);
+        if (hitColliders.Length == 0)
         {
             return pos;
         } else

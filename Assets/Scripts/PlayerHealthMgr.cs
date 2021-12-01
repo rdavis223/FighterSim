@@ -116,7 +116,7 @@ public class PlayerHealthMgr : MonoBehaviour
 
     void AsteroidCrash(GameObject other)
     {
-        this.hurt(startingHealth / 2);
+        this.hurt(49f);
         AstroidMovement mgr = other.GetComponent<AstroidMovement>();
         if (mgr != null)
         {
@@ -160,5 +160,15 @@ public class PlayerHealthMgr : MonoBehaviour
         gameOverCanvas.SetActive(true);
         GlobalStateMgr.timeControl(true);
 
+    }
+
+    public float getCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    public float getLostHealth()
+    {
+        return startingHealth - currentHealth;
     }
 }
