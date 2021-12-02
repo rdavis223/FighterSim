@@ -56,7 +56,6 @@ public static class GlobalStateMgr
         {
             healerEnemyList.Remove(enemy);
         }
-        Debug.Log(isRoundOver());
     }
 
     public static void initalize()

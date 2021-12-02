@@ -115,14 +115,26 @@ public class EnemyAICommon : MonoBehaviour
         }
     }
 
-    protected void setDodgeObject(Vector3 currentDir, float angle, float range)
+    protected void setDodgeObject(Vector3 currentDir, float angle, float range, int depth = 3)
     {
         Vector3 newDirection = Quaternion.Euler(angle, 0f, 0f) * currentDir;
         dest = this.transform.position + (newDirection.normalized * range);
         RaycastHit hit;
-        if (Physics.Raycast(this.transform.position, newDirection, out hit, (dest - this.transform.position).magnitude, wall))
+        if (Physics.Raycast(this.transform.position, newDirection, out hit, (dest - this.transform.position).magnitude))
         {
-            dest = hit.point;
+            if (hit.transform.gameObject.tag == "Station" || hit.transform.gameObject.tag == "Enemy" || hit.transform.gameObject.tag == "Ast")
+            {
+                if (depth > 0)
+                {
+                    setDodgeObject(newDirection, angle, range, depth - 1);
+                    return;
+                }
+            }
+
+            if (hit.transform.gameObject.tag == "Wall")
+            {
+                dest = hit.point;
+            }
         }
         dir = Quaternion.LookRotation(newDirection);
         dodging = true;

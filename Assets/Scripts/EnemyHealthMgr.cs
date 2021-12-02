@@ -118,7 +118,6 @@ public class EnemyHealthMgr : MonoBehaviour
 
         if (other.gameObject.tag == "Station")
         {
-            Debug.Log("STATION DEATH");
             kill();
         }
     }

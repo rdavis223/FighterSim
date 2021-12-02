@@ -197,7 +197,7 @@ public class EnemyAIMain : EnemyAICommon
         float d = distanceToPlayer();
         if (distanceToPlayer() < 140f && dot < 0.4f)
         {
-            setDodgeObject(this.transform.forward, Random.Range(-25f, 25f), 50f);
+            setDodgeObject(this.transform.forward, Random.Range(-25f, 25f), 50f, 0);
             return true;
         } else
         {

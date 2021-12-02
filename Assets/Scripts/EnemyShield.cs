@@ -80,7 +80,6 @@ public class EnemyShield : MonoBehaviour
         shieldEnergy -= damage;
         if (shieldEnergy < 0f)
         {
-            Debug.Log("Transfer");
             if (healthmgr != null)
             {
                 healthmgr.hurt(shieldEnergy * -1);

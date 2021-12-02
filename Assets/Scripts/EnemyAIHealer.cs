@@ -186,13 +186,11 @@ public class EnemyAIHealer : EnemyAICommon
     {
         if (collision.gameObject.tag == "Station")
         {
-            Debug.Log("Collision");
             setDodgeObject(this.transform.forward, 90, 50f);
             initiateDetach();
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("EnemyCollide");
             if (collision.gameObject != attachedEnemy)
             {
                 setDodgeObject((collision.gameObject.transform.position - this.transform.position).normalized, 180f, Random.Range(10f, 40f));

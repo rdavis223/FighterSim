@@ -44,7 +44,6 @@ public class BulletMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Station")
         {
-            Debug.Log("StationHit");
             Destroy(this.gameObject);
         }
     }
