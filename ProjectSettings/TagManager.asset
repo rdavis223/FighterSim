@@ -13,6 +13,7 @@ TagManager:
   - EnemyShield
   - Ast
   - player
+  - Wall
   layers:
   - Default
   - TransparentFX
