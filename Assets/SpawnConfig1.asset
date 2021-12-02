@@ -20,7 +20,7 @@ MonoBehaviour:
   initialEnemyShipShields: 50
   initialEnemyShipDamage: 1
   initialEnemyShipFireChance: 10
-  initalHealerShipRechargeRate: 2
+  initalHealerShipRechargeRate: 2.5
   initalHealerShipHealth: 60
   enemyShipCountIncreaseRate: 1.5
   enemyShipHealthIncreaseRate: 1.3
@@ -28,7 +28,7 @@ MonoBehaviour:
   enemyShipDamageIncreaseRate: 1.4
   enemyFireChangeIncreaseRate: 1.1
   healerShipCountIncreaseRate: 1.3
-  healerShipRechargeIncreaseRate: 1.1
-  healerShipHealthIncreaseRate: 1.1
+  healerShipRechargeIncreaseRate: 1.3
+  healerShipHealthIncreaseRate: 1.2
   enemyShipPrefab: {fileID: 8844409068092906627, guid: 4ead75cb452e8404dbf14bb3511df93b, type: 3}
   healerShipPrefab: {fileID: 4627331949488200291, guid: dfae401c5ade74fbf80d33784b18f9f8, type: 3}

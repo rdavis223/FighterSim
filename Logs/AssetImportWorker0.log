@@ -569,3 +569,483 @@ System memory in use after: 151.8 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1819.
 Total: 1.737799 ms (FindLiveObjects: 0.170849 ms CreateObjectMapping: 0.041770 ms MarkObjects: 1.473783 ms  DeleteObjects: 0.050337 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 52484.750887 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(a5dd47ed3f2d246a4ac604dac2a75e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(a5dd47ed3f2d246a4ac604dac2a75e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13bc585cd6ba6ee4233a773e2c22b76') in 0.100483 seconds
+  Import took 0.201610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.623800 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ef74c595874c3e554e90c27757d84d') in 0.001078 seconds
+  Import took 0.003095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016097 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ef74c595874c3e554e90c27757d84d') in 0.001016 seconds
+  Import took 0.002871 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000572 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.896 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.2 MB.
+System memory in use after: 152.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1822.
+Total: 1.670845 ms (FindLiveObjects: 0.304819 ms CreateObjectMapping: 0.030703 ms MarkObjects: 1.271316 ms  DeleteObjects: 0.063272 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000445 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.4 MB.
+System memory in use after: 152.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1825.
+Total: 1.560232 ms (FindLiveObjects: 0.157129 ms CreateObjectMapping: 0.035022 ms MarkObjects: 1.317429 ms  DeleteObjects: 0.049960 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000454 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.6 MB.
+System memory in use after: 152.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1828.
+Total: 1.600364 ms (FindLiveObjects: 0.161587 ms CreateObjectMapping: 0.044024 ms MarkObjects: 1.338010 ms  DeleteObjects: 0.055932 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000366 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.792 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.8 MB.
+System memory in use after: 152.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1831.
+Total: 1.527967 ms (FindLiveObjects: 0.302219 ms CreateObjectMapping: 0.032349 ms MarkObjects: 1.149658 ms  DeleteObjects: 0.042998 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000457 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.933 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.0 MB.
+System memory in use after: 153.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1834.
+Total: 1.666665 ms (FindLiveObjects: 0.159087 ms CreateObjectMapping: 0.042683 ms MarkObjects: 1.410030 ms  DeleteObjects: 0.053891 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1140.655070 seconds.
+  path: Assets/SpawnConfig1.asset
+  artifactKey: Guid(97a08eea378014311a4d7d2c6d2acf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpawnConfig1.asset using Guid(97a08eea378014311a4d7d2c6d2acf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd807c1cf410acad4091ab97b7bbf0723') in 0.055630 seconds
+  Import took 0.059132 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000397 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.789 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.2 MB.
+System memory in use after: 153.3 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1837.
+Total: 2.037784 ms (FindLiveObjects: 0.195984 ms CreateObjectMapping: 0.053583 ms MarkObjects: 1.710175 ms  DeleteObjects: 0.076715 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.299601 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a71eef621d2cb24fe046786c934273') in 0.322797 seconds
+  Import took 0.326469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.055111 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12fa854dc62dea8db0ff93ae06d915fe') in 0.037079 seconds
+  Import took 0.040772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.649575 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(4ead75cb452e8404dbf14bb3511df93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f6e4a061833aa19681c474b7a64c91') in 0.035956 seconds
+  Import took 0.039576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.169069 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/alpha_4096.png
+  artifactKey: Guid(ce6b71f8c1706ab43855393a5337b9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/alpha_4096.png using Guid(ce6b71f8c1706ab43855393a5337b9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88414e7abc8aff1db9dba5b89851eb0a') in 0.420398 seconds
+  Import took 0.424077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000003.png
+  artifactKey: Guid(2f91aaab8fe48f247876509e0e865b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000003.png using Guid(2f91aaab8fe48f247876509e0e865b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9f130d58c9c8b4d8110e3bceb0d6c1') in 0.036634 seconds
+  Import took 0.039410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000001.png
+  artifactKey: Guid(fdc4bb24e99d5dd4a9f55c4f040e1ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000001.png using Guid(fdc4bb24e99d5dd4a9f55c4f040e1ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89be0c56290ed6e766067c1267acc45d') in 0.031739 seconds
+  Import took 0.034297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000001.png
+  artifactKey: Guid(892ab872c5b9ccb4e8328163a634d83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000001.png using Guid(892ab872c5b9ccb4e8328163a634d83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147ba28ddf99dc3de0f0f3c857cbcb00') in 0.032139 seconds
+  Import took 0.034799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth001.png
+  artifactKey: Guid(b6b0ceb71b4d15b4ca2064603c107b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth001.png using Guid(b6b0ceb71b4d15b4ca2064603c107b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930d26ceceb3e63554680dfe4425eb1d') in 0.033918 seconds
+  Import took 0.036556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000003.png
+  artifactKey: Guid(9a897092db778004aa92750e42189bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000003.png using Guid(9a897092db778004aa92750e42189bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3eb05683c67dbba23bd33c1d4d00edf') in 0.032335 seconds
+  Import took 0.034949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0000.png
+  artifactKey: Guid(32ad5af0e491ded429a8242f894c0255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0000.png using Guid(32ad5af0e491ded429a8242f894c0255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1dc8e86db2636a0179b59b446296306') in 0.032988 seconds
+  Import took 0.035596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000004.png
+  artifactKey: Guid(5320e23e13f5df5429a3bf1a8ad94dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000004.png using Guid(5320e23e13f5df5429a3bf1a8ad94dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c559722f3b3e6218cd1d1c4c85a3cd91') in 0.030445 seconds
+  Import took 0.033163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0001.png
+  artifactKey: Guid(8a1d58568af5b8848a8a8c9f922eae74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0001.png using Guid(8a1d58568af5b8848a8a8c9f922eae74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13fdd0d40641c068023876cddfdc4dd1') in 0.031514 seconds
+  Import took 0.034252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0002.png
+  artifactKey: Guid(a1a37eb6d1bfaba4fa949c57139f3086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0002.png using Guid(a1a37eb6d1bfaba4fa949c57139f3086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe921b4ea2cc28dd4a2a7ef0babac9d') in 0.031464 seconds
+  Import took 0.034095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth002.png
+  artifactKey: Guid(662c6ab797dfbae4c9838fcb303d75b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth002.png using Guid(662c6ab797dfbae4c9838fcb303d75b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd052f1187bf74e4e2669531a0480fd21') in 0.034824 seconds
+  Import took 0.037457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000002.png
+  artifactKey: Guid(b56632c7c8fd3b847b45240b062ff1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000002.png using Guid(b56632c7c8fd3b847b45240b062ff1a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e869f64b4d2fcbf43d114f80002a1c57') in 0.032571 seconds
+  Import took 0.035251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000002.png
+  artifactKey: Guid(4b4c12ed349f8c643a78059e2f1b713e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000002.png using Guid(4b4c12ed349f8c643a78059e2f1b713e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ee190a418f5ef56a6a52bb98e15ec5') in 0.034152 seconds
+  Import took 0.036898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth003.png
+  artifactKey: Guid(2b07a6fdb0e3e7347911e03f857552e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth003.png using Guid(2b07a6fdb0e3e7347911e03f857552e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2117880d67378d5435c5b8c74269fb0') in 0.036372 seconds
+  Import took 0.039086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_MetallicSmoothness.png
+  artifactKey: Guid(859aa0c16660ddf4c910e8d21103fcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_MetallicSmoothness.png using Guid(859aa0c16660ddf4c910e8d21103fcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823c8d859afb5be899e3dfe9bfc8eed7') in 0.009284 seconds
+  Import took 0.011567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0003.png
+  artifactKey: Guid(dcc2a8d7aa4c4474c968566b167e7e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0003.png using Guid(dcc2a8d7aa4c4474c968566b167e7e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8045114312c26c402ff0822309b0494c') in 0.035488 seconds
+  Import took 0.038557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000003.jpg
+  artifactKey: Guid(4e483e21493603d4299ec27d45a4e541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000003.jpg using Guid(4e483e21493603d4299ec27d45a4e541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9a197615f88c0a356ace6474a27f32') in 0.382045 seconds
+  Import took 0.383905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000001.png
+  artifactKey: Guid(b2971c0987c36864ca738efb0e6eae50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000001.png using Guid(b2971c0987c36864ca738efb0e6eae50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1237e8b126596241bcce71f1287b27b') in 0.035974 seconds
+  Import took 0.039116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000003.png
+  artifactKey: Guid(a931d416680388640b2b2d0500616778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000003.png using Guid(a931d416680388640b2b2d0500616778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184c169ac54c03d2d6e044e111594928') in 0.037371 seconds
+  Import took 0.040738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000002.png
+  artifactKey: Guid(d1910481342e0e042b7ac5c623da58a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000002.png using Guid(d1910481342e0e042b7ac5c623da58a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd000d2d6041b8a35412932cf52dd66d8') in 0.039210 seconds
+  Import took 0.042605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000002.jpg
+  artifactKey: Guid(97f2a89eaa4fd6c4db32f62edcf59e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000002.jpg using Guid(97f2a89eaa4fd6c4db32f62edcf59e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0a9b2f18093c5bd06c1c615592be87') in 0.016503 seconds
+  Import took 0.018611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.964759 seconds.
+  path: Assets/Prefabs/Healer.prefab
+  artifactKey: Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Healer.prefab using Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4125e9b8c8f2617281a71816ce86c63d') in 0.033219 seconds
+  Import took 0.036630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.633401 seconds.
+  path: Assets/Prefabs/Healer.prefab
+  artifactKey: Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Healer.prefab using Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa273c38dfba29e6712542bb1b3cc16') in 0.032970 seconds
+  Import took 0.036272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.450749 seconds.
+  path: Assets/Prefabs/Healer.prefab
+  artifactKey: Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Healer.prefab using Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af57dc8a4f993297f082cb739e439d5') in 0.033686 seconds
+  Import took 0.037173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.420655 seconds.
+  path: Assets/Prefabs/Healer.prefab
+  artifactKey: Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Healer.prefab using Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc897547b182ca8e921bdf275a207c7b') in 0.036807 seconds
+  Import took 0.040434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.022541 seconds.
+  path: Assets/Prefabs/Healer.prefab
+  artifactKey: Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Healer.prefab using Guid(dfae401c5ade74fbf80d33784b18f9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fa6bd1950f0767021b50e4348346d6') in 0.035913 seconds
+  Import took 0.039572 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000391 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 169.9 MB.
+System memory in use after: 170.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1849.
+Total: 2.034720 ms (FindLiveObjects: 0.195775 ms CreateObjectMapping: 0.053342 ms MarkObjects: 1.706738 ms  DeleteObjects: 0.077331 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000400 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.1 MB.
+System memory in use after: 170.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1852.
+Total: 1.529910 ms (FindLiveObjects: 0.269501 ms CreateObjectMapping: 0.029404 ms MarkObjects: 1.186709 ms  DeleteObjects: 0.043578 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000421 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.3 MB.
+System memory in use after: 170.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1855.
+Total: 1.549147 ms (FindLiveObjects: 0.156006 ms CreateObjectMapping: 0.040714 ms MarkObjects: 1.299285 ms  DeleteObjects: 0.052387 ms)
+

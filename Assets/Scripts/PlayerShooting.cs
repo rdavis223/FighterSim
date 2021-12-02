@@ -141,7 +141,7 @@ public class PlayerShooting : MonoBehaviour
 
         }
         fireTimer += Time.deltaTime;
-        weaponHeat -= Time.deltaTime * 2.5f;
+        weaponHeat -= Time.deltaTime * 2.75f;
         missileRechargeTimer+= Time.deltaTime;
         updateUI();
     }

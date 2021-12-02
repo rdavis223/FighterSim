@@ -6723,7 +6723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdaf6a2d269c842d9bf1a74d9aeecbae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothRate: 20
+  smoothRate: 15
 --- !u!82 &1806432279
 AudioSource:
   m_ObjectHideFlags: 0
