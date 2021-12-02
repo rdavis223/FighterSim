@@ -225,3 +225,1395 @@ System memory in use after: 148.5 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1776.
 Total: 1.504486 ms (FindLiveObjects: 0.145329 ms CreateObjectMapping: 0.038598 ms MarkObjects: 1.267699 ms  DeleteObjects: 0.052061 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 1036.815152 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/black.png
+  artifactKey: Guid(67229ef5567344140af0330ab0428e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/black.png using Guid(67229ef5567344140af0330ab0428e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7e006c2358de4e4ee7ccdfbc7eb4da') in 0.296731 seconds
+  Import took 0.299399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007002.png
+  artifactKey: Guid(0d3e959d6dacc644aa9175b2897e0720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007002.png using Guid(0d3e959d6dacc644aa9175b2897e0720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54f652097c155792cfc9fb20d13b092') in 0.047370 seconds
+  Import took 0.051137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008002.png
+  artifactKey: Guid(ca9ab3e70fdb58a4bbf4ea542009370c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008002.png using Guid(ca9ab3e70fdb58a4bbf4ea542009370c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4b9bfbe2da394961ca22592a147ea4') in 0.013126 seconds
+  Import took 0.015089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb005.png
+  artifactKey: Guid(5b6283ffc7a3a2b498d9e67c75cfac40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb005.png using Guid(5b6283ffc7a3a2b498d9e67c75cfac40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a20d2ec8062cec1a589577e1041940b') in 0.038429 seconds
+  Import took 0.042185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0005.png
+  artifactKey: Guid(3aa09844bc7dc34408d16d3f63bdb18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0005.png using Guid(3aa09844bc7dc34408d16d3f63bdb18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34b6723f1b5402b85e00443cb277a3a') in 0.038419 seconds
+  Import took 0.041991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006003.png
+  artifactKey: Guid(0a56b1c7379957345bfdcf942d172884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006003.png using Guid(0a56b1c7379957345bfdcf942d172884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0162c2277875df3955932ebe4e31a7') in 0.037232 seconds
+  Import took 0.040619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth005.png
+  artifactKey: Guid(577bc81e65e616444a4230b4ba6725ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth005.png using Guid(577bc81e65e616444a4230b4ba6725ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd745915aaac57bd65209f88305e3a571') in 0.036983 seconds
+  Import took 0.040352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007005.png
+  artifactKey: Guid(38bf3c58f354a0e4996212f9a2fad8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007005.png using Guid(38bf3c58f354a0e4996212f9a2fad8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f70476709b09bed89b9ca46914db30f') in 0.036903 seconds
+  Import took 0.040247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000004.png
+  artifactKey: Guid(4f25ae7d5f8fe3b4b82728355be7080a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000004.png using Guid(4f25ae7d5f8fe3b4b82728355be7080a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b392cc0bf1f84053d54317116062c65') in 0.037028 seconds
+  Import took 0.040515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300002.png
+  artifactKey: Guid(b46a9c632aba33a4391fc8a32b44e480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300002.png using Guid(b46a9c632aba33a4391fc8a32b44e480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20eccaa23812c2987382780ebe29d874') in 0.036704 seconds
+  Import took 0.040188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0004.png
+  artifactKey: Guid(7d43db4c841b20341b310dce47e0920c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe/earth0004.png using Guid(7d43db4c841b20341b310dce47e0920c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eff3220034d9ebc913cc69b1789d9b2') in 0.036960 seconds
+  Import took 0.040344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007004.png
+  artifactKey: Guid(38bc148937fbb484297fce740a8b2e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007004.png using Guid(38bc148937fbb484297fce740a8b2e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76fcca25c012318658c8fd09384438a') in 0.037077 seconds
+  Import took 0.040752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007003.png
+  artifactKey: Guid(1e82fa775cff0b74a874c8d78075bd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007003.png using Guid(1e82fa775cff0b74a874c8d78075bd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159fbd3b457f0fb46534eef68cb8d072') in 0.037337 seconds
+  Import took 0.040786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008005.png
+  artifactKey: Guid(6e39b8a5ebdaca144b4791178d53f790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008005.png using Guid(6e39b8a5ebdaca144b4791178d53f790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f15f70c5ebe74edbfd57521659c731') in 0.011064 seconds
+  Import took 0.012940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007001.png
+  artifactKey: Guid(f1a48fce5b7d2874abf7a310846fa0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007001.png using Guid(f1a48fce5b7d2874abf7a310846fa0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6758c4735d9ec7a1ec4875043fce3f96') in 0.037684 seconds
+  Import took 0.040960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008000.png
+  artifactKey: Guid(53784f41dae2aeb439c874f916d99bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008000.png using Guid(53784f41dae2aeb439c874f916d99bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9883ebffd8a8203901151351430894') in 0.013633 seconds
+  Import took 0.015516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006001.png
+  artifactKey: Guid(27ebf8409f20aeb40a10dc39cfe6ef88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006001.png using Guid(27ebf8409f20aeb40a10dc39cfe6ef88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68396f5a590898b41155de792fb22143') in 0.038772 seconds
+  Import took 0.042517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008001.png
+  artifactKey: Guid(f2ab79e740632f94f94e8ee77790a970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008001.png using Guid(f2ab79e740632f94f94e8ee77790a970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ec4fc7049fc5a966e579d3d44337c6') in 0.013372 seconds
+  Import took 0.015551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008003.png
+  artifactKey: Guid(e841d37c7f690ec47ad01b8fc4d7ddc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008003.png using Guid(e841d37c7f690ec47ad01b8fc4d7ddc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb2407da22e9cb8a6d7ae60fd5a8416') in 0.012301 seconds
+  Import took 0.014557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008004.png
+  artifactKey: Guid(afb22ac8f23513c4e890a2d09721aae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_unknown/earth008004.png using Guid(afb22ac8f23513c4e890a2d09721aae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4289c1fb603ab2f2d536de7dffbec480') in 0.011846 seconds
+  Import took 0.013898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300004.png
+  artifactKey: Guid(47b725d4fa9219b46b2e9c24bab0f183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300004.png using Guid(47b725d4fa9219b46b2e9c24bab0f183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd30a574765bb22e748ed9ef3c9d71e2') in 0.038420 seconds
+  Import took 0.042162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300003.png
+  artifactKey: Guid(136fb35e1f6aa884e9a61f66cd3bc911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300003.png using Guid(136fb35e1f6aa884e9a61f66cd3bc911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c77da943f194632136ea28a76463b7') in 0.038861 seconds
+  Import took 0.042746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000004.png
+  artifactKey: Guid(50ef5c21788d1cb4bb7b5f2fadbb47d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000004.png using Guid(50ef5c21788d1cb4bb7b5f2fadbb47d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae34c6ad406bffad3be34c407fceeac5') in 0.036558 seconds
+  Import took 0.040058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006005.png
+  artifactKey: Guid(53a7e9302e5c96a458bd8907e18bab7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006005.png using Guid(53a7e9302e5c96a458bd8907e18bab7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53dd1cd1ab76df52a71f34286c9c0efc') in 0.034867 seconds
+  Import took 0.038196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000004.png
+  artifactKey: Guid(50ef5c21788d1cb4bb7b5f2fadbb47d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000004.png using Guid(50ef5c21788d1cb4bb7b5f2fadbb47d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae34c6ad406bffad3be34c407fceeac5') in 0.033528 seconds
+  Import took 0.037194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000005.png
+  artifactKey: Guid(4411bb59c0cae2340ac787e23b7beda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000005.png using Guid(4411bb59c0cae2340ac787e23b7beda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a995ac8edebebed24c52d0f1819c414') in 0.040105 seconds
+  Import took 0.043812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Asset Packs/Fx Explosion Pack/Texture&Material/Other/Decal.png
+  artifactKey: Guid(24ff2d53a0e0cdc48896260abb418801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Fx Explosion Pack/Texture&Material/Other/Decal.png using Guid(24ff2d53a0e0cdc48896260abb418801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d93b7907eeead4b1aa767dd5103daad') in 0.011271 seconds
+  Import took 0.013408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300005.png
+  artifactKey: Guid(2847daf794764c94faf763ec817b03a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300005.png using Guid(2847daf794764c94faf763ec817b03a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e566cf23d0400eb7c91598f36619e8') in 0.037452 seconds
+  Import took 0.041088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006004.png
+  artifactKey: Guid(ad63d8fd7992a974b94d5f42441ef273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006004.png using Guid(ad63d8fd7992a974b94d5f42441ef273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0628eca31befb36f87f0466a970248') in 0.036980 seconds
+  Import took 0.040413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth006.png
+  artifactKey: Guid(a448e4319c4bd3940a3542486d7ec2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth006.png using Guid(a448e4319c4bd3940a3542486d7ec2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d46823dbb61df17cd6d01ffd4833d5') in 0.033877 seconds
+  Import took 0.037216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Asset Packs/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020ef5bd05796b6f1b5d86d1905a212b') in 0.007425 seconds
+  Import took 0.009387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000006.png
+  artifactKey: Guid(df954f6e41758804bbdf9b590c8e47b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000006.png using Guid(df954f6e41758804bbdf9b590c8e47b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7ff09ccf439ef7f77668c9f5b267a7') in 0.034070 seconds
+  Import took 0.037430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000006.png
+  artifactKey: Guid(8fcf6c9b535f47249bf83b0783a53a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_europe_night/earth000006.png using Guid(8fcf6c9b535f47249bf83b0783a53a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1fcbabe6286c92541ede1a69ead063') in 0.034490 seconds
+  Import took 0.037828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb004.png
+  artifactKey: Guid(e8e5661315b28af40b0f5e0b78dbdf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb004.png using Guid(e8e5661315b28af40b0f5e0b78dbdf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496a3ff7b3c95ce43a4963e192476cf4') in 0.035310 seconds
+  Import took 0.038728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300006.png
+  artifactKey: Guid(1e2ba78e235c8c84fb1b3612d93ba9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300006.png using Guid(1e2ba78e235c8c84fb1b3612d93ba9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa76a2053d002280bd56edd876fb36b7') in 0.034351 seconds
+  Import took 0.037738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006000.png
+  artifactKey: Guid(96d9d30db37196e40ada2ef386b545da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006000.png using Guid(96d9d30db37196e40ada2ef386b545da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a2f6e9cd5e76ec5f176c782312ab69') in 0.035165 seconds
+  Import took 0.038534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb003.png
+  artifactKey: Guid(8085ffb3464a9d94280a0d09290f1d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb003.png using Guid(8085ffb3464a9d94280a0d09290f1d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b280bd78292290d48f103e27215a6c') in 0.034352 seconds
+  Import took 0.037637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb002.png
+  artifactKey: Guid(18f3ca67fc731504cba26a870dc13cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb002.png using Guid(18f3ca67fc731504cba26a870dc13cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c37e3d6a5742d4e60f60c1cc2ba3433') in 0.034431 seconds
+  Import took 0.037806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb001.png
+  artifactKey: Guid(70f74b1a7d711f54586d28da1964387b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb001.png using Guid(70f74b1a7d711f54586d28da1964387b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7042b6df2c5a61e63d2b6df6f3522153') in 0.035139 seconds
+  Import took 0.038460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb000.png
+  artifactKey: Guid(efa2d67d413d4104cb5f32af00aace12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_night/default1_rgb000.png using Guid(efa2d67d413d4104cb5f32af00aace12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b344ecec7cd993d76ceffe9645d1f04e') in 0.034866 seconds
+  Import took 0.038204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Grey.png
+  artifactKey: Guid(79766b9d7d57b854fa14ff073d34a0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Grey.png using Guid(79766b9d7d57b854fa14ff073d34a0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bdd1a2481c9d07e894dc53fbcbb43e') in 0.007841 seconds
+  Import took 0.009739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000006.png
+  artifactKey: Guid(2460972a1fbd2b14782125f9fc968380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000006.png using Guid(2460972a1fbd2b14782125f9fc968380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfbeb556258a4eab3d5a221aa4aeaad') in 0.035000 seconds
+  Import took 0.038369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000005.png
+  artifactKey: Guid(0dd38e8b341f29e45b0cbd97a983413d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth2/earth000005.png using Guid(0dd38e8b341f29e45b0cbd97a983413d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d286aeb34ee45a216632ca817e0665') in 0.037023 seconds
+  Import took 0.040424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000005.png
+  artifactKey: Guid(30ea30490dc5d4e4fa91b1249fdfa425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa_far/earth000005.png using Guid(30ea30490dc5d4e4fa91b1249fdfa425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e769cd84841506b72b46c1b6ab2547b5') in 0.037432 seconds
+  Import took 0.041356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007000.png
+  artifactKey: Guid(abbc2913ea54095429661d2ebf90795f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_newzealand/earth007000.png using Guid(abbc2913ea54095429661d2ebf90795f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4e593186d39c151fced4027a9f45bf') in 0.039937 seconds
+  Import took 0.043707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006002.png
+  artifactKey: Guid(d2c3c1eda9959ae4c94fb84a6b01419f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_usa/earth006002.png using Guid(d2c3c1eda9959ae4c94fb84a6b01419f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443633501a38c6517002e19e7a51adec') in 0.038205 seconds
+  Import took 0.041927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300001.png
+  artifactKey: Guid(ab5c0a79d6303cb4cb80c677b697bfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_earthfar/earth300001.png using Guid(ab5c0a79d6303cb4cb80c677b697bfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57301b336740ac315fbb2f566037b321') in 0.037089 seconds
+  Import took 0.040418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Normal.png
+  artifactKey: Guid(98a18c0634080da40a446c86ad6083b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/MissileBomb/Bomb_Normal.png using Guid(98a18c0634080da40a446c86ad6083b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce27525f6c10da24b9eaeec97713d05c') in 0.029576 seconds
+  Import took 0.031543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth004.png
+  artifactKey: Guid(3ca7637fd1a61fd4eb82f8c631fe8a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_ocean/earth004.png using Guid(3ca7637fd1a61fd4eb82f8c631fe8a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c69ce89dd97d365556d2697b9a294f5e') in 0.035302 seconds
+  Import took 0.038929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Asset Packs/Fx Explosion Pack/Texture&Material/Other/Decal2.png
+  artifactKey: Guid(dffe2c1a534bf804587dcf4e6b6ec02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Fx Explosion Pack/Texture&Material/Other/Decal2.png using Guid(dffe2c1a534bf804587dcf4e6b6ec02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2617aab6dc4196a9792ec15617408a') in 0.008984 seconds
+  Import took 0.010949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.726774 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_MetallicSmoothness.png
+  artifactKey: Guid(1081a96ded5ed4d40bc35d5e1925bed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_MetallicSmoothness.png using Guid(1081a96ded5ed4d40bc35d5e1925bed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8367cdeabf4fba54b783872d1df85af') in 0.008688 seconds
+  Import took 0.010955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024687 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Normal.png
+  artifactKey: Guid(56788cf7355aae243a176c2002e84e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Normal.png using Guid(56788cf7355aae243a176c2002e84e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14df3ccd40261e5e3255ed99cc755183') in 0.009383 seconds
+  Import took 0.011544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Purple.png
+  artifactKey: Guid(ab00a42ce58ed8346aac0ec3ebc03d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/FlyingInsect/FlyingInsect_Purple.png using Guid(ab00a42ce58ed8346aac0ec3ebc03d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003dc3ae13960fc0d0cb877a35639f44') in 0.008974 seconds
+  Import took 0.010938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.197591 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india000.png
+  artifactKey: Guid(a0572e5670c87504d9c1e1d39955cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india000.png using Guid(a0572e5670c87504d9c1e1d39955cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e9a48760dcc4171d4994398c2b3009') in 0.036037 seconds
+  Import took 0.040391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india002.png
+  artifactKey: Guid(5738ed9c8cc132f498a932252f0bc519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india002.png using Guid(5738ed9c8cc132f498a932252f0bc519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655f691f3dc8f2b67180d8594e312316') in 0.037039 seconds
+  Import took 0.040999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india005.png
+  artifactKey: Guid(defdcbac06f72e242b00dea5930448a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india005.png using Guid(defdcbac06f72e242b00dea5930448a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71daa7b5c51e5a3acb873917bff5914') in 0.034457 seconds
+  Import took 0.038466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0002.png
+  artifactKey: Guid(158e454aaf702ba4aac72b3c61a8b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0002.png using Guid(158e454aaf702ba4aac72b3c61a8b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10d7eef05c2f85511cbcecc1f9962ce') in 0.037951 seconds
+  Import took 0.041989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india004.png
+  artifactKey: Guid(a5e44093c6205d04fbcebe13260038e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india004.png using Guid(a5e44093c6205d04fbcebe13260038e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68113e6266c37af26642154ffdb6df39') in 0.022722 seconds
+  Import took 0.024781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india000.png
+  artifactKey: Guid(a0572e5670c87504d9c1e1d39955cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india000.png using Guid(a0572e5670c87504d9c1e1d39955cc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e9a48760dcc4171d4994398c2b3009') in 0.032172 seconds
+  Import took 0.036338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0005.png
+  artifactKey: Guid(241c782d80f591b469cfeb905cf55aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0005.png using Guid(241c782d80f591b469cfeb905cf55aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2875a8f5c6a573d4736bcbd478be08ad') in 0.037807 seconds
+  Import took 0.041706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1001.png
+  artifactKey: Guid(3d5ccaef0fc282e43b830735ba245010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1001.png using Guid(3d5ccaef0fc282e43b830735ba245010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca9962fcab9a0db404b8cf0d3d2e9d3') in 0.039395 seconds
+  Import took 0.043470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0004.png
+  artifactKey: Guid(6924bbe9793ea6347871e6b7486e3bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0004.png using Guid(6924bbe9793ea6347871e6b7486e3bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea5eb76882884f7ba7485f3c40862e2') in 0.038925 seconds
+  Import took 0.043002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1003.png
+  artifactKey: Guid(c6b625c7d7053494abe1d776c0ddd91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1003.png using Guid(c6b625c7d7053494abe1d776c0ddd91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa0988a3bf48c4c8dd8204e40f3db6b') in 0.041060 seconds
+  Import took 0.045147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1004.png
+  artifactKey: Guid(c34324ab481d30843a1ad8d16f86144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1004.png using Guid(c34324ab481d30843a1ad8d16f86144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d20b50a8e2f21e7aac15cda7b77b85') in 0.039985 seconds
+  Import took 0.044230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india002.png
+  artifactKey: Guid(5738ed9c8cc132f498a932252f0bc519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india002.png using Guid(5738ed9c8cc132f498a932252f0bc519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655f691f3dc8f2b67180d8594e312316') in 0.036799 seconds
+  Import took 0.041469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1002.png
+  artifactKey: Guid(4861f346dc6bfaa4dab1ce1d9b5fa48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1002.png using Guid(4861f346dc6bfaa4dab1ce1d9b5fa48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02a82e7830e2befe8d7071daaf18dcb') in 0.039693 seconds
+  Import took 0.043752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1006.png
+  artifactKey: Guid(f77756ef8f7a6d94db3a6b985fb96ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1006.png using Guid(f77756ef8f7a6d94db3a6b985fb96ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c054b0e3cda281818f25860306c36ebf') in 0.038708 seconds
+  Import took 0.042703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0003.png
+  artifactKey: Guid(9e2a4cac10a856d47941194defbacf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0003.png using Guid(9e2a4cac10a856d47941194defbacf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48270c9d598fbd2a2a925107eb3d0198') in 0.037964 seconds
+  Import took 0.041802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0006.png
+  artifactKey: Guid(65b6e42fc572e03418ddd5649425c306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0006.png using Guid(65b6e42fc572e03418ddd5649425c306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07e95c3f8372904b6db08508cbfac67') in 0.037236 seconds
+  Import took 0.041243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3001.png
+  artifactKey: Guid(3b603e7b626a33645a6957b43945f456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3001.png using Guid(3b603e7b626a33645a6957b43945f456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5795cf587d59bbb497c3bbe59450d293') in 0.039041 seconds
+  Import took 0.043055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3003.png
+  artifactKey: Guid(80e1e5359b9be8c489f5c53c7023ab81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3003.png using Guid(80e1e5359b9be8c489f5c53c7023ab81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41103ec04fe80991f981b0a42c9cd97') in 0.036793 seconds
+  Import took 0.040453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3005.png
+  artifactKey: Guid(11147fc8a8190d44f87e3fe48afb32c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3005.png using Guid(11147fc8a8190d44f87e3fe48afb32c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8c6f47c52fb906f6a969bbd35a3e0d') in 0.034471 seconds
+  Import took 0.037966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3004.png
+  artifactKey: Guid(e35cafec3b8870c4dba1c6ab38f1978b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3004.png using Guid(e35cafec3b8870c4dba1c6ab38f1978b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1b0832466d04e2615ac1908ebcb487d') in 0.035415 seconds
+  Import took 0.038940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3002.png
+  artifactKey: Guid(c4393ee2211fb244abd9b72131125a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter2/jupiter3002.png using Guid(c4393ee2211fb244abd9b72131125a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a28b315163ddcf665f52aa46d5306b3') in 0.035480 seconds
+  Import took 0.039114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0001.png
+  artifactKey: Guid(aedfdb1410f781547a7238f08720925c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter/jupiter0001.png using Guid(aedfdb1410f781547a7238f08720925c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3f083c5a104cf0ca69457c58fc8904') in 0.036484 seconds
+  Import took 0.040276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1005.png
+  artifactKey: Guid(0c6f57b21559672458e540c1bad9b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_jupiter1/jupiter1005.png using Guid(0c6f57b21559672458e540c1bad9b5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34f4d6785ffecbd29028e522977bfbf') in 0.035562 seconds
+  Import took 0.039188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/Lightning.tif
+  artifactKey: Guid(92781d74b982d084ca9223b02d2cae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/Lightning.tif using Guid(92781d74b982d084ca9223b02d2cae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f591f7d60d427b315a5128227650206') in 0.382208 seconds
+  Import took 0.384119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india003.png
+  artifactKey: Guid(c5a7647a009f60d41bbfb731df9d1cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skybox_EarthProDemo/india003.png using Guid(c5a7647a009f60d41bbfb731df9d1cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865dd8ba39fce0a5feee3c2550823426') in 0.037851 seconds
+  Import took 0.042270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.393943 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20003.png
+  artifactKey: Guid(63cb4734cb8b7db4da5e86f842e66b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20003.png using Guid(63cb4734cb8b7db4da5e86f842e66b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42494ef84a1d4e8e5dcab6222a23d7f6') in 0.040277 seconds
+  Import took 0.044624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20006.png
+  artifactKey: Guid(f69a24e7c768e23489be228042ada976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20006.png using Guid(f69a24e7c768e23489be228042ada976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619deeb5ad210c8ac62e333473cd63ee') in 0.038570 seconds
+  Import took 0.042317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20003.png
+  artifactKey: Guid(63cb4734cb8b7db4da5e86f842e66b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20003.png using Guid(63cb4734cb8b7db4da5e86f842e66b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42494ef84a1d4e8e5dcab6222a23d7f6') in 0.035039 seconds
+  Import took 0.038306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20005.png
+  artifactKey: Guid(010a197edd8bdf143be51c41ca3e093f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20005.png using Guid(010a197edd8bdf143be51c41ca3e093f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b17933ff8c39c39968bc1997d3520a') in 0.037440 seconds
+  Import took 0.041180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20004.png
+  artifactKey: Guid(977bd2e30153ac7459929d20cee20117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_mars2/mars20004.png using Guid(977bd2e30153ac7459929d20cee20117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9474eed452b25e6a652b6b197e51ac14') in 0.035778 seconds
+  Import took 0.039343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.196785 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample1_MetallicSmoothness.png
+  artifactKey: Guid(8d0f2071706729c4d95bb30b050bc137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample1_MetallicSmoothness.png using Guid(8d0f2071706729c4d95bb30b050bc137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bacfda0400d10c3293ded8647db92c0') in 0.006835 seconds
+  Import took 0.008934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample1_Normal.png
+  artifactKey: Guid(a909b68486656de4986628989cc5f12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample1_Normal.png using Guid(a909b68486656de4986628989cc5f12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a57fd1bca0259dbf123cfb8c20ff154') in 0.006707 seconds
+  Import took 0.009050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035779 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_Brown.png
+  artifactKey: Guid(89444bc8e26f111479c9f9b288546a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_Brown.png using Guid(89444bc8e26f111479c9f9b288546a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3303afdcf56ae5b095098a8aa1766e8') in 0.005592 seconds
+  Import took 0.007712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002537 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_Brown.png
+  artifactKey: Guid(89444bc8e26f111479c9f9b288546a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_Brown.png using Guid(89444bc8e26f111479c9f9b288546a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3303afdcf56ae5b095098a8aa1766e8') in 0.004797 seconds
+  Import took 0.006847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_Normal.png
+  artifactKey: Guid(69ef4596fd4f3034f91923605a279538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_Normal.png using Guid(69ef4596fd4f3034f91923605a279538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a397184d3d1371898f7f41abc4b9bbb') in 0.006771 seconds
+  Import took 0.008844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_MetallicSmoothness.png
+  artifactKey: Guid(0ff802439110fec41b4c0bda29885e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Mines/MineSample2_MetallicSmoothness.png using Guid(0ff802439110fec41b4c0bda29885e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a83d192c7eb73ceadbc0ba36a4f81dc') in 0.005501 seconds
+  Import took 0.007433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.638545 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module1_MetallicSmoothness.tga
+  artifactKey: Guid(4338b6be84631fc40b11254c5d4c4ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module1_MetallicSmoothness.tga using Guid(4338b6be84631fc40b11254c5d4c4ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36e7cb5098f37caf72671cf66694e0b') in 0.393165 seconds
+  Import took 0.395329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module3_Normal.tga
+  artifactKey: Guid(20a9eab5241a9cb4983c6ca806341904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module3_Normal.tga using Guid(20a9eab5241a9cb4983c6ca806341904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd49d8298fcbbb8d75a6fe32f7394ef3') in 0.013339 seconds
+  Import took 0.015224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module4_MetallicSmoothness.tga
+  artifactKey: Guid(bf8c4f853ccf9444cae3368bc0670dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module4_MetallicSmoothness.tga using Guid(bf8c4f853ccf9444cae3368bc0670dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725853bbe9b6d9f81177261bb54c329b') in 0.011946 seconds
+  Import took 0.013970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module4_Normal.tga
+  artifactKey: Guid(afad21980f8681348a6155772ec3967d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module4_Normal.tga using Guid(afad21980f8681348a6155772ec3967d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a844fe6ae8d7c8cc6adf78cd5c00696b') in 0.013732 seconds
+  Import took 0.015766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module1_Normal.tga
+  artifactKey: Guid(abac20d2518fd93419f43d5c9cfcb4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module1_Normal.tga using Guid(abac20d2518fd93419f43d5c9cfcb4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b39eac313372664773053d3cd3d04cf') in 0.014856 seconds
+  Import took 0.016962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module3_MetallicSmoothness.tga
+  artifactKey: Guid(bac83a37e52add348b245041b8112aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module3_MetallicSmoothness.tga using Guid(bac83a37e52add348b245041b8112aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ffd74199652b04be2e85a983aa6db6') in 0.012479 seconds
+  Import took 0.014657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.169243 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_MetallicSmoothness.tga
+  artifactKey: Guid(9b4dc2e58f4447f43b9e1d4aa95279cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_MetallicSmoothness.tga using Guid(9b4dc2e58f4447f43b9e1d4aa95279cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3626ff9a0d18d61a156fe7bcd31e3f') in 0.012853 seconds
+  Import took 0.015221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_Normal.tga
+  artifactKey: Guid(92ec01f35dad9c84f9ecade2eb094732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_Normal.tga using Guid(92ec01f35dad9c84f9ecade2eb094732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3675bfb680a294598fc3559926a2705') in 0.014150 seconds
+  Import took 0.016281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_MetallicSmoothness.tga
+  artifactKey: Guid(9b4dc2e58f4447f43b9e1d4aa95279cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_MetallicSmoothness.tga using Guid(9b4dc2e58f4447f43b9e1d4aa95279cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3626ff9a0d18d61a156fe7bcd31e3f') in 0.013522 seconds
+  Import took 0.015654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_Normal.tga
+  artifactKey: Guid(92ec01f35dad9c84f9ecade2eb094732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module5_Normal.tga using Guid(92ec01f35dad9c84f9ecade2eb094732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3675bfb680a294598fc3559926a2705') in 0.014596 seconds
+  Import took 0.016688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003639 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module6_MetallicSmoothness.tga
+  artifactKey: Guid(88a1701ab8e729e47830f908a7e1cc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module6_MetallicSmoothness.tga using Guid(88a1701ab8e729e47830f908a7e1cc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fdacb713d8777653b74d54e6b834677') in 0.013377 seconds
+  Import took 0.015588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module6_Normal.tga
+  artifactKey: Guid(099a054adb9ffa142875b43b41515f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module6_Normal.tga using Guid(099a054adb9ffa142875b43b41515f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96771c40ff53a75e5cadaf53886a6ff3') in 0.014031 seconds
+  Import took 0.016195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.615693 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module7_AlbedoTransparency.tga
+  artifactKey: Guid(22ef1a991e4390a4e9716084bf486a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module7_AlbedoTransparency.tga using Guid(22ef1a991e4390a4e9716084bf486a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ead2edb241a0797d65490a4143072c') in 0.010668 seconds
+  Import took 0.013248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048762 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module7_MetallicSmoothness.tga
+  artifactKey: Guid(d66d627044c910d4f8ee0273dbae7edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module7_MetallicSmoothness.tga using Guid(d66d627044c910d4f8ee0273dbae7edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d76b98bca15952668d9b1a90ad714a') in 0.011527 seconds
+  Import took 0.013714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module7_Normal.tga
+  artifactKey: Guid(2ab6a4353d0982f43894c3f96782d7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module7_Normal.tga using Guid(2ab6a4353d0982f43894c3f96782d7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7bc7df4838022198e38d71134cfbc0') in 0.012361 seconds
+  Import took 0.014301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.197107 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module8_AlbedoTransparency.tga
+  artifactKey: Guid(baa3e1d4459382a42a8028a6fe148393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module8_AlbedoTransparency.tga using Guid(baa3e1d4459382a42a8028a6fe148393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e25117c5e9e84aac58b2a1c1a24d5a9') in 0.010584 seconds
+  Import took 0.013035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module8_MetallicSmoothness.tga
+  artifactKey: Guid(e92ba640ff006af4890394a6be6a49ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module8_MetallicSmoothness.tga using Guid(e92ba640ff006af4890394a6be6a49ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8e7b9e8800df8ff4242441faf4d7b8') in 0.013724 seconds
+  Import took 0.015902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025247 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module8_Normal.tga
+  artifactKey: Guid(1b079268d43b12f4c878c35e43fc4d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module8_Normal.tga using Guid(1b079268d43b12f4c878c35e43fc4d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5659d657f453be9f0267c8a8c8748a3') in 0.012059 seconds
+  Import took 0.014284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module9_Normal.tga
+  artifactKey: Guid(abf83a96b91eed34dbdc6be266de021c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module9_Normal.tga using Guid(abf83a96b91eed34dbdc6be266de021c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7fab36c631c7311297a8e320561683') in 0.012332 seconds
+  Import took 0.014335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module9_MetallicSmoothness.tga
+  artifactKey: Guid(fa484e960a4bf5344a402bb3cab1370f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module9_MetallicSmoothness.tga using Guid(fa484e960a4bf5344a402bb3cab1370f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b3d5a3eef1db10cd37e89a3ec9c4eb') in 0.012358 seconds
+  Import took 0.014308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module9_AlbedoTransparency.tga
+  artifactKey: Guid(45a607637f7301f4e97e2c2e4cebb089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module9_AlbedoTransparency.tga using Guid(45a607637f7301f4e97e2c2e4cebb089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb2b6a4e6d7a38043ed43427b32b205') in 0.010213 seconds
+  Import took 0.012286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.198777 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_AlbedoTransparency.tga
+  artifactKey: Guid(c4e606887ee20304688b3d2a0c244559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_AlbedoTransparency.tga using Guid(c4e606887ee20304688b3d2a0c244559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128c990b7cca50c1a982a21ad93cbe7b') in 0.010700 seconds
+  Import took 0.013179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002558 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_AlbedoTransparency.tga
+  artifactKey: Guid(c4e606887ee20304688b3d2a0c244559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_AlbedoTransparency.tga using Guid(c4e606887ee20304688b3d2a0c244559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128c990b7cca50c1a982a21ad93cbe7b') in 0.010763 seconds
+  Import took 0.013075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042315 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_MetallicSmoothness.tga
+  artifactKey: Guid(977dbf053c9ad67419e3cb7ca5a6f0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_MetallicSmoothness.tga using Guid(977dbf053c9ad67419e3cb7ca5a6f0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cfc637d2926995113be62b544bb923') in 0.011784 seconds
+  Import took 0.013913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_Normal.tga
+  artifactKey: Guid(ecf6a64970260fa478a46411ebe371b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module10_Normal.tga using Guid(ecf6a64970260fa478a46411ebe371b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadce8c734f901ee821b147d800460d9') in 0.012192 seconds
+  Import took 0.014154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043343 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module11_AlbedoTransparency.tga
+  artifactKey: Guid(c72c34d922b5f4c448f42da0af520428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module11_AlbedoTransparency.tga using Guid(c72c34d922b5f4c448f42da0af520428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc74d6b851e392fa1417e79beaf11aa9') in 0.009578 seconds
+  Import took 0.011730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027099 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module11_MetallicSmoothness.tga
+  artifactKey: Guid(4e7029d2b983cd44cb6670b4b53cfb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module11_MetallicSmoothness.tga using Guid(4e7029d2b983cd44cb6670b4b53cfb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b773595fe68a15101f0e61b0af8935d') in 0.011284 seconds
+  Import took 0.013573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module12_AlbedoTransparency.tga
+  artifactKey: Guid(94094c5142b66924c8f50b74c8722511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module12_AlbedoTransparency.tga using Guid(94094c5142b66924c8f50b74c8722511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2262f4e1a1432d34f5711ee6e56bc542') in 0.009402 seconds
+  Import took 0.011324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module12_MetallicSmoothness.tga
+  artifactKey: Guid(132518938424c0b4caa1feee3d33d1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module12_MetallicSmoothness.tga using Guid(132518938424c0b4caa1feee3d33d1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b14c3a8d2ad1cd43e30ebfd285031aa') in 0.011289 seconds
+  Import took 0.013374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module11_Normal.tga
+  artifactKey: Guid(f8c5188d03fa2f2479134db22c7ba770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module11_Normal.tga using Guid(f8c5188d03fa2f2479134db22c7ba770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97e330f07ab04ed0136b9f1eb5f381a') in 0.011589 seconds
+  Import took 0.013599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018634 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module12_Normal.tga
+  artifactKey: Guid(0112258253789604887ce548f0d7fa2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module12_Normal.tga using Guid(0112258253789604887ce548f0d7fa2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b42ba2d5cc27e7a80994a34149949e') in 0.011579 seconds
+  Import took 0.013739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_AlbedoTransparency.tga
+  artifactKey: Guid(462fffdde5b70cb4c8a4f8f0d6d82de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_AlbedoTransparency.tga using Guid(462fffdde5b70cb4c8a4f8f0d6d82de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b56249694167f04d63970c5d76a834') in 0.009376 seconds
+  Import took 0.011300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056710 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_MetallicSmoothness.tga
+  artifactKey: Guid(cf7a92e02b061124480b05e3bbc94122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_MetallicSmoothness.tga using Guid(cf7a92e02b061124480b05e3bbc94122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5759ef751eb705e5c3bd9b7b8165047c') in 0.011076 seconds
+  Import took 0.013251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_Normal.tga
+  artifactKey: Guid(c623355b0a0a4374fbb5874b5292d3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_Normal.tga using Guid(c623355b0a0a4374fbb5874b5292d3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673a00986affcd5cc539ab61359ab3d3') in 0.012027 seconds
+  Import took 0.014000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_MetallicSmoothness.tga
+  artifactKey: Guid(cf7a92e02b061124480b05e3bbc94122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_MetallicSmoothness.tga using Guid(cf7a92e02b061124480b05e3bbc94122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5759ef751eb705e5c3bd9b7b8165047c') in 0.013987 seconds
+  Import took 0.016081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_Normal.tga
+  artifactKey: Guid(c623355b0a0a4374fbb5874b5292d3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module13_Normal.tga using Guid(c623355b0a0a4374fbb5874b5292d3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673a00986affcd5cc539ab61359ab3d3') in 0.012306 seconds
+  Import took 0.014211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000889 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module14_AlbedoTransparency.tga
+  artifactKey: Guid(eb55adc2eb10e4845a58bf2c51a64ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module14_AlbedoTransparency.tga using Guid(eb55adc2eb10e4845a58bf2c51a64ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fedf4ff441c3820a325304c01977f04') in 0.008931 seconds
+  Import took 0.010959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module14_MetallicSmoothness.tga
+  artifactKey: Guid(ad8284acb3542b84f9a2d60fccbdb6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module14_MetallicSmoothness.tga using Guid(ad8284acb3542b84f9a2d60fccbdb6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812dcc9cae950312b45ae3700ee3b968') in 0.011290 seconds
+  Import took 0.013291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/module14_Normal.tga
+  artifactKey: Guid(9f5ef7edbf03aaa4ab3bc85636d2ebec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/module14_Normal.tga using Guid(9f5ef7edbf03aaa4ab3bc85636d2ebec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4168e2883482b5d96141934aeb1afb') in 0.011476 seconds
+  Import took 0.013446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000001.png
+  artifactKey: Guid(6f985e55578e0b340aa1f480496f76fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000001.png using Guid(6f985e55578e0b340aa1f480496f76fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd38ea5647b456c98a91e1d2b2d0affa') in 0.037135 seconds
+  Import took 0.041389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000004.png
+  artifactKey: Guid(3362dc44cd51c2b46b591aa975723c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000004.png using Guid(3362dc44cd51c2b46b591aa975723c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa88ba806c5d6103d7ff54753200ea45') in 0.039596 seconds
+  Import took 0.043571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000003.png
+  artifactKey: Guid(6a28e85abc4f87f4a8c3ed2dbfc6beb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000003.png using Guid(6a28e85abc4f87f4a8c3ed2dbfc6beb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33a6d0e8bdc444db6aac27894bff569') in 0.039080 seconds
+  Import took 0.043047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100001.png
+  artifactKey: Guid(76b5c0f6b47597847afa770871eef868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100001.png using Guid(76b5c0f6b47597847afa770871eef868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1782633226889d492eae41b652f6d4') in 0.039664 seconds
+  Import took 0.043871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000006.png
+  artifactKey: Guid(14b5f8372475033498961f985ae487ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000006.png using Guid(14b5f8372475033498961f985ae487ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9b86b532dd37cd0a3454829ebc9822') in 0.037381 seconds
+  Import took 0.041405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000005.png
+  artifactKey: Guid(6c07faad2c8505846a63f991e24be555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000005.png using Guid(6c07faad2c8505846a63f991e24be555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32e793deec7fed343018cf28cf30bb7') in 0.038745 seconds
+  Import took 0.042535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000002.png
+  artifactKey: Guid(c86db939838aa694e8597ee23b722c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon_earth/moon000002.png using Guid(c86db939838aa694e8597ee23b722c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2cd38614cf335458ef5ce39297185c') in 0.036560 seconds
+  Import took 0.040068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100002.png
+  artifactKey: Guid(2b1ef9544fc071e4b9b4d7030b41f94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100002.png using Guid(2b1ef9544fc071e4b9b4d7030b41f94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68bd17e77e0656a1be383d2dfbfb3d1e') in 0.038829 seconds
+  Import took 0.042438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100003.png
+  artifactKey: Guid(0c452a53c5346124d949d65b8f756971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100003.png using Guid(0c452a53c5346124d949d65b8f756971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0c3702d6e42fbb55d0b32caaf4afd9') in 0.037821 seconds
+  Import took 0.042007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083895 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100004.png
+  artifactKey: Guid(26b9e7d63670e454fa5674351f848781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100004.png using Guid(26b9e7d63670e454fa5674351f848781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39da8e7c791b7f18de18aee723ec41fb') in 0.042786 seconds
+  Import took 0.046976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100006.png
+  artifactKey: Guid(c6ec2e7744fe9a64ab38ec3574086439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100006.png using Guid(c6ec2e7744fe9a64ab38ec3574086439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '659bac089c250c2bc41a21979762ed38') in 0.039000 seconds
+  Import took 0.043052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100005.png
+  artifactKey: Guid(ab0a775ebb0da3b4d9ad9a7219d18464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_moon1/moon100005.png using Guid(ab0a775ebb0da3b4d9ad9a7219d18464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40b53bb417e420fa9ab54b53cdcd602') in 0.037311 seconds
+  Import took 0.041448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.589586 seconds.
+  path: Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/ramp01.png
+  artifactKey: Guid(99e09a9bd0f10384fa2a3bcbd5c65c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/ramp01.png using Guid(99e09a9bd0f10384fa2a3bcbd5c65c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c402b290d12dadd1caaf2dc325ead8e2') in 0.006843 seconds
+  Import took 0.009347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.126811 seconds.
+  path: Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/Ramp03.png
+  artifactKey: Guid(595a5c1164fec844f8e6b477620221f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/Ramp03.png using Guid(595a5c1164fec844f8e6b477620221f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f095302a862424e9039300e814382c') in 0.006987 seconds
+  Import took 0.009602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033233 seconds.
+  path: Assets/Asset Packs/StarSparrow/Readme/Readme Files/Icons/ReadMeStarSparrow_Icon.png
+  artifactKey: Guid(6756ed7b80223ac4e8f026ce27541de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Readme/Readme Files/Icons/ReadMeStarSparrow_Icon.png using Guid(6756ed7b80223ac4e8f026ce27541de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442cc6e4915f7fa6c99ff2e0f655f87d') in 0.007104 seconds
+  Import took 0.009350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Asset Packs/Fx Explosion Pack/Texture&Material/Other/Ring.png
+  artifactKey: Guid(50e74b430033b274484bc0db1b9b3968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Fx Explosion Pack/Texture&Material/Other/Ring.png using Guid(50e74b430033b274484bc0db1b9b3968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '473d29d2644335fe8ea2b443461c15db') in 0.008014 seconds
+  Import took 0.009949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.400980 seconds.
+  path: Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif
+  artifactKey: Guid(492f3349f92767645a752364a5d18422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif using Guid(492f3349f92767645a752364a5d18422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5933378a76e64bb520a5a2a24beeae') in 0.007551 seconds
+  Import took 0.009770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028785 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars001.png
+  artifactKey: Guid(c1264b34156832442b3703b410ee52a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars001.png using Guid(c1264b34156832442b3703b410ee52a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6f07796d6658b3571119e7214c01a90') in 0.037481 seconds
+  Import took 0.041572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.210867 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars002.png
+  artifactKey: Guid(48d72fc358394c040bbafb6777131bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars002.png using Guid(48d72fc358394c040bbafb6777131bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedbe34b1e6188836944faf6f67a07a6') in 0.040902 seconds
+  Import took 0.045033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars004.png
+  artifactKey: Guid(b995c14c2b7b97046bb4aa95e03050e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars004.png using Guid(b995c14c2b7b97046bb4aa95e03050e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bdcf4f3dd96c98c088783fbbbc3e52c') in 0.038826 seconds
+  Import took 0.042597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Black.png
+  artifactKey: Guid(206a5b1f7176ecd4691948148171fb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Black.png using Guid(206a5b1f7176ecd4691948148171fb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023fe5f157529fda96c33d51528320ab') in 0.012713 seconds
+  Import took 0.014879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars006.png
+  artifactKey: Guid(e7a7cc38d3852b94f80a266210217d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars006.png using Guid(e7a7cc38d3852b94f80a266210217d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c5bd57e242540c879d779704e4cff0') in 0.039469 seconds
+  Import took 0.042916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars005.png
+  artifactKey: Guid(18772a1715e0fe44b9036efa8159988f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars005.png using Guid(18772a1715e0fe44b9036efa8159988f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b420cd1046769dd087c40847c3ec3506') in 0.035874 seconds
+  Import took 0.039184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars003.png
+  artifactKey: Guid(0b7b72a163e1b474bb8c557f62b3957a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Stagit/SkyboxEarthPlanets/textures/skyboxv1_stars_only/stars003.png using Guid(0b7b72a163e1b474bb8c557f62b3957a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156bd227c9203bcd5283ce8f8ad1faa1') in 0.037007 seconds
+  Import took 0.040325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.166004 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Cyan.png
+  artifactKey: Guid(3928818884a3a9c41a8d469459870822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Cyan.png using Guid(3928818884a3a9c41a8d469459870822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e13a01684f58183dbbeefe43344de6') in 0.010656 seconds
+  Import took 0.012829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007232 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Cyan.png
+  artifactKey: Guid(3928818884a3a9c41a8d469459870822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Cyan.png using Guid(3928818884a3a9c41a8d469459870822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e13a01684f58183dbbeefe43344de6') in 0.009027 seconds
+  Import took 0.011246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030006 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Green.png
+  artifactKey: Guid(834cc5d6ac8c31641a2235a9d4682f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Green.png using Guid(834cc5d6ac8c31641a2235a9d4682f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f2ed6667dd06c4de64f242d90626e3') in 0.010689 seconds
+  Import took 0.013021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018511 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Grey.png
+  artifactKey: Guid(e80529d62d99b2a43a062d8434e9f4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Grey.png using Guid(e80529d62d99b2a43a062d8434e9f4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48caf39475cc005f7a41d9abce6f585c') in 0.010383 seconds
+  Import took 0.012522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.262516 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_MetallicSmoothness.png
+  artifactKey: Guid(d3effaf83ec3f7e42ae598da93a72524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_MetallicSmoothness.png using Guid(d3effaf83ec3f7e42ae598da93a72524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b0170e37c92cac6195cad55b1ebc22') in 0.012028 seconds
+  Import took 0.014204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/Masks/StarSparrow_Neutral.png
+  artifactKey: Guid(f695ffcd972587c4bbeac051d94c35b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/Masks/StarSparrow_Neutral.png using Guid(f695ffcd972587c4bbeac051d94c35b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc1b856b64e8d0e083bc233f9773663') in 0.012232 seconds
+  Import took 0.014216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.154224 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Normal.png
+  artifactKey: Guid(c96423a02cfe8934286c58b144ca7a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Normal.png using Guid(c96423a02cfe8934286c58b144ca7a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55129fe64804d7fff596376663f84151') in 0.012703 seconds
+  Import took 0.014888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Orange.png
+  artifactKey: Guid(9910943c18579a249a5a2984fdb3f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Orange.png using Guid(9910943c18579a249a5a2984fdb3f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228898badbc3394e1c0ff21cb9bee582') in 0.011413 seconds
+  Import took 0.013354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Normal.png
+  artifactKey: Guid(c96423a02cfe8934286c58b144ca7a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Normal.png using Guid(c96423a02cfe8934286c58b144ca7a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55129fe64804d7fff596376663f84151') in 0.012993 seconds
+  Import took 0.014966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Purple.png
+  artifactKey: Guid(d1d3cc1b67fbc2146a520fd04ce86e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Purple.png using Guid(d1d3cc1b67fbc2146a520fd04ce86e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa655b0dd916bd72de3ca74cd8b73c9c') in 0.011176 seconds
+  Import took 0.013114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Orange.png
+  artifactKey: Guid(9910943c18579a249a5a2984fdb3f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Orange.png using Guid(9910943c18579a249a5a2984fdb3f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228898badbc3394e1c0ff21cb9bee582') in 0.009516 seconds
+  Import took 0.011507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Purple.png
+  artifactKey: Guid(d1d3cc1b67fbc2146a520fd04ce86e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_Purple.png using Guid(d1d3cc1b67fbc2146a520fd04ce86e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa655b0dd916bd72de3ca74cd8b73c9c') in 0.009055 seconds
+  Import took 0.011039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041293 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/StarSparrow_White.png
+  artifactKey: Guid(07e73c410e4389545a8cd3e12dee52b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/StarSparrow_White.png using Guid(07e73c410e4389545a8cd3e12dee52b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4288e054c5d1425799edaf70e4cfc443') in 0.008980 seconds
+  Import took 0.011127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083459 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/thruster_Material.006_AlbedoTransparency.tga
+  artifactKey: Guid(f4e4f11143eadd048b40dd7e2b030a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/thruster_Material.006_AlbedoTransparency.tga using Guid(f4e4f11143eadd048b40dd7e2b030a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d38c90ea6be2eac41788568dede989a') in 0.008964 seconds
+  Import took 0.011155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/thruster_Material.006_MetallicSmoothness.tga
+  artifactKey: Guid(701f486b9125858459a3e84702795027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/thruster_Material.006_MetallicSmoothness.tga using Guid(701f486b9125858459a3e84702795027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b028e4875695de3b1505a596693a1e19') in 0.012042 seconds
+  Import took 0.013995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.081129 seconds.
+  path: Assets/Asset Packs/Cobble Games/Spaceship/Textures/thruster_Material.006_Normal.tga
+  artifactKey: Guid(492f986e6ffb69f4f945860841cc1b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Cobble Games/Spaceship/Textures/thruster_Material.006_Normal.tga using Guid(492f986e6ffb69f4f945860841cc1b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9aff0b8b7b0611585be5b1a9c8acf0d') in 0.014053 seconds
+  Import took 0.016512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Albedo.png
+  artifactKey: Guid(b617caa5ef54773409f566190c82a16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Albedo.png using Guid(b617caa5ef54773409f566190c82a16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62431c820744f2a5660ed1caf290e702') in 0.012816 seconds
+  Import took 0.015092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028439 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Tinniuq_MetallicSmoothness.png
+  artifactKey: Guid(35c503943e9b94a49a5cf140d6154a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Tinniuq_MetallicSmoothness.png using Guid(35c503943e9b94a49a5cf140d6154a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2ba0484c82988a86568db97f3c904f') in 0.008560 seconds
+  Import took 0.010711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Normal.png
+  artifactKey: Guid(cbdbc14d991fe424c8ad8afda55c8e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/StarSparrow/Textures/BonusContent/Planet/Tinniuq_Normal.png using Guid(cbdbc14d991fe424c8ad8afda55c8e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71993d9977dbca022aad3f6177fde127') in 0.014695 seconds
+  Import took 0.016626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 167.025812 seconds.
+  path: Assets/UI/rocketship-icon-0.png
+  artifactKey: Guid(4bc8418c999b54cf694030e221008e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/rocketship-icon-0.png using Guid(4bc8418c999b54cf694030e221008e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9963ec36f5e72519003f8f3090d4419') in 0.010069 seconds
+  Import took 0.012734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.905753 seconds.
+  path: Assets/UI/rocketship-icon-0.png
+  artifactKey: Guid(4bc8418c999b54cf694030e221008e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/rocketship-icon-0.png using Guid(4bc8418c999b54cf694030e221008e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823887c3a5b63373617509ad32bf4142') in 0.038204 seconds
+  Import took 0.040538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000717 seconds.
+  path: Assets/UI/rocketship-icon-0.png
+  artifactKey: Guid(4bc8418c999b54cf694030e221008e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/rocketship-icon-0.png using Guid(4bc8418c999b54cf694030e221008e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823887c3a5b63373617509ad32bf4142') in 0.019083 seconds
+  Import took 0.021311 seconds .
+
