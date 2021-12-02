@@ -42,7 +42,7 @@ public class OutOfBoundsMgr : MonoBehaviour
         {
             if (yBounds[0] < player.transform.position.y && yBounds[1] > player.transform.position.y)
             {
-                if (zBounds[0] < player.transform.position.y && yBounds[1] > player.transform.position.z)
+                if (zBounds[0] < player.transform.position.z && yBounds[1] > player.transform.position.z)
                 {
                     outside = false;
                     updateState();
